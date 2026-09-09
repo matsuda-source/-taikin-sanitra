@@ -356,7 +356,7 @@ jobs:
           )
 
           # 取得失敗時に今までのデータを消さない
-                    if len(cars) < 5:
+          if len(cars) < 5:
               if OUT.exists():
                   print(
                       "Too few listings. Preserving last good cars.json",
