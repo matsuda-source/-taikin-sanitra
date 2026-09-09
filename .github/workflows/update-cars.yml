@@ -357,13 +357,32 @@ jobs:
 
           # 取得失敗時に今までのデータを消さない
           if len(cars) < 5:
-              print(
-                  "Too few listings. "
-                  "Preserving last good cars.json",
-                  file=sys.stderr
-              )
+    if OUT.exists():
+        print(
+            "Too few listings. Preserving last good cars.json",
+            file=sys.stderr
+        )
+        sys.exit(0)
 
-              sys.exit(0)
+    OUT.write_text(
+        json.dumps(
+            {
+                "updated_at": datetime.now(JST).isoformat(timespec="seconds"),
+                "cars": cars,
+                "stats": {
+                    "date": datetime.now(JST).date().isoformat(),
+                    "count": len(cars)
+                },
+                "history": [],
+                "errors": errors
+            },
+            ensure_ascii=False,
+            indent=2
+        ),
+        encoding="utf-8"
+    )
+
+    sys.exit(0)
 
           # 面白そう度
           def interesting_score(car):
