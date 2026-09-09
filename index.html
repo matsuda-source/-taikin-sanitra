@@ -841,6 +841,7 @@ async function refreshCars(){
 
     db.cars=arr.map(x=>({
   name:x.name||x.title||"中古車",
+  image:x.image||x.image_url||"",
   model:x.model||x.name||x.title||"",
   price:Number(x.price)||0,
   year:x.year||"",
@@ -1193,6 +1194,24 @@ const tagHtml=tags.length
   :"";
     return `
       <div class="car">
+      　　${x.image
+  ?`<a href="${x.url||x.image}" target="_blank" rel="noopener">
+      <img
+        src="${x.image}"
+        alt="${x.name}"
+        loading="lazy"
+        style="
+          width:100%;
+          aspect-ratio:16/9;
+          object-fit:cover;
+          border-radius:14px;
+          margin-bottom:12px;
+          display:block;
+        "
+      >
+    </a>`
+  :""
+}
         <div class="car-title">
           ${x.name}
         </div>
