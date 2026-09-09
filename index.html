@@ -1144,6 +1144,22 @@ function renderCars(){
 
     const gap=x.price-s;
 
+    const monthly=Number(db.settings.monthly)||0;
+
+let buyDateText="";
+
+if(gap<=0){
+  buyDateText="今すぐ購入圏内";
+}else if(monthly>0){
+  const months=Math.ceil(gap/monthly);
+
+  const d=new Date();
+  d.setMonth(d.getMonth()+months);
+
+  buyDateText=
+    `${d.getFullYear()}年${d.getMonth()+1}月ごろ買える`;
+}
+
     let status=
       gap<=0
       ?`<span class="badge">
@@ -1227,6 +1243,12 @@ const tagHtml=tags.length
         <div style="margin-top:7px">
           ${status}
         </div>
+        ${buyDateText
+  ?`<div class="car-meta" style="margin-top:6px">
+      📅 ${buyDateText}
+    </div>`
+  :""
+}
 　　　　　<div style="margin-top:7px">
   ${fun}
 </div>
