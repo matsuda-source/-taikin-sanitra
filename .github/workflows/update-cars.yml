@@ -568,10 +568,27 @@ jobs:
 
                   if not title:
                       title = "中古車"
+                  img = block.find("img") if block else None
+                  image_url = ""
+                  
+                  if img:
+                      image_url = (
+                          img.get("data-src")
+                          or img.get("data-original")
+                          or img.get("data-lazy")
+                          or img.get("src")
+                          or ""
+                      )
+                  
+                      if image_url and not image_url.startswith("data:"):
+                          image_url = urljoin(BASE, image_url)
+                      else:
+                          image_url = ""
 
                   found[url] = {
                       "name": title,
-
+                      "image": image_url,
+                      
                       # 車種固定ではないので
                       # modelは後でname由来で使う
                       "model": title,
