@@ -1,10 +1,3530 @@
 {
-  "updated_at": "2026-09-09T23:40:53+09:00",
-  "cars": [],
+  "updated_at": "2026-09-09T23:52:04+09:00",
+  "cars": [
+    {
+      "name": "ミニキャブトラック 660 TD 4WD 4WD 5MT",
+      "model": "ミニキャブトラック 660 TD 4WD 4WD 5MT",
+      "price": 260000,
+      "year": 2000,
+      "mileage": 76000,
+      "transmission": "フロア5MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7252420649/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "100万円以下",
+        "4WD",
+        "MT",
+        "トラック",
+        "旧車"
+      ],
+      "interesting_score": 27
+    },
+    {
+      "name": "アクティトラック 660 SDX 三方開 4WD 5MT",
+      "model": "アクティトラック 660 SDX 三方開 4WD 5MT",
+      "price": 350000,
+      "year": 1995,
+      "mileage": 85000,
+      "transmission": "フロア5MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU6874401109/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "100万円以下",
+        "4WD",
+        "MT",
+        "トラック",
+        "旧車"
+      ],
+      "interesting_score": 27
+    },
+    {
+      "name": "アクティトラック 660 SDX 純正CDステレオ/AM&FMラジオ・AUX対応/エアコン/パワステ/パワーウィンドウ/運転席エアバッグ/ABS/キーレスエントリー/作業灯/荷台マット&プロテクターガード/3方開/ワンオーナー禁煙/ユーザー買取車",
+      "model": "アクティトラック 660 SDX 純正CDステレオ/AM&FMラジオ・AUX対応/エアコン/パワステ/パワーウィンドウ/運転席エアバッグ/ABS/キーレスエントリー/作業灯/荷台マット&プロテクターガード/3方開/ワンオーナー禁煙/ユーザー買取車",
+      "price": 990000,
+      "year": 2022,
+      "mileage": 24000,
+      "transmission": "フロア5MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "オープン",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU6955467436/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "MT",
+        "トラック"
+      ],
+      "fun_tags": [
+        "100万円以下",
+        "MT",
+        "オープン",
+        "トラック"
+      ],
+      "interesting_score": 26
+    },
+    {
+      "name": "サンバートラック 660 TB 三方開 4WD 4WD MT 運転席エアバッグ",
+      "model": "サンバートラック 660 TB 三方開 4WD 4WD MT 運転席エアバッグ",
+      "price": 380000,
+      "year": 2002,
+      "mileage": 60000,
+      "transmission": "フロア5MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7186425694/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "100万円以下",
+        "4WD",
+        "MT",
+        "トラック"
+      ],
+      "interesting_score": 23
+    },
+    {
+      "name": "ハイゼットトラック 660 農用スペシャル VS 3方開 4WD 軽トラック",
+      "model": "ハイゼットトラック 660 農用スペシャル VS 3方開 4WD 軽トラック",
+      "price": 690000,
+      "year": 2014,
+      "mileage": 48000,
+      "transmission": "フロア5MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7236022508/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "100万円以下",
+        "4WD",
+        "MT",
+        "トラック"
+      ],
+      "interesting_score": 23
+    },
+    {
+      "name": "アクティトラック 660 SDX 4WD 本州仕入 車検整備付き 4WD 5MT 純正ラジオ",
+      "model": "アクティトラック 660 SDX 4WD 本州仕入 車検整備付き 4WD 5MT 純正ラジオ",
+      "price": 480000,
+      "year": 2012,
+      "mileage": 102000,
+      "transmission": "フロア5MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7188181736/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "100万円以下",
+        "4WD",
+        "MT",
+        "トラック"
+      ],
+      "interesting_score": 22
+    },
+    {
+      "name": "ダットサン 2.4 AXリミテッド ダブルキャブ 4WD 最終後期型・修復歴無し・サビ少ない本州車両・整備記録簿14枚・社外ナビ・フルセグ・BT・LEDヘッドライト・新品夏タイヤ・キーレス・エアコン・ABS・試乗可",
+      "model": "ダットサン 2.4 AXリミテッド ダブルキャブ 4WD 最終後期型・修復歴無し・サビ少ない本州車両・整備記録簿14枚・社外ナビ・フルセグ・BT・LEDヘッドライト・新品夏タイヤ・キーレス・エアコン・ABS・試乗可",
+      "price": 2200000,
+      "year": 1999,
+      "mileage": 97000,
+      "transmission": "フロア4AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "ピックアップトラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7311173852/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "ピックアップ"
+      ],
+      "fun_tags": [
+        "4WD",
+        "トラック",
+        "ピックアップ",
+        "旧車"
+      ],
+      "interesting_score": 22
+    },
+    {
+      "name": "ハイラックス 2.4 Z ディーゼルターボ 4WD 純正7インチナビ+バックモニター&1年保証付＼走行距離無制限/",
+      "model": "ハイラックス 2.4 Z ディーゼルターボ 4WD 純正7インチナビ+バックモニター&1年保証付＼走行距離無制限/",
+      "price": 3810000,
+      "year": 2022,
+      "mileage": 35000,
+      "transmission": "フロア6AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "ピックアップトラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7193188016/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "ピックアップ"
+      ],
+      "fun_tags": [
+        "4WD",
+        "ターボ",
+        "トラック",
+        "ピックアップ"
+      ],
+      "interesting_score": 22
+    },
+    {
+      "name": "ハイラックス 2.4 Z ディーゼルターボ 4WD ナビ バックカメラ ドライブレコーダー エンジンスターター アダプティブクルーズコントロール 横滑り防止装置 衝突被害軽減ブレーキ レーンキープアシスト",
+      "model": "ハイラックス 2.4 Z ディーゼルターボ 4WD ナビ バックカメラ ドライブレコーダー エンジンスターター アダプティブクルーズコントロール 横滑り防止装置 衝突被害軽減ブレーキ レーンキープアシスト",
+      "price": 3870000,
+      "year": 2019,
+      "mileage": 28000,
+      "transmission": "フロアMTモード付6AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "ピックアップトラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7177316819/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "ピックアップ"
+      ],
+      "fun_tags": [
+        "4WD",
+        "ターボ",
+        "トラック",
+        "ピックアップ"
+      ],
+      "interesting_score": 22
+    },
+    {
+      "name": "ハイラックス 2.4 Z ディーゼルターボ 4WD 寒冷地仕様 プリクラッシュ レーダークルーズ アルパイン11型フローティングナビ クリアランスソナー レーンディパーチャー バックカメラ トラクションコントロール ダウンヒルアシスト ETC",
+      "model": "ハイラックス 2.4 Z ディーゼルターボ 4WD 寒冷地仕様 プリクラッシュ レーダークルーズ アルパイン11型フローティングナビ クリアランスソナー レーンディパーチャー バックカメラ トラクションコントロール ダウンヒルアシスト ETC",
+      "price": 4250000,
+      "year": 2020,
+      "mileage": 40000,
+      "transmission": "フロアMTモード付6AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "ピックアップトラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7231428214/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "ピックアップ"
+      ],
+      "fun_tags": [
+        "4WD",
+        "ターボ",
+        "トラック",
+        "ピックアップ"
+      ],
+      "interesting_score": 22
+    },
+    {
+      "name": "ハイラックス 2.4 Z GRスポーツ ディーゼルターボ 4WD GRスポーツ専用シート/GRスポーツバー/ベッドライナー/ディスプレイオーディオ/アラウンドビューモニター/パワーシート/ETC/LEDヘッドライト",
+      "model": "ハイラックス 2.4 Z GRスポーツ ディーゼルターボ 4WD GRスポーツ専用シート/GRスポーツバー/ベッドライナー/ディスプレイオーディオ/アラウンドビューモニター/パワーシート/ETC/LEDヘッドライト",
+      "price": 4490000,
+      "year": 2023,
+      "mileage": 36000,
+      "transmission": "フロアMTモード付6AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "ピックアップトラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7093037709/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "ピックアップ"
+      ],
+      "fun_tags": [
+        "4WD",
+        "ターボ",
+        "トラック",
+        "ピックアップ"
+      ],
+      "interesting_score": 22
+    },
+    {
+      "name": "ハイラックス 2.4 Z GRスポーツ ディーゼルターボ 4WD 純正ナビ パノラミックモニタ- Bluetooth ETC",
+      "model": "ハイラックス 2.4 Z GRスポーツ ディーゼルターボ 4WD 純正ナビ パノラミックモニタ- Bluetooth ETC",
+      "price": 4610000,
+      "year": 2024,
+      "mileage": 26000,
+      "transmission": "フロア6AT",
+      "region": "岐阜県",
+      "repair": "なし",
+      "body_type": "ピックアップトラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7136097098/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "ピックアップ"
+      ],
+      "fun_tags": [
+        "4WD",
+        "ターボ",
+        "トラック",
+        "ピックアップ"
+      ],
+      "interesting_score": 22
+    },
+    {
+      "name": "ハイラックス 2.4 Z ディーゼルターボ 4WD 実質年率3.9/カスタム車/タンドラルック/リフトアップ/サイドステップ/ハードトノカバー/SUXONマフラー/オーバーフェンダー/ROCKSTAR17AW/アルパイン11型ディスプレイ/Bluetooth/フロント・バックカメラ/ETC/禁煙車",
+      "model": "ハイラックス 2.4 Z ディーゼルターボ 4WD 実質年率3.9/カスタム車/タンドラルック/リフトアップ/サイドステップ/ハードトノカバー/SUXONマフラー/オーバーフェンダー/ROCKSTAR17AW/アルパイン11型ディスプレイ/Bluetooth/フロント・バックカメラ/ETC/禁煙車",
+      "price": 4690000,
+      "year": 2021,
+      "mileage": 11000,
+      "transmission": "フロアMTモード付6AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "ピックアップトラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7305257057/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "ピックアップ"
+      ],
+      "fun_tags": [
+        "4WD",
+        "ターボ",
+        "トラック",
+        "ピックアップ"
+      ],
+      "interesting_score": 22
+    },
+    {
+      "name": "トライトン 2.4 GSR ディーゼルターボ 4WD 純正スマホ連携ナビ トノカバー マルチアラウンドモニター マイパイロット 電動シート シートヒーター ワンオーナー レーンキープアシスト",
+      "model": "トライトン 2.4 GSR ディーゼルターボ 4WD 純正スマホ連携ナビ トノカバー マルチアラウンドモニター マイパイロット 電動シート シートヒーター ワンオーナー レーンキープアシスト",
+      "price": 4770000,
+      "year": 2025,
+      "mileage": 34000,
+      "transmission": "フロアMTモード付6AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "ピックアップトラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7305254519/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "ピックアップ"
+      ],
+      "fun_tags": [
+        "4WD",
+        "ターボ",
+        "トラック",
+        "ピックアップ"
+      ],
+      "interesting_score": 22
+    },
+    {
+      "name": "トライトン 2.4 GSR ディーゼルターボ 4WD 純正スマホ連携ナビ マルチアラウンドモニター 本革シート 電動シート シートヒーター 障害物センサー ETC アダプティブクルーズコントロール",
+      "model": "トライトン 2.4 GSR ディーゼルターボ 4WD 純正スマホ連携ナビ マルチアラウンドモニター 本革シート 電動シート シートヒーター 障害物センサー ETC アダプティブクルーズコントロール",
+      "price": 4880000,
+      "year": 2025,
+      "mileage": 10000,
+      "transmission": "フロアMTモード付6AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "ピックアップトラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7118308408/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "ピックアップ"
+      ],
+      "fun_tags": [
+        "4WD",
+        "ターボ",
+        "トラック",
+        "ピックアップ"
+      ],
+      "interesting_score": 22
+    },
+    {
+      "name": "トライトン 2.4 GSR ディーゼルターボ 4WD ブルートゥース接続 寒冷地仕様車 シートヒーター バックカメラ 全周囲カメラ スマートフォン連携ナビ 認定中古車保障付き TOYO オープンカントリーAT WEDS MUD Vance",
+      "model": "トライトン 2.4 GSR ディーゼルターボ 4WD ブルートゥース接続 寒冷地仕様車 シートヒーター バックカメラ 全周囲カメラ スマートフォン連携ナビ 認定中古車保障付き TOYO オープンカントリーAT WEDS MUD Vance",
+      "price": 5000000,
+      "year": 2025,
+      "mileage": 2000,
+      "transmission": "フロアMTモード付6AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "ピックアップトラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7214537386/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "ピックアップ"
+      ],
+      "fun_tags": [
+        "4WD",
+        "ターボ",
+        "トラック",
+        "ピックアップ"
+      ],
+      "interesting_score": 22
+    },
+    {
+      "name": "ハイラックス 2.4 Z GRスポーツ ディーゼルターボ 4WD JAOS VFA ver.A リフトアップ エアージーヴァルカンホイール BFグッドリッヂ A/T 265/70R17 純正ベッドライナー バグガード LEDグリルマーカー 純正ディスプレイオーディオ ETC ドラレコ",
+      "model": "ハイラックス 2.4 Z GRスポーツ ディーゼルターボ 4WD JAOS VFA ver.A リフトアップ エアージーヴァルカンホイール BFグッドリッヂ A/T 265/70R17 純正ベッドライナー バグガード LEDグリルマーカー 純正ディスプレイオーディオ ETC ドラレコ",
+      "price": 5390000,
+      "year": 2022,
+      "mileage": 30000,
+      "transmission": "フロアMTモード付6AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "ピックアップトラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7139606513/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "ピックアップ"
+      ],
+      "fun_tags": [
+        "4WD",
+        "ターボ",
+        "トラック",
+        "ピックアップ"
+      ],
+      "interesting_score": 22
+    },
+    {
+      "name": "ハイラックス 2.4 Z GRスポーツ ディーゼルターボ 4WD タンドラフェイス ソフトトノカバー 265/65R18 GR純正ホイール 純正ディスプレイオーディオ ETC ドライブレコーダー ラバーフロアマット",
+      "model": "ハイラックス 2.4 Z GRスポーツ ディーゼルターボ 4WD タンドラフェイス ソフトトノカバー 265/65R18 GR純正ホイール 純正ディスプレイオーディオ ETC ドライブレコーダー ラバーフロアマット",
+      "price": 5390000,
+      "year": 2022,
+      "mileage": 38000,
+      "transmission": "フロアMTモード付6AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "ピックアップトラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7142413250/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "ピックアップ"
+      ],
+      "fun_tags": [
+        "4WD",
+        "ターボ",
+        "トラック",
+        "ピックアップ"
+      ],
+      "interesting_score": 22
+    },
+    {
+      "name": "ハイラックス 2.8 Z ディーゼルターボ 4WD 2026年7月登録 登録済み未使用車 テールゲートアシストダンパー テールゲートエンブレム ETC車載器 12.3型ディスプレイオーディオプラス パノラミックビューモニター ブラインドスポットモニター 寒冷地仕様",
+      "model": "ハイラックス 2.8 Z ディーゼルターボ 4WD 2026年7月登録 登録済み未使用車 テールゲートアシストダンパー テールゲートエンブレム ETC車載器 12.3型ディスプレイオーディオプラス パノラミックビューモニター ブラインドスポットモニター 寒冷地仕様",
+      "price": 5780000,
+      "year": 2026,
+      "mileage": 17,
+      "transmission": "フロアMTモード付6AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "ピックアップトラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7203032098/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "ピックアップ"
+      ],
+      "fun_tags": [
+        "4WD",
+        "ターボ",
+        "トラック",
+        "ピックアップ"
+      ],
+      "interesting_score": 22
+    },
+    {
+      "name": "ハイラックス 2.8 Z アドベンチャー ディーゼルターボ 4WD スポーツバー LEDヘッドライト BSM パノラミックビューモニター 純正ベッドライナー ステアリングヒーター 12.3型ディスプレイオーディオ Bluetooth 純正18AW フロントフォグ",
+      "model": "ハイラックス 2.8 Z アドベンチャー ディーゼルターボ 4WD スポーツバー LEDヘッドライト BSM パノラミックビューモニター 純正ベッドライナー ステアリングヒーター 12.3型ディスプレイオーディオ Bluetooth 純正18AW フロントフォグ",
+      "price": 6980000,
+      "year": 2026,
+      "mileage": 23,
+      "transmission": "フロア6AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "ピックアップトラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7301353921/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "ピックアップ"
+      ],
+      "fun_tags": [
+        "4WD",
+        "ターボ",
+        "トラック",
+        "ピックアップ"
+      ],
+      "interesting_score": 22
+    },
+    {
+      "name": "キャリイ 660 KCエアコン・パワステ 3方開 4WD 5MT スズキセーフティーサポート 4WD 衝突被害軽減システム アイドリングストップ 横滑り防止機能 衝突安全ボディ",
+      "model": "キャリイ 660 KCエアコン・パワステ 3方開 4WD 5MT スズキセーフティーサポート 4WD 衝突被害軽減システム アイドリングストップ 横滑り防止機能 衝突安全ボディ",
+      "price": 1090000,
+      "year": 2025,
+      "mileage": 3000,
+      "transmission": "フロア5MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7305260313/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "4WD",
+        "MT",
+        "トラック"
+      ],
+      "interesting_score": 21
+    },
+    {
+      "name": "キャリイ 660 KCエアコン・パワステ 3方開 4WD 保証3年距離無制限 パワーウィンドウ 寒冷地仕様 キーレス 衝突被害軽減ブレーキ 障害物センサー",
+      "model": "キャリイ 660 KCエアコン・パワステ 3方開 4WD 保証3年距離無制限 パワーウィンドウ 寒冷地仕様 キーレス 衝突被害軽減ブレーキ 障害物センサー",
+      "price": 1100000,
+      "year": 2024,
+      "mileage": 5000,
+      "transmission": "フロア5MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7172960043/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "4WD",
+        "MT",
+        "トラック"
+      ],
+      "interesting_score": 21
+    },
+    {
+      "name": "キャリイ 660 KCエアコン・パワステ農繁 3方開 4WD 登録済未使用 衝突軽減B 障害物センサ",
+      "model": "キャリイ 660 KCエアコン・パワステ農繁 3方開 4WD 登録済未使用 衝突軽減B 障害物センサ",
+      "price": 1150000,
+      "year": 2024,
+      "mileage": 4,
+      "transmission": "フロア5MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU6089554422/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "4WD",
+        "MT",
+        "トラック"
+      ],
+      "interesting_score": 21
+    },
+    {
+      "name": "キャリイ 660 KC 3方開 4WD 8型モデル 5MT車 パートタイム4WD スズキ保証付 デュアルセンサーブレーキサポートII 誤発進抑制機能 パーキングセンサー 車線逸脱抑制機能 ハイビームアシスト LEDヘッドランプ アイドリングストップ",
+      "model": "キャリイ 660 KC 3方開 4WD 8型モデル 5MT車 パートタイム4WD スズキ保証付 デュアルセンサーブレーキサポートII 誤発進抑制機能 パーキングセンサー 車線逸脱抑制機能 ハイビームアシスト LEDヘッドランプ アイドリングストップ",
+      "price": 1220000,
+      "year": 2026,
+      "mileage": 4,
+      "transmission": "フロア5MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU6813460542/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "4WD",
+        "MT",
+        "トラック"
+      ],
+      "interesting_score": 21
+    },
+    {
+      "name": "キャリイ 660 KC農繁 3方開 4WD 衝突被害軽減ブレーキ 誤発進抑制機能 LEDヘッドライト オートライト キーレスエントリー",
+      "model": "キャリイ 660 KC農繁 3方開 4WD 衝突被害軽減ブレーキ 誤発進抑制機能 LEDヘッドライト オートライト キーレスエントリー",
+      "price": 1290000,
+      "year": 2026,
+      "mileage": 5,
+      "transmission": "フロア5MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7278849856/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "4WD",
+        "MT",
+        "トラック"
+      ],
+      "interesting_score": 21
+    },
+    {
+      "name": "キャリイ 660 KCエアコン・パワステ農繁 3方開 4WD 衝突軽減ブレーキ/横滑り防止/アイドリングストップ/デフロック/作業灯/キーレス/パワーウインド/リアセンサー/社外アルミホイール/ナビテレビ/オートライト/オートマチックハイビーム",
+      "model": "キャリイ 660 KCエアコン・パワステ農繁 3方開 4WD 衝突軽減ブレーキ/横滑り防止/アイドリングストップ/デフロック/作業灯/キーレス/パワーウインド/リアセンサー/社外アルミホイール/ナビテレビ/オートライト/オートマチックハイビーム",
+      "price": 1290000,
+      "year": 2025,
+      "mileage": 2000,
+      "transmission": "フロア5MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7164828049/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "4WD",
+        "MT",
+        "トラック"
+      ],
+      "interesting_score": 21
+    },
+    {
+      "name": "キャリイ 660 KX 3方開 4WD",
+      "model": "キャリイ 660 KX 3方開 4WD",
+      "price": 1300000,
+      "year": 2025,
+      "mileage": 1000,
+      "transmission": "フロア5MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7271583636/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "4WD",
+        "MT",
+        "トラック"
+      ],
+      "interesting_score": 21
+    },
+    {
+      "name": "K1500 シルバラード 4WD 自社全塗装済(グレーM) ETC",
+      "model": "K1500 シルバラード 4WD 自社全塗装済(グレーM) ETC",
+      "price": 2710000,
+      "year": 1995,
+      "mileage": 111000,
+      "transmission": "フロア4AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "ピックアップトラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU5979455374/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "ピックアップ"
+      ],
+      "fun_tags": [
+        "4WD",
+        "トラック",
+        "ピックアップ",
+        "旧車"
+      ],
+      "interesting_score": 21
+    },
+    {
+      "name": "ハイラックス 2.4 Z ディーゼルターボ 4WD 衝突被害軽減ブレーキ・メモリーナビ付き",
+      "model": "ハイラックス 2.4 Z ディーゼルターボ 4WD 衝突被害軽減ブレーキ・メモリーナビ付き",
+      "price": 3800000,
+      "year": 2021,
+      "mileage": 59000,
+      "transmission": "フロア6AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "ピックアップトラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7282462937/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "ピックアップ"
+      ],
+      "fun_tags": [
+        "4WD",
+        "ターボ",
+        "トラック",
+        "ピックアップ"
+      ],
+      "interesting_score": 21
+    },
+    {
+      "name": "キャリイ 660 KCエアコン 3方開 修復歴無し",
+      "model": "キャリイ 660 KCエアコン 3方開 修復歴無し",
+      "price": 430000,
+      "year": 2006,
+      "mileage": 84000,
+      "transmission": "フロア5MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7218117082/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "100万円以下",
+        "MT",
+        "トラック"
+      ],
+      "interesting_score": 20
+    },
+    {
+      "name": "ダコタ 5.2L V8 SLT DAYTONAホイール",
+      "model": "ダコタ 5.2L V8 SLT DAYTONAホイール",
+      "price": 1250000,
+      "year": 1997,
+      "mileage": 135000,
+      "transmission": "その他AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "ピックアップトラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7224929443/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "ピックアップ"
+      ],
+      "fun_tags": [
+        "トラック",
+        "ピックアップ",
+        "旧車"
+      ],
+      "interesting_score": 20
+    },
+    {
+      "name": "クリッパートラック 660 DX 4WD オートマチック/純正ラジオ/エアコン/パワステ/パワーウィンドウ/ABS/両席エアバッグ/横滑り防止/LEDオートライト/インテリジェントエマージェンシーブレーキ/パーキングセンサー/キーレス/4WD/保証書あり",
+      "model": "クリッパートラック 660 DX 4WD オートマチック/純正ラジオ/エアコン/パワステ/パワーウィンドウ/ABS/両席エアバッグ/横滑り防止/LEDオートライト/インテリジェントエマージェンシーブレーキ/パーキングセンサー/キーレス/4WD/保証書あり",
+      "price": 1250000,
+      "year": 2026,
+      "mileage": 20,
+      "transmission": "フロア4AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "オープン",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU6984339657/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "4WD",
+        "オープン",
+        "トラック"
+      ],
+      "interesting_score": 20
+    },
+    {
+      "name": "ハイゼットトラック 660 ジャンボ エクストラ 3方開 4WD 実質年率3.9/5速/純正9型ディスプレイオーディオ/フルセグ/Bluetooth/バックカメラ/スマートアシスト/コーナーセンサー/車線逸脱警報/誤発進抑制/マット/バイザー/LEDヘッド/LEDフォグ/USB/HDMI/禁煙車",
+      "model": "ハイゼットトラック 660 ジャンボ エクストラ 3方開 4WD 実質年率3.9/5速/純正9型ディスプレイオーディオ/フルセグ/Bluetooth/バックカメラ/スマートアシスト/コーナーセンサー/車線逸脱警報/誤発進抑制/マット/バイザー/LEDヘッド/LEDフォグ/USB/HDMI/禁煙車",
+      "price": 1730000,
+      "year": 2025,
+      "mileage": 9,
+      "transmission": "フロア5MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU6555068046/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "4WD",
+        "MT",
+        "トラック"
+      ],
+      "interesting_score": 20
+    },
+    {
+      "name": "GRカローラ 1.6 RZ 4WD 純正コネクトナビ&フルセグTV/ブルートゥース&USB接続/バックカメラ/ETC2.0/前後ドラレコ/ブラインドスポットM/シート&ステアリングヒーター/ヘッドアップディスプレイ/トヨタセーフティセンス/純正アルミ/禁煙車",
+      "model": "GRカローラ 1.6 RZ 4WD 純正コネクトナビ&フルセグTV/ブルートゥース&USB接続/バックカメラ/ETC2.0/前後ドラレコ/ブラインドスポットM/シート&ステアリングヒーター/ヘッドアップディスプレイ/トヨタセーフティセンス/純正アルミ/禁煙車",
+      "price": 4730000,
+      "year": 2023,
+      "mileage": 29000,
+      "transmission": "フロア6MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "オープン",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7260939108/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "MT"
+      ],
+      "fun_tags": [
+        "4WD",
+        "MT",
+        "オープン"
+      ],
+      "interesting_score": 20
+    },
+    {
+      "name": "キャンター 4.9 ワイド ロング 高床 DX ディーゼルターボ 新明和垂直パワーゲート",
+      "model": "キャンター 4.9 ワイド ロング 高床 DX ディーゼルターボ 新明和垂直パワーゲート",
+      "price": 1690000,
+      "year": 2004,
+      "mileage": 343000,
+      "transmission": "インパネ6MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/VU0564813254/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "MT",
+        "ターボ",
+        "トラック"
+      ],
+      "interesting_score": 19
+    },
+    {
+      "name": "ハイゼットトラック 660 スタンダード 3方開 届出済み未使用車 衝突軽減ブレーキ コーナーセンサー 横滑り防止装置 エアコン パワステ",
+      "model": "ハイゼットトラック 660 スタンダード 3方開 届出済み未使用車 衝突軽減ブレーキ コーナーセンサー 横滑り防止装置 エアコン パワステ",
+      "price": 1050000,
+      "year": 2025,
+      "mileage": 68,
+      "transmission": "フロア5MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7291536380/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "MT",
+        "トラック"
+      ],
+      "interesting_score": 18
+    },
+    {
+      "name": "インプレッサハッチバックSTI 2.0 WRX 4WD 事故無し ターボ 6速マニュアル 前席RECAROシート 地デジ バックカメラ プッシュスタート スマートキー 社外マフラー 中古純正18インチアルミホイール&夏タイヤ付属 純正HID ETC ウインカーミラー",
+      "model": "インプレッサハッチバックSTI 2.0 WRX 4WD 事故無し ターボ 6速マニュアル 前席RECAROシート 地デジ バックカメラ プッシュスタート スマートキー 社外マフラー 中古純正18インチアルミホイール&夏タイヤ付属 純正HID ETC ウインカーミラー",
+      "price": 1300000,
+      "year": 2009,
+      "mileage": 188000,
+      "transmission": "フロア6MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "ハッチバック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU6961250736/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "MT"
+      ],
+      "fun_tags": [
+        "4WD",
+        "MT",
+        "ターボ"
+      ],
+      "interesting_score": 18
+    },
+    {
+      "name": "タンドラ 4WD クルーマックス SR5 V8 新車並行 アメリカモデル TSS-P ベンコラ YAKIMAオーバーハウル リフトアップ",
+      "model": "タンドラ 4WD クルーマックス SR5 V8 新車並行 アメリカモデル TSS-P ベンコラ YAKIMAオーバーハウル リフトアップ",
+      "price": 7130000,
+      "year": 2018,
+      "mileage": 32000,
+      "transmission": "コラムMTモード付6AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "ピックアップトラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7118922802/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "ピックアップ"
+      ],
+      "fun_tags": [
+        "4WD",
+        "トラック",
+        "ピックアップ"
+      ],
+      "interesting_score": 18
+    },
+    {
+      "name": "グラディエーター 3.6 ルビコン 4WD 1ナンバー/トノカバー/認定中古車保証",
+      "model": "グラディエーター 3.6 ルビコン 4WD 1ナンバー/トノカバー/認定中古車保証",
+      "price": 7600000,
+      "year": 2022,
+      "mileage": 6000,
+      "transmission": "フロアMTモード付8AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "ピックアップトラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7308416466/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "ピックアップ"
+      ],
+      "fun_tags": [
+        "4WD",
+        "トラック",
+        "ピックアップ"
+      ],
+      "interesting_score": 18
+    },
+    {
+      "name": "クリッパートラック 660 DX オートマチック/純正AM&FMラジオ/エアコン/パワステ/ABS/両席エアバック/横滑り防止/オートライト/パーキングセンサー/キーレスエントリー&スペア/ゴムマット/3方開/荷台マット/ゴムマット/1オーナー禁煙/買取車",
+      "model": "クリッパートラック 660 DX オートマチック/純正AM&FMラジオ/エアコン/パワステ/ABS/両席エアバック/横滑り防止/オートライト/パーキングセンサー/キーレスエントリー&スペア/ゴムマット/3方開/荷台マット/ゴムマット/1オーナー禁煙/買取車",
+      "price": 1050000,
+      "year": 2024,
+      "mileage": 3000,
+      "transmission": "フロア4AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "オープン",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7277232703/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "オープン",
+        "トラック"
+      ],
+      "interesting_score": 17
+    },
+    {
+      "name": "ライトエーストラック 平 幌 Xエディション 0.8t MT 内寸250×160×125 外寸427×167×189 車両総重量 3.5t未 普通免許 4ナンバーエンジン型式 3SZ 1500cc 保証付 小型 トラック",
+      "model": "ライトエーストラック 平 幌 Xエディション 0.8t MT 内寸250×160×125 外寸427×167×189 車両総重量 3.5t未 普通免許 4ナンバーエンジン型式 3SZ 1500cc 保証付 小型 トラック",
+      "price": 1320000,
+      "year": 2016,
+      "mileage": 99000,
+      "transmission": "インパネ5MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU6954428907/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "MT",
+        "トラック"
+      ],
+      "interesting_score": 17
+    },
+    {
+      "name": "ライトエーストラック 平ボディ 0.8t MT ガソリン 内寸250×160×37 外寸427×167×189 車両総重量 3.5t 普通免許 4ナンバー エンジン型式 3SZ 1500cc 保証付 小型 トラック",
+      "model": "ライトエーストラック 平ボディ 0.8t MT ガソリン 内寸250×160×37 外寸427×167×189 車両総重量 3.5t 普通免許 4ナンバー エンジン型式 3SZ 1500cc 保証付 小型 トラック",
+      "price": 1360000,
+      "year": 2017,
+      "mileage": 93000,
+      "transmission": "インパネ5MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7276852129/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "MT",
+        "トラック"
+      ],
+      "interesting_score": 17
+    },
+    {
+      "name": "ハイゼットデッキバン 660 G 社外SDナビ&フルセグTV/CD&DVD再生・ブルートゥース接続/ABS/両席エアバック/横滑り防止/パーキングセンサー/インテリキー&スペアキー/オートライト&ハイビーム/スマートアシスト/純正15インチアルミ/禁煙車両",
+      "model": "ハイゼットデッキバン 660 G 社外SDナビ&フルセグTV/CD&DVD再生・ブルートゥース接続/ABS/両席エアバック/横滑り防止/パーキングセンサー/インテリキー&スペアキー/オートライト&ハイビーム/スマートアシスト/純正15インチアルミ/禁煙車両",
+      "price": 1450000,
+      "year": 2023,
+      "mileage": 43000,
+      "transmission": "インパネCVT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "オープン",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7260936147/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "オープン",
+        "トラック"
+      ],
+      "interesting_score": 17
+    },
+    {
+      "name": "タウンエーストラック 平ボディ 0.8t MT ガソリン 普通免許 内寸250×160×37 外寸427×167×189 車両総重量 3.5t 普通免許 4ナンバー エンジン型式 3SZ 1500cc 保証付 小型 トラック",
+      "model": "タウンエーストラック 平ボディ 0.8t MT ガソリン 普通免許 内寸250×160×37 外寸427×167×189 車両総重量 3.5t 普通免許 4ナンバー エンジン型式 3SZ 1500cc 保証付 小型 トラック",
+      "price": 1460000,
+      "year": 2016,
+      "mileage": 92000,
+      "transmission": "インパネ5MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7214546644/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "MT",
+        "トラック"
+      ],
+      "interesting_score": 17
+    },
+    {
+      "name": "ライトエーストラック 平 Xエディション 0.8t MT ガソリン 内寸250×160×37 外寸427×167×189 車両総重量 3.5t 普通免許 4ナンバー エンジン型式 3SZ 1500cc 保証付 小型 トラック",
+      "model": "ライトエーストラック 平 Xエディション 0.8t MT ガソリン 内寸250×160×37 外寸427×167×189 車両総重量 3.5t 普通免許 4ナンバー エンジン型式 3SZ 1500cc 保証付 小型 トラック",
+      "price": 1550000,
+      "year": 2016,
+      "mileage": 41000,
+      "transmission": "インパネ5MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7159862572/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "MT",
+        "トラック"
+      ],
+      "interesting_score": 17
+    },
+    {
+      "name": "ロードスターRF 2.0 S 6速MT/レーンアシスト/BSM/ETC/スマートキー/純正ナビ/フルセグ/Bluetooth/バックカメラ/LEDオートライト/純正AW",
+      "model": "ロードスターRF 2.0 S 6速MT/レーンアシスト/BSM/ETC/スマートキー/純正ナビ/フルセグ/Bluetooth/バックカメラ/LEDオートライト/純正AW",
+      "price": 2260000,
+      "year": 2017,
+      "mileage": 49000,
+      "transmission": "フロア6MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "オープン",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU6986333575/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "オープン"
+      ],
+      "fun_tags": [
+        "MT",
+        "オープン"
+      ],
+      "interesting_score": 17
+    },
+    {
+      "name": "ロードスターRF 2.0 VS 6速MT/ローダウン/茶革シート/シートヒーター/BSM/RCTA/ハイビームコントロール/スマートキー/ETC/横滑り防止装置/純正ナビ/Bluetooth/地デジ/LEDオートライト/純正AW",
+      "model": "ロードスターRF 2.0 VS 6速MT/ローダウン/茶革シート/シートヒーター/BSM/RCTA/ハイビームコントロール/スマートキー/ETC/横滑り防止装置/純正ナビ/Bluetooth/地デジ/LEDオートライト/純正AW",
+      "price": 2500000,
+      "year": 2017,
+      "mileage": 33000,
+      "transmission": "フロア6MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "オープン",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7231891460/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "MT",
+        "オープン"
+      ],
+      "fun_tags": [
+        "MT",
+        "オープン"
+      ],
+      "interesting_score": 17
+    },
+    {
+      "name": "ロードスター 1.5 S 6速MT/WORK17AW/Apexiディンスリーメーター/アドバンストSCBS/リアパーキングセンサー/BSM/RCTA/レーンアシスト/ハイビームコントロール/LEDオートライト",
+      "model": "ロードスター 1.5 S 6速MT/WORK17AW/Apexiディンスリーメーター/アドバンストSCBS/リアパーキングセンサー/BSM/RCTA/レーンアシスト/ハイビームコントロール/LEDオートライト",
+      "price": 2500000,
+      "year": 2021,
+      "mileage": 25000,
+      "transmission": "フロア6MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "オープン",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU6954913850/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "オープン"
+      ],
+      "fun_tags": [
+        "MT",
+        "オープン"
+      ],
+      "interesting_score": 17
+    },
+    {
+      "name": "ロードスター 1.5 990S 6速MT/HKSマフラー/オートエグゼローダウンスプリング/デジタルインナーミラー/アドバンストSCBS/リアパーキングセンサー/BSM/RCTA/ハイビームコントロール/LEDオートライト/鍛造AW",
+      "model": "ロードスター 1.5 990S 6速MT/HKSマフラー/オートエグゼローダウンスプリング/デジタルインナーミラー/アドバンストSCBS/リアパーキングセンサー/BSM/RCTA/ハイビームコントロール/LEDオートライト/鍛造AW",
+      "price": 2760000,
+      "year": 2022,
+      "mileage": 28000,
+      "transmission": "フロア6MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "オープン",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7119988431/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "MT",
+        "オープン"
+      ],
+      "fun_tags": [
+        "MT",
+        "オープン"
+      ],
+      "interesting_score": 17
+    },
+    {
+      "name": "ロードスター 1.5 S スペシャルパッケージ 後期/6速MT/カープレイ/アドバンストSCBS/リアパーキングセンサー/BSM/RCTA/ハイビームコントロールシステム/ハイビームコントロールシステム/純正ナビ/バックカメラ/LEDオートライト",
+      "model": "ロードスター 1.5 S スペシャルパッケージ 後期/6速MT/カープレイ/アドバンストSCBS/リアパーキングセンサー/BSM/RCTA/ハイビームコントロールシステム/ハイビームコントロールシステム/純正ナビ/バックカメラ/LEDオートライト",
+      "price": 2770000,
+      "year": 2024,
+      "mileage": 30000,
+      "transmission": "フロア6MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "オープン",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7054064839/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "オープン"
+      ],
+      "fun_tags": [
+        "MT",
+        "オープン"
+      ],
+      "interesting_score": 17
+    },
+    {
+      "name": "ロードスター 1.5 S スペシャルパッケージ 後期/6速MT/カープレイ/シートヒーター/レーダークルコン/リアパーキングセンサー/レーンアシスト/BSM/RCTA/ハイビームコントロール/純正ナビ/バックカメラ/LEDオートライト/純正AW",
+      "model": "ロードスター 1.5 S スペシャルパッケージ 後期/6速MT/カープレイ/シートヒーター/レーダークルコン/リアパーキングセンサー/レーンアシスト/BSM/RCTA/ハイビームコントロール/純正ナビ/バックカメラ/LEDオートライト/純正AW",
+      "price": 2850000,
+      "year": 2024,
+      "mileage": 36000,
+      "transmission": "フロア6MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "オープン",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7087182491/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "オープン"
+      ],
+      "fun_tags": [
+        "MT",
+        "オープン"
+      ],
+      "interesting_score": 17
+    },
+    {
+      "name": "ロードスター 1.5 990S 6速MT LEDライト ETC",
+      "model": "ロードスター 1.5 990S 6速MT LEDライト ETC",
+      "price": 2910000,
+      "year": 2022,
+      "mileage": 14000,
+      "transmission": "フロア6MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "オープン",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7206065036/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "オープン"
+      ],
+      "fun_tags": [
+        "MT",
+        "オープン"
+      ],
+      "interesting_score": 17
+    },
+    {
+      "name": "ハイラックス スポーツピックアップ 2.7 エクストラキャブ ワイドボディ 4WD サビ無し本州車両・走行92800km・サンルーフ・公認リフトUP・セトグチ・RANCHO・SUXON マフラー・MKW16インチ・ジオランダーAT・トノカバー・社外ナビ・Bluetooth・フルセグ・ETC・LEDヘッドランプ",
+      "model": "ハイラックス スポーツピックアップ 2.7 エクストラキャブ ワイドボディ 4WD サビ無し本州車両・走行92800km・サンルーフ・公認リフトUP・セトグチ・RANCHO・SUXON マフラー・MKW16インチ・ジオランダーAT・トノカバー・社外ナビ・Bluetooth・フルセグ・ETC・LEDヘッドランプ",
+      "price": 3060000,
+      "year": 2003,
+      "mileage": 93000,
+      "transmission": "フロア4AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "ピックアップトラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU6888561366/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "ピックアップ"
+      ],
+      "fun_tags": [
+        "4WD",
+        "トラック",
+        "ピックアップ"
+      ],
+      "interesting_score": 17
+    },
+    {
+      "name": "タンドラ クルーマックス SR5 5.7 V8 4WD TRDオフロードPKG 新車並行輸入 ワンオーナー BlueTooth バックカメラ 20インチAW グッドリットAT BSM トノカバー 前後コーナーセンサー 電動リアガラス クルコン",
+      "model": "タンドラ クルーマックス SR5 5.7 V8 4WD TRDオフロードPKG 新車並行輸入 ワンオーナー BlueTooth バックカメラ 20インチAW グッドリットAT BSM トノカバー 前後コーナーセンサー 電動リアガラス クルコン",
+      "price": 6580000,
+      "year": 2017,
+      "mileage": 56000,
+      "transmission": "フロア6AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "ピックアップトラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7288401143/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "ピックアップ"
+      ],
+      "fun_tags": [
+        "4WD",
+        "トラック",
+        "ピックアップ"
+      ],
+      "interesting_score": 17
+    },
+    {
+      "name": "ミニキャブトラック 660 みのり 4WD 1年保証 オートマ ETC 衝突軽減ブレーキ",
+      "model": "ミニキャブトラック 660 みのり 4WD 1年保証 オートマ ETC 衝突軽減ブレーキ",
+      "price": 850000,
+      "year": 2022,
+      "mileage": 41000,
+      "transmission": "フロア4AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7285193517/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "100万円以下",
+        "4WD",
+        "トラック"
+      ],
+      "interesting_score": 16
+    },
+    {
+      "name": "キャリイ 660 KCスペシャル 3方開 4WD エアコン パワステ パワーウィンドウ オートマ キーレス",
+      "model": "キャリイ 660 KCスペシャル 3方開 4WD エアコン パワステ パワーウィンドウ オートマ キーレス",
+      "price": 850000,
+      "year": 2017,
+      "mileage": 43000,
+      "transmission": "フロア3AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU6983670302/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "100万円以下",
+        "4WD",
+        "トラック"
+      ],
+      "interesting_score": 16
+    },
+    {
+      "name": "タウンエーストラック 平ボディ 0.8t MT 800kg 普通免許 荷台内寸 250×160×37 車両外寸 427×167×189 車両総重量3.5t 新普通免許証 4ナンバー エンジン型式 3SZ 1500CC 保証付 小型 トラック 荷台地上高約73cm",
+      "model": "タウンエーストラック 平ボディ 0.8t MT 800kg 普通免許 荷台内寸 250×160×37 車両外寸 427×167×189 車両総重量3.5t 新普通免許証 4ナンバー エンジン型式 3SZ 1500CC 保証付 小型 トラック 荷台地上高約73cm",
+      "price": 1520000,
+      "year": 2018,
+      "mileage": 91000,
+      "transmission": "インパネ5MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU6652428473/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "MT",
+        "トラック"
+      ],
+      "interesting_score": 16
+    },
+    {
+      "name": "タウンエーストラック 平ボディ 0.8t MT ガソリン 荷台 250×160×36 外寸 427×167×189 車両総重量 3.5t未 普通免許 4ナンバー エンジン型式 3SZ 1500cc 保証付 小型 トラック",
+      "model": "タウンエーストラック 平ボディ 0.8t MT ガソリン 荷台 250×160×36 外寸 427×167×189 車両総重量 3.5t未 普通免許 4ナンバー エンジン型式 3SZ 1500cc 保証付 小型 トラック",
+      "price": 1570000,
+      "year": 2018,
+      "mileage": 88000,
+      "transmission": "インパネ5MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU6911001163/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "MT",
+        "トラック"
+      ],
+      "interesting_score": 16
+    },
+    {
+      "name": "ロードスター 1.5 S スペシャルパッケージ パドルシフト/スマートキー/ETC/横滑り防止装置/純正ナビ/Bluetooth/バックカメラ/地デジ/LEDオートライト/純正AW",
+      "model": "ロードスター 1.5 S スペシャルパッケージ パドルシフト/スマートキー/ETC/横滑り防止装置/純正ナビ/Bluetooth/バックカメラ/地デジ/LEDオートライト/純正AW",
+      "price": 2120000,
+      "year": 2015,
+      "mileage": 53000,
+      "transmission": "フロアMTモード付6MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "オープン",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7193874480/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "オープン"
+      ],
+      "fun_tags": [
+        "MT",
+        "オープン"
+      ],
+      "interesting_score": 16
+    },
+    {
+      "name": "ロードスターRF 2.0 S 6速MT/BOSEサウンド/柿本マフラー/BSM/レーンアシスト/ETC/純正ナビ/地デジ/Bluetooth/LEDオートライト/純正AW",
+      "model": "ロードスターRF 2.0 S 6速MT/BOSEサウンド/柿本マフラー/BSM/レーンアシスト/ETC/純正ナビ/地デジ/Bluetooth/LEDオートライト/純正AW",
+      "price": 2220000,
+      "year": 2017,
+      "mileage": 70000,
+      "transmission": "フロア6MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "オープン",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7154119466/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "オープン"
+      ],
+      "fun_tags": [
+        "MT",
+        "オープン"
+      ],
+      "interesting_score": 16
+    },
+    {
+      "name": "BRZ 2.0 R 社外7型メモリーナビ フルセグ CD/DVD再生 ブルートゥース Bカメラ ETC ドライブレコーダー キーレス 6速MT 社外シフトノブ LEDオートライト 純正17AW 禁煙車",
+      "model": "BRZ 2.0 R 社外7型メモリーナビ フルセグ CD/DVD再生 ブルートゥース Bカメラ ETC ドライブレコーダー キーレス 6速MT 社外シフトノブ LEDオートライト 純正17AW 禁煙車",
+      "price": 2350000,
+      "year": 2020,
+      "mileage": 41000,
+      "transmission": "フロア6MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "クーペ",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7085597278/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "MT",
+        "クーペ"
+      ],
+      "fun_tags": [
+        "MT",
+        "クーペ"
+      ],
+      "interesting_score": 16
+    },
+    {
+      "name": "ロードスター 1.5 S スペシャルパッケージ 純正ナビ フルセグTV バックカメラ クルーズコントロール レーンキープアシスト 衝突被害軽減ブレーキ ドライブレコーダー ETC 6速MT 純正16インチAW スマートキー Bluetooth",
+      "model": "ロードスター 1.5 S スペシャルパッケージ 純正ナビ フルセグTV バックカメラ クルーズコントロール レーンキープアシスト 衝突被害軽減ブレーキ ドライブレコーダー ETC 6速MT 純正16インチAW スマートキー Bluetooth",
+      "price": 2500000,
+      "year": 2021,
+      "mileage": 58000,
+      "transmission": "フロア6MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "オープン",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7242301890/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "オープン"
+      ],
+      "fun_tags": [
+        "MT",
+        "オープン"
+      ],
+      "interesting_score": 16
+    },
+    {
+      "name": "86 2.0 G 後期/6速MT/VELVA SPORT16AW/キーレス/ETC/横滑り防止装置/ケンウッドナビ/Bluetooth/地デジ/LEDヘッドライト",
+      "model": "86 2.0 G 後期/6速MT/VELVA SPORT16AW/キーレス/ETC/横滑り防止装置/ケンウッドナビ/Bluetooth/地デジ/LEDヘッドライト",
+      "price": 2520000,
+      "year": 2019,
+      "mileage": 39000,
+      "transmission": "フロア6MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "クーペ",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7160627942/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "MT",
+        "クーペ"
+      ],
+      "fun_tags": [
+        "MT",
+        "クーペ"
+      ],
+      "interesting_score": 16
+    },
+    {
+      "name": "フェアレディZ 3.5 バージョン ST 6速MT/社外トランクスポイラー/前後ブレンボキャリパー/BOSEサウンド/黒本革電動シート/シートヒーター/キーレス/純正ナビ/地デジ/HIDヘッドライト/純正AW",
+      "model": "フェアレディZ 3.5 バージョン ST 6速MT/社外トランクスポイラー/前後ブレンボキャリパー/BOSEサウンド/黒本革電動シート/シートヒーター/キーレス/純正ナビ/地デジ/HIDヘッドライト/純正AW",
+      "price": 2950000,
+      "year": 2007,
+      "mileage": 29000,
+      "transmission": "フロア6MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "クーペ",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7234228079/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "クーペ"
+      ],
+      "fun_tags": [
+        "MT",
+        "クーペ"
+      ],
+      "interesting_score": 16
+    },
+    {
+      "name": "GR86 2.4 RZ 6速MT/HKSマフラー/黒ハーフ革/シートヒーター/カロッツェリアナビ/Bluetooth/バックカメラ/TRACKモード/クルーズコントロール/BSM/RCTA/LEDオートライト/純正AW",
+      "model": "GR86 2.4 RZ 6速MT/HKSマフラー/黒ハーフ革/シートヒーター/カロッツェリアナビ/Bluetooth/バックカメラ/TRACKモード/クルーズコントロール/BSM/RCTA/LEDオートライト/純正AW",
+      "price": 3000000,
+      "year": 2022,
+      "mileage": 50000,
+      "transmission": "フロア6MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "クーペ",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7268524141/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "MT",
+        "クーペ"
+      ],
+      "fun_tags": [
+        "MT",
+        "クーペ"
+      ],
+      "interesting_score": 16
+    },
+    {
+      "name": "GR86 2.4 RZ 6MT・純正9型ナビ・GRトランクスポイラー・HDMI・前後ドライブレコーダー・シートヒーター・LEDヘッドライト・スマートキー・純正AW・バックカメラ・フルセグTV・CD/DVD再生・Bluetooth・ETC",
+      "model": "GR86 2.4 RZ 6MT・純正9型ナビ・GRトランクスポイラー・HDMI・前後ドライブレコーダー・シートヒーター・LEDヘッドライト・スマートキー・純正AW・バックカメラ・フルセグTV・CD/DVD再生・Bluetooth・ETC",
+      "price": 3220000,
+      "year": 2023,
+      "mileage": 39000,
+      "transmission": "フロア6MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "クーペ",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7183925204/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "クーペ"
+      ],
+      "fun_tags": [
+        "MT",
+        "クーペ"
+      ],
+      "interesting_score": 16
+    },
+    {
+      "name": "BRZ 2.4 S 登録済未使用車 6速MT アイサイト 後期型 クルーズコントロール シートヒーター 革/スエードコンビシート LEDライト 純正18インチアルミホイール",
+      "model": "BRZ 2.4 S 登録済未使用車 6速MT アイサイト 後期型 クルーズコントロール シートヒーター 革/スエードコンビシート LEDライト 純正18インチアルミホイール",
+      "price": 3330000,
+      "year": 2026,
+      "mileage": 10,
+      "transmission": "フロア6MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "クーペ",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7310533734/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "MT",
+        "クーペ"
+      ],
+      "fun_tags": [
+        "MT",
+        "クーペ"
+      ],
+      "interesting_score": 16
+    },
+    {
+      "name": "フェアレディZ 3.7 後期/6速MT/インナーブラック/3連サブメーター/スマートキー/ETC/横滑り防止装置/純正ナビ/Bluetooth/バックカメラ/地デジ/HIDオートライト/純正AW",
+      "model": "フェアレディZ 3.7 後期/6速MT/インナーブラック/3連サブメーター/スマートキー/ETC/横滑り防止装置/純正ナビ/Bluetooth/バックカメラ/地デジ/HIDオートライト/純正AW",
+      "price": 3390000,
+      "year": 2018,
+      "mileage": 45000,
+      "transmission": "フロア6MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "クーペ",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7087177319/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "クーペ"
+      ],
+      "fun_tags": [
+        "MT",
+        "クーペ"
+      ],
+      "interesting_score": 16
+    },
+    {
+      "name": "フェアレディZ 3.7 バージョン ST 後期/6速MT/インナーブラック/HKSマフラー&車高調/BOSEサウンド/半革電動シート/シートヒーター/クリアランスソナー/スマートキー/ETC/横滑り防止装置/純正ナビ/バックカメラ/純正AW",
+      "model": "フェアレディZ 3.7 バージョン ST 後期/6速MT/インナーブラック/HKSマフラー&車高調/BOSEサウンド/半革電動シート/シートヒーター/クリアランスソナー/スマートキー/ETC/横滑り防止装置/純正ナビ/バックカメラ/純正AW",
+      "price": 4200000,
+      "year": 2021,
+      "mileage": 16000,
+      "transmission": "フロア6MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "クーペ",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7142723540/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "MT",
+        "クーペ"
+      ],
+      "fun_tags": [
+        "MT",
+        "クーペ"
+      ],
+      "interesting_score": 16
+    },
+    {
+      "name": "スープラ 3.0 RZ 6MTワンオーナー",
+      "model": "スープラ 3.0 RZ 6MTワンオーナー",
+      "price": 7700000,
+      "year": 2024,
+      "mileage": 9000,
+      "transmission": "フロア6MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "クーペ",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7242019219/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "クーペ"
+      ],
+      "fun_tags": [
+        "MT",
+        "クーペ"
+      ],
+      "interesting_score": 16
+    },
+    {
+      "name": "M2クーペ 3.0 6速MT harmankardonサウンド HUD クルーズコントロール ブラックレザーシート パワーシート/シートヒーター D席メモリーシート 純正ナビ BT/USB/Spotify/Apple Car Play バックカメラ アンビエントライト",
+      "model": "M2クーペ 3.0 6速MT harmankardonサウンド HUD クルーズコントロール ブラックレザーシート パワーシート/シートヒーター D席メモリーシート 純正ナビ BT/USB/Spotify/Apple Car Play バックカメラ アンビエントライト",
+      "price": 7770000,
+      "year": 2024,
+      "mileage": 9000,
+      "transmission": "フロア6MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "クーペ",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7146405825/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "クーペ"
+      ],
+      "fun_tags": [
+        "MT",
+        "クーペ"
+      ],
+      "interesting_score": 16
+    },
+    {
+      "name": "スープラ 3.0 RZ SupraConnectHDDナビ/JBLプレミアムサウンド/オプションタン革スポーツシート/Bremboブレーキ/アダプティブバリアブルサスペンション/パワーシート/シートヒーター/専用19AW/ETC車載器",
+      "model": "スープラ 3.0 RZ SupraConnectHDDナビ/JBLプレミアムサウンド/オプションタン革スポーツシート/Bremboブレーキ/アダプティブバリアブルサスペンション/パワーシート/シートヒーター/専用19AW/ETC車載器",
+      "price": 8450000,
+      "year": 2024,
+      "mileage": 3000,
+      "transmission": "フロア6MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "クーペ",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7180681866/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "クーペ"
+      ],
+      "fun_tags": [
+        "MT",
+        "クーペ"
+      ],
+      "interesting_score": 16
+    },
+    {
+      "name": "ミラ 660 TX 2WD MT 660cc 1DINオーディオ マニュアルエアコン パワーウインド 運転席・助手席エアバック パワーステアリング ハロゲンヘッドライト",
+      "model": "ミラ 660 TX 2WD MT 660cc 1DINオーディオ マニュアルエアコン パワーウインド 運転席・助手席エアバック パワーステアリング ハロゲンヘッドライト",
+      "price": 460000,
+      "year": 2012,
+      "mileage": 61000,
+      "transmission": "フロア5MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "ハッチバック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7231423386/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "MT"
+      ],
+      "fun_tags": [
+        "100万円以下",
+        "MT"
+      ],
+      "interesting_score": 15
+    },
+    {
+      "name": "BRZ 2.0 tS 500台限定・6速MT・専用ハーフレザーシート・専用STI足回り・純正bremboブレーキ・専用STI18インチAW・SDナビ・バックカメラ・Bluetooth接続・スマートキー・プッシュスタート・HIDヘッドライト・シートヒーター",
+      "model": "BRZ 2.0 tS 500台限定・6速MT・専用ハーフレザーシート・専用STI足回り・純正bremboブレーキ・専用STI18インチAW・SDナビ・バックカメラ・Bluetooth接続・スマートキー・プッシュスタート・HIDヘッドライト・シートヒーター",
+      "price": 1440000,
+      "year": 2014,
+      "mileage": 82000,
+      "transmission": "フロア6MT",
+      "region": "",
+      "repair": "あり",
+      "body_type": "クーペ",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU6910984482/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "MT",
+        "クーペ"
+      ],
+      "fun_tags": [
+        "MT",
+        "クーペ"
+      ],
+      "interesting_score": 15
+    },
+    {
+      "name": "コペン エクスプレイ 660 社外7型ナビ フルセグ CD/DVD再生 ブルートゥース Bカメラ ETC LEDオートライト インテリキー シートヒーター 電動オープン ターボ車 社外14AW 禁煙車",
+      "model": "コペン エクスプレイ 660 社外7型ナビ フルセグ CD/DVD再生 ブルートゥース Bカメラ ETC LEDオートライト インテリキー シートヒーター 電動オープン ターボ車 社外14AW 禁煙車",
+      "price": 1650000,
+      "year": 2022,
+      "mileage": 39000,
+      "transmission": "フロアCVT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "オープン",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7028771686/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "オープン"
+      ],
+      "fun_tags": [
+        "オープン",
+        "ターボ"
+      ],
+      "interesting_score": 15
+    },
+    {
+      "name": "86 2.0 GT 後期 SDナビ バックカメラ クルーズコントロール 6速MT 左右独立型オートエアコン スマートキー LEDヘッドライト 純正革巻きステアリング オートライト Bluetooth ETC",
+      "model": "86 2.0 GT 後期 SDナビ バックカメラ クルーズコントロール 6速MT 左右独立型オートエアコン スマートキー LEDヘッドライト 純正革巻きステアリング オートライト Bluetooth ETC",
+      "price": 2050000,
+      "year": 2017,
+      "mileage": 93000,
+      "transmission": "フロア6MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "クーペ",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7309251520/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "MT",
+        "クーペ"
+      ],
+      "fun_tags": [
+        "MT",
+        "クーペ"
+      ],
+      "interesting_score": 15
+    },
+    {
+      "name": "アトラス 1.3t アルミバン 低床 左スライドドア 1.3t積載 アルミバン 低床 ラッシングレール1段 アルミバン 坂道発進補助 ETC ナビ テレビ バックカメラ 集中ロック 荷台内寸339/168/117 荷台高75 車両総重量3645kg",
+      "model": "アトラス 1.3t アルミバン 低床 左スライドドア 1.3t積載 アルミバン 低床 ラッシングレール1段 アルミバン 坂道発進補助 ETC ナビ テレビ バックカメラ 集中ロック 荷台内寸339/168/117 荷台高75 車両総重量3645kg",
+      "price": 2100000,
+      "year": 2018,
+      "mileage": 60000,
+      "transmission": "フロア6MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU4596774290/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "MT",
+        "トラック"
+      ],
+      "interesting_score": 15
+    },
+    {
+      "name": "86 2.0 GT エアロパッケージ 1オーナー 純正ナビ エアロ オートライト スマートキー ドラレコ BT フルセグTV 社外18インチAW フォグランプ 保証書 取説 スペアキー 社外レーダー プッシュスタート",
+      "model": "86 2.0 GT エアロパッケージ 1オーナー 純正ナビ エアロ オートライト スマートキー ドラレコ BT フルセグTV 社外18インチAW フォグランプ 保証書 取説 スペアキー 社外レーダー プッシュスタート",
+      "price": 2240000,
+      "year": 2016,
+      "mileage": 51000,
+      "transmission": "フロア6MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "クーペ",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7261662430/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "MT",
+        "クーペ"
+      ],
+      "fun_tags": [
+        "MT",
+        "クーペ"
+      ],
+      "interesting_score": 15
+    },
+    {
+      "name": "S2000 2.0 6速MT/Prodrive17AW/BLITZ車高調/黒革シート/ETC/ユピテルナビ/カロッツェリアオーディオ/HIDヘッドライト",
+      "model": "S2000 2.0 6速MT/Prodrive17AW/BLITZ車高調/黒革シート/ETC/ユピテルナビ/カロッツェリアオーディオ/HIDヘッドライト",
+      "price": 3780000,
+      "year": 2001,
+      "mileage": 109000,
+      "transmission": "フロア6MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "オープン",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7181899210/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "オープン"
+      ],
+      "fun_tags": [
+        "MT",
+        "オープン"
+      ],
+      "interesting_score": 15
+    },
+    {
+      "name": "ルーテシア ゼン MT Bカメラ/ETC/プッシュスタート/リアソナー/AUTOライト/AUTOワイパー/純正16インチAW",
+      "model": "ルーテシア ゼン MT Bカメラ/ETC/プッシュスタート/リアソナー/AUTOライト/AUTOワイパー/純正16インチAW",
+      "price": 880000,
+      "year": 2018,
+      "mileage": 51000,
+      "transmission": "フロア5MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "ハッチバック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7298722217/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "MT"
+      ],
+      "fun_tags": [
+        "100万円以下",
+        "MT"
+      ],
+      "interesting_score": 14
+    },
+    {
+      "name": "キャリイ 660 KX 3方開 4WD 衝突被害軽減ブレーキ エアコン パワステ パワーウィンドウ キーレス オートライト オートマ HIDヘッドライト CD フロントフォグランプ フロントメッキグリル 4WD",
+      "model": "キャリイ 660 KX 3方開 4WD 衝突被害軽減ブレーキ エアコン パワステ パワーウィンドウ キーレス オートライト オートマ HIDヘッドライト CD フロントフォグランプ フロントメッキグリル 4WD",
+      "price": 1090000,
+      "year": 2022,
+      "mileage": 28000,
+      "transmission": "フロア4AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7202259250/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "4WD",
+        "トラック"
+      ],
+      "interesting_score": 14
+    },
+    {
+      "name": "キャリイ 660 スーパーキャリイ X 3方開 1年保証付・ローン2.9パーセント・禁煙車・HIDオートライト・オーディオ・CD・Bluetooth・スズキセーフティ・フォグ・エアコン・ハンドルカバー・キーレスエントリー・フロアラバーマット・サイドバイザー・4WD",
+      "model": "キャリイ 660 スーパーキャリイ X 3方開 1年保証付・ローン2.9パーセント・禁煙車・HIDオートライト・オーディオ・CD・Bluetooth・スズキセーフティ・フォグ・エアコン・ハンドルカバー・キーレスエントリー・フロアラバーマット・サイドバイザー・4WD",
+      "price": 1150000,
+      "year": 2020,
+      "mileage": 22000,
+      "transmission": "フロア3AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7214546760/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "4WD",
+        "トラック"
+      ],
+      "interesting_score": 14
+    },
+    {
+      "name": "キャリイ 660 KCエアコン・パワステ農繁 3方開 4WD",
+      "model": "キャリイ 660 KCエアコン・パワステ農繁 3方開 4WD",
+      "price": 1280000,
+      "year": 2025,
+      "mileage": 2000,
+      "transmission": "フロア4AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7174825295/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "4WD",
+        "トラック"
+      ],
+      "interesting_score": 14
+    },
+    {
+      "name": "キャリイ 660 KC 3方開 4WD AT車 届出済未使用車 LEDヘッドライト キーレスエントリー アイドリングストップ エアコン パワステ パワーウインドウ オートライト ラジオチューナー 衝突被害軽減ブレーキ 障害物センサー",
+      "model": "キャリイ 660 KC 3方開 4WD AT車 届出済未使用車 LEDヘッドライト キーレスエントリー アイドリングストップ エアコン パワステ パワーウインドウ オートライト ラジオチューナー 衝突被害軽減ブレーキ 障害物センサー",
+      "price": 1310000,
+      "year": 2026,
+      "mileage": 12,
+      "transmission": "フロア4AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7257070883/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "4WD",
+        "トラック"
+      ],
+      "interesting_score": 14
+    },
+    {
+      "name": "キャリイ 660 KX 3方開 4WD オートライト 禁煙車 スズキセーフティーサポート ワンオーナー 4WD 衝突被害軽減システム アイドリングストップ 横滑り防止機能 衝突安全ボディ 盗難防止システム",
+      "model": "キャリイ 660 KX 3方開 4WD オートライト 禁煙車 スズキセーフティーサポート ワンオーナー 4WD 衝突被害軽減システム アイドリングストップ 横滑り防止機能 衝突安全ボディ 盗難防止システム",
+      "price": 1430000,
+      "year": 2025,
+      "mileage": 105,
+      "transmission": "フロア4AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU6884257465/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "4WD",
+        "トラック"
+      ],
+      "interesting_score": 14
+    },
+    {
+      "name": "キャリイ 660 スーパーキャリイ X 3方開 4WD",
+      "model": "キャリイ 660 スーパーキャリイ X 3方開 4WD",
+      "price": 1500000,
+      "year": 2025,
+      "mileage": 2000,
+      "transmission": "フロア4AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7274975214/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "4WD",
+        "トラック"
+      ],
+      "interesting_score": 14
+    },
+    {
+      "name": "RX-8 スピリットR 6速MT/BOSEサウンド/フジツボマフラー/マツダスピード18AW/レカロシート/スマートキー/ETC2.0/横滑り防止装置/カロッツェリアナビ/バックカメラ/地デジ/LEDオートライト/純正AW",
+      "model": "RX-8 スピリットR 6速MT/BOSEサウンド/フジツボマフラー/マツダスピード18AW/レカロシート/スマートキー/ETC2.0/横滑り防止装置/カロッツェリアナビ/バックカメラ/地デジ/LEDオートライト/純正AW",
+      "price": 2070000,
+      "year": 2012,
+      "mileage": 111000,
+      "transmission": "フロア6MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "クーペ",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7302266090/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "MT",
+        "クーペ"
+      ],
+      "fun_tags": [
+        "MT",
+        "クーペ"
+      ],
+      "interesting_score": 14
+    },
+    {
+      "name": "ジムニーシエラ 1.5 JC 4WD 5速MT/Panasonicナビ/フルセグ/バックカメラ/ETC/リヤパーキングセンサー/シートヒーター/LEDヘッドライト/前後ドラレコ/AppleCarplay/クルーズコントロール/ワンオーナー",
+      "model": "ジムニーシエラ 1.5 JC 4WD 5速MT/Panasonicナビ/フルセグ/バックカメラ/ETC/リヤパーキングセンサー/シートヒーター/LEDヘッドライト/前後ドラレコ/AppleCarplay/クルーズコントロール/ワンオーナー",
+      "price": 2780000,
+      "year": 2025,
+      "mileage": 3000,
+      "transmission": "フロア5MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "クロカン・ＳＵＶ",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7072559157/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "MT"
+      ],
+      "fun_tags": [
+        "4WD",
+        "MT"
+      ],
+      "interesting_score": 14
+    },
+    {
+      "name": "フォワード アルミバン3.6t リヤモニターキーレスETCHIDヘッドライト",
+      "model": "フォワード アルミバン3.6t リヤモニターキーレスETCHIDヘッドライト",
+      "price": 2980000,
+      "year": 2016,
+      "mileage": 119000,
+      "transmission": "フロア6MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU5764237723/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "MT",
+        "トラック"
+      ],
+      "interesting_score": 14
+    },
+    {
+      "name": "MAZDA3ファストバック 2.0 X プロアクティブ ツーリング セレクション 4WD 6MT4WD 360°セーフティパッケージ 柿本改マフラー レオニス19インチAW TEIN車高調 8.8マツダコネクトナビTV クルージングトラフィックサポート パワーシート&ヒーター ステアリングヒーター",
+      "model": "MAZDA3ファストバック 2.0 X プロアクティブ ツーリング セレクション 4WD 6MT4WD 360°セーフティパッケージ 柿本改マフラー レオニス19インチAW TEIN車高調 8.8マツダコネクトナビTV クルージングトラフィックサポート パワーシート&ヒーター ステアリングヒーター",
+      "price": 3180000,
+      "year": 2021,
+      "mileage": 11000,
+      "transmission": "フロア6MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "ハッチバック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7133182487/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "MT"
+      ],
+      "fun_tags": [
+        "4WD",
+        "MT"
+      ],
+      "interesting_score": 14
+    },
+    {
+      "name": "GRヤリス 1.6 RZ ハイ パフォーマンス 4WD MC後 寒冷地仕様 サブラジ コンフォート",
+      "model": "GRヤリス 1.6 RZ ハイ パフォーマンス 4WD MC後 寒冷地仕様 サブラジ コンフォート",
+      "price": 5250000,
+      "year": 2025,
+      "mileage": 15,
+      "transmission": "フロア6MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "ハッチバック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7310744277/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "MT"
+      ],
+      "fun_tags": [
+        "4WD",
+        "MT"
+      ],
+      "interesting_score": 14
+    },
+    {
+      "name": "ランサーエボリューション 2.0 ファイナルエディション 4WD 5速MT/モンスタースポーツマフラー/社外マフラー/前後ブレンボキャリパー/レカロシート/シートヒーター/スマートキー/ETC/横滑り防止装置/純正ナビ/バックカメラ/地デジ/純正AW",
+      "model": "ランサーエボリューション 2.0 ファイナルエディション 4WD 5速MT/モンスタースポーツマフラー/社外マフラー/前後ブレンボキャリパー/レカロシート/シートヒーター/スマートキー/ETC/横滑り防止装置/純正ナビ/バックカメラ/地デジ/純正AW",
+      "price": 5670000,
+      "year": 2015,
+      "mileage": 43000,
+      "transmission": "フロア5MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "セダン",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7104412733/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "MT"
+      ],
+      "fun_tags": [
+        "4WD",
+        "MT"
+      ],
+      "interesting_score": 14
+    },
+    {
+      "name": "ランサーエボリューション 2.0 GSR X ハイパフォーマンスパッケージ 4WD 5速MT/HKSマフラー/elSPORT車高調/前後ブレンボキャリパー/レカロシート/シートヒーター/クルーズコントロール/ETC/カロッツェリアナビ/バックカメラ/純正AW",
+      "model": "ランサーエボリューション 2.0 GSR X ハイパフォーマンスパッケージ 4WD 5速MT/HKSマフラー/elSPORT車高調/前後ブレンボキャリパー/レカロシート/シートヒーター/クルーズコントロール/ETC/カロッツェリアナビ/バックカメラ/純正AW",
+      "price": 5680000,
+      "year": 2014,
+      "mileage": 15000,
+      "transmission": "フロア5MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "セダン",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7104412496/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "MT"
+      ],
+      "fun_tags": [
+        "4WD",
+        "MT"
+      ],
+      "interesting_score": 14
+    },
+    {
+      "name": "LBX モリゾウ RR 4WD ワンオーナー 純正9.8インチディスプレイオーディオ FM/AM/BT/USB/Miracast/フルセグ レクサスセーフティーシステム+ ヘッドアップディスプレイ パラミックビューカメラ レザー",
+      "model": "LBX モリゾウ RR 4WD ワンオーナー 純正9.8インチディスプレイオーディオ FM/AM/BT/USB/Miracast/フルセグ レクサスセーフティーシステム+ ヘッドアップディスプレイ パラミックビューカメラ レザー",
+      "price": 5950000,
+      "year": 2025,
+      "mileage": 5000,
+      "transmission": "フロア6MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "クロカン・ＳＵＶ",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7225408882/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "MT"
+      ],
+      "fun_tags": [
+        "4WD",
+        "MT"
+      ],
+      "interesting_score": 14
+    },
+    {
+      "name": "ハイゼットトラック 660 ジャンボ SAIIIt 3方開 LEDヘッドランプ ケンウッド地デジナビ フォグランプ バックカメラ ETC ドラレコ キーレス",
+      "model": "ハイゼットトラック 660 ジャンボ SAIIIt 3方開 LEDヘッドランプ ケンウッド地デジナビ フォグランプ バックカメラ ETC ドラレコ キーレス",
+      "price": 950000,
+      "year": 2019,
+      "mileage": 27000,
+      "transmission": "フロア4AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7309042020/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "100万円以下",
+        "トラック"
+      ],
+      "interesting_score": 13
+    },
+    {
+      "name": "サンバートラック 660 TC スーパーチャージャー 三方開 4WD スーパーチャージャー 4WD ワンオーナー 禁煙車 AT車 キーレス エアコン パワーウインド",
+      "model": "サンバートラック 660 TC スーパーチャージャー 三方開 4WD スーパーチャージャー 4WD ワンオーナー 禁煙車 AT車 キーレス エアコン パワーウインド",
+      "price": 1100000,
+      "year": 2010,
+      "mileage": 56000,
+      "transmission": "インパネ3AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7000766832/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "4WD",
+        "トラック"
+      ],
+      "interesting_score": 13
+    },
+    {
+      "name": "キャリイ 660 スーパーキャリイ Xリミテッド 3方開 4WD オートライト 4WD 衝突被害軽減システム 横滑り防止機能 衝突安全ボディ 盗難防止システム",
+      "model": "キャリイ 660 スーパーキャリイ Xリミテッド 3方開 4WD オートライト 4WD 衝突被害軽減システム 横滑り防止機能 衝突安全ボディ 盗難防止システム",
+      "price": 1640000,
+      "year": 2025,
+      "mileage": 3000,
+      "transmission": "フロア4AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7162731846/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "4WD",
+        "トラック"
+      ],
+      "interesting_score": 13
+    },
+    {
+      "name": "ハイゼットトラック 660 ジャンボ エクストラ 3方開 4WD ワンオーナー/純正DA/シュタイナーFTX 14インチAW/K-TRIDERエアロ/バックカメラ/デジタルインナーミラー/スペアキー/オートハイビーム/前方ドライブレコーダー/ETC2.0/アイドリングストップ/LED荷台作業灯",
+      "model": "ハイゼットトラック 660 ジャンボ エクストラ 3方開 4WD ワンオーナー/純正DA/シュタイナーFTX 14インチAW/K-TRIDERエアロ/バックカメラ/デジタルインナーミラー/スペアキー/オートハイビーム/前方ドライブレコーダー/ETC2.0/アイドリングストップ/LED荷台作業灯",
+      "price": 1790000,
+      "year": 2023,
+      "mileage": 18000,
+      "transmission": "フロアCVT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7298551405/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "4WD",
+        "トラック"
+      ],
+      "interesting_score": 13
+    },
+    {
+      "name": "TTロードスター ファイナル エディション 4WD 最終50台限定モデル ナノグレーメタリック イエローステッチ/ブラウンモカシンレザー Bang&Olufsen マトリクスLED サイドアシスト シートヒーター Sスポーツシート ナビ バックカメラ",
+      "model": "TTロードスター ファイナル エディション 4WD 最終50台限定モデル ナノグレーメタリック イエローステッチ/ブラウンモカシンレザー Bang&Olufsen マトリクスLED サイドアシスト シートヒーター Sスポーツシート ナビ バックカメラ",
+      "price": 5890000,
+      "year": 2020,
+      "mileage": 12000,
+      "transmission": "フロアMTモード付6AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "オープン",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7181899763/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "オープン"
+      ],
+      "fun_tags": [
+        "4WD",
+        "オープン"
+      ],
+      "interesting_score": 13
+    },
+    {
+      "name": "キャリイ 660 KCスペシャル 3方開 4WD トラベルハウス仕様 セーフティサポート オートライト AM/FMラジオ パワーウインドウ マニュアルエアコン キーレスエントリー メッキドアハンドル メッキフロントガーニッシュ",
+      "model": "キャリイ 660 KCスペシャル 3方開 4WD トラベルハウス仕様 セーフティサポート オートライト AM/FMラジオ パワーウインドウ マニュアルエアコン キーレスエントリー メッキドアハンドル メッキフロントガーニッシュ",
+      "price": 2430000,
+      "year": 2023,
+      "mileage": 220,
+      "transmission": "フロア4AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU5920247111/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "4WD",
+        "トラック"
+      ],
+      "interesting_score": 12
+    },
+    {
+      "name": "2シリーズクーペ M240i xドライブ 4WD 2年保証付き認定中古車・ファストトラックPKG・サンルーフ・ハイラインパッケージ・アダプティブMサスペンション・バリアブルスポーツステアリング・アダプティブLEDヘッドライト",
+      "model": "2シリーズクーペ M240i xドライブ 4WD 2年保証付き認定中古車・ファストトラックPKG・サンルーフ・ハイラインパッケージ・アダプティブMサスペンション・バリアブルスポーツステアリング・アダプティブLEDヘッドライト",
+      "price": 5430000,
+      "year": 2022,
+      "mileage": 32000,
+      "transmission": "フロアMTモード付8AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "クーペ",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7138056079/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "クーペ"
+      ],
+      "fun_tags": [
+        "4WD",
+        "クーペ"
+      ],
+      "interesting_score": 12
+    },
+    {
+      "name": "キャリイ 660 KCエアコン・パワステ 3方開 オートライト スズキセーフティーサポート アイドリングストップ 横滑り防止機能 衝突安全ボディ",
+      "model": "キャリイ 660 KCエアコン・パワステ 3方開 オートライト スズキセーフティーサポート アイドリングストップ 横滑り防止機能 衝突安全ボディ",
+      "price": 1080000,
+      "year": 2025,
+      "mileage": 5000,
+      "transmission": "フロア4AT",
+      "region": "大分県",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7106167565/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "トラック"
+      ],
+      "interesting_score": 11
+    },
+    {
+      "name": "キャリイ 660 スーパーキャリイ X 3方開 社外オーディオ・Bluetooth・USB接続・オーバーヘッドコンソール・スズキセーフティー・オートライト・パワーウィンドウ・フロアマット・サイドバイザー・ヘッドライトレベライザー",
+      "model": "キャリイ 660 スーパーキャリイ X 3方開 社外オーディオ・Bluetooth・USB接続・オーバーヘッドコンソール・スズキセーフティー・オートライト・パワーウィンドウ・フロアマット・サイドバイザー・ヘッドライトレベライザー",
+      "price": 1090000,
+      "year": 2021,
+      "mileage": 5000,
+      "transmission": "フロア3AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7239492764/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "トラック"
+      ],
+      "interesting_score": 11
+    },
+    {
+      "name": "MR-S 1.8 Vエディション シーケンシャル ユーザー買取車/タンカラーソフトトップ/茶革シート/純正AWフロント15インチ/リア16インチ/リッド付きリアラゲッジスペース/アルミペダル/Pウィンドウ/マニュアルエアコン/電動ドアミラー",
+      "model": "MR-S 1.8 Vエディション シーケンシャル ユーザー買取車/タンカラーソフトトップ/茶革シート/純正AWフロント15インチ/リア16インチ/リッド付きリアラゲッジスペース/アルミペダル/Pウィンドウ/マニュアルエアコン/電動ドアミラー",
+      "price": 1230000,
+      "year": 2003,
+      "mileage": 58000,
+      "transmission": "フロアMTモード付6AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "オープン",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7199614600/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "オープン"
+      ],
+      "fun_tags": [
+        "オープン"
+      ],
+      "interesting_score": 11
+    },
+    {
+      "name": "キャリイ 660 KC 3方開 オートライト スズキセーフティーサポート アイドリングストップ 横滑り防止機能 衝突安全ボディ",
+      "model": "キャリイ 660 KC 3方開 オートライト スズキセーフティーサポート アイドリングストップ 横滑り防止機能 衝突安全ボディ",
+      "price": 1230000,
+      "year": 2026,
+      "mileage": 726,
+      "transmission": "フロア4AT",
+      "region": "大分県",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7301169045/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "トラック"
+      ],
+      "interesting_score": 11
+    },
+    {
+      "name": "キャリイ 660 KCエアコン・パワステ 3方開",
+      "model": "キャリイ 660 KCエアコン・パワステ 3方開",
+      "price": 1230000,
+      "year": 2025,
+      "mileage": 3000,
+      "transmission": "フロア4AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU6925635342/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "トラック"
+      ],
+      "interesting_score": 11
+    },
+    {
+      "name": "キャリイ 660 スーパーキャリイ X 3方開 2WD 4AT 衝突被害軽減ブレーキ 誤発進抑制機能 車線逸脱警報機能 パーキングセンサー オートライト オートハイビーム アイドリングストップ LEDヘッドライト ハロゲンフォグ 当社試乗車",
+      "model": "キャリイ 660 スーパーキャリイ X 3方開 2WD 4AT 衝突被害軽減ブレーキ 誤発進抑制機能 車線逸脱警報機能 パーキングセンサー オートライト オートハイビーム アイドリングストップ LEDヘッドライト ハロゲンフォグ 当社試乗車",
+      "price": 1340000,
+      "year": 2026,
+      "mileage": 848,
+      "transmission": "フロア4AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7074135960/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "トラック"
+      ],
+      "interesting_score": 11
+    },
+    {
+      "name": "SC 430 マークレビンソンサウンド/ベージュ革電動シート/シートメモリ/シートヒーター/クルコン/純正ナビ/ETC/HIDオートライト/純正AW",
+      "model": "SC 430 マークレビンソンサウンド/ベージュ革電動シート/シートメモリ/シートヒーター/クルコン/純正ナビ/ETC/HIDオートライト/純正AW",
+      "price": 1500000,
+      "year": 2006,
+      "mileage": 89000,
+      "transmission": "フロアMTモード付6AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "オープン",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7212454961/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "オープン"
+      ],
+      "fun_tags": [
+        "オープン"
+      ],
+      "interesting_score": 11
+    },
+    {
+      "name": "コペン コペン ローブS ナビ ETC",
+      "model": "コペン コペン ローブS ナビ ETC",
+      "price": 1660000,
+      "year": 2020,
+      "mileage": 47000,
+      "transmission": "その他AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "オープン",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7282455402/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "オープン"
+      ],
+      "fun_tags": [
+        "オープン"
+      ],
+      "interesting_score": 11
+    },
+    {
+      "name": "S660 660 アルファ",
+      "model": "S660 660 アルファ",
+      "price": 1340000,
+      "year": 2017,
+      "mileage": 114000,
+      "transmission": "フロアMTモード付CVT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "オープン",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7305264305/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "オープン"
+      ],
+      "fun_tags": [
+        "オープン"
+      ],
+      "interesting_score": 10
+    },
+    {
+      "name": "Z4 sドライブ 20i ハイライン ハードトップオープン/純正ナビ/黒レザーシート/ETC/HID",
+      "model": "Z4 sドライブ 20i ハイライン ハードトップオープン/純正ナビ/黒レザーシート/ETC/HID",
+      "price": 2190000,
+      "year": 2013,
+      "mileage": 40000,
+      "transmission": "フロアMTモード付8AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "オープン",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7285200559/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "オープン"
+      ],
+      "fun_tags": [
+        "オープン"
+      ],
+      "interesting_score": 10
+    },
+    {
+      "name": "シビック 1.5 LX 1オーナー/6速MT/ホンダセンシング/黒ハーフ革/シートヒーター/アダプティブクルーズ/レーンアシスト/純正ディスプレイオーディオ/ナビ/地デジ/Bluetooth/BSM/クリアランスソナー",
+      "model": "シビック 1.5 LX 1オーナー/6速MT/ホンダセンシング/黒ハーフ革/シートヒーター/アダプティブクルーズ/レーンアシスト/純正ディスプレイオーディオ/ナビ/地デジ/Bluetooth/BSM/クリアランスソナー",
+      "price": 2490000,
+      "year": 2021,
+      "mileage": 78000,
+      "transmission": "フロア6MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "ハッチバック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7228620069/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "MT"
+      ],
+      "fun_tags": [
+        "MT"
+      ],
+      "interesting_score": 10
+    },
+    {
+      "name": "フェアレディZロードスター 3.7 バージョン ST HKS車高調/BOSEサウンド/半革電動シート/シートベンチレーション/パドルシフト/スマートキー/ETC/横滑り防止装置/純正ナビ/Bluetooth/バックカメラ/地デジ/純正AW",
+      "model": "フェアレディZロードスター 3.7 バージョン ST HKS車高調/BOSEサウンド/半革電動シート/シートベンチレーション/パドルシフト/スマートキー/ETC/横滑り防止装置/純正ナビ/Bluetooth/バックカメラ/地デジ/純正AW",
+      "price": 3200000,
+      "year": 2010,
+      "mileage": 15000,
+      "transmission": "フロアMTモード付7AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "オープン",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7097420569/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "オープン"
+      ],
+      "fun_tags": [
+        "オープン"
+      ],
+      "interesting_score": 10
+    },
+    {
+      "name": "シビックタイプR 2.0 6速MT/750台限定車/エナペタル車高調/ブレンボキャリパー/クルーズコントロール/ETC/スマートキー/純正ナビ/地デジ/Bluetooth/バックカメラ/純正19AW",
+      "model": "シビックタイプR 2.0 6速MT/750台限定車/エナペタル車高調/ブレンボキャリパー/クルーズコントロール/ETC/スマートキー/純正ナビ/地デジ/Bluetooth/バックカメラ/純正19AW",
+      "price": 3350000,
+      "year": 2016,
+      "mileage": 92000,
+      "transmission": "フロア6MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "ハッチバック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7124623190/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "MT"
+      ],
+      "fun_tags": [
+        "MT"
+      ],
+      "interesting_score": 10
+    },
+    {
+      "name": "ミニコンバーチブル ジョン・クーパー・ワークス ワンオーナー 純正ナビ バックカメラ シートヒーター コンフォートアクセス アクティブクルーズコントロール Bluetooth 障害物ソナー ETC2.0 Yoursソフトトップ パーキングアシスト ACC ヘッドアップディスプレイ",
+      "model": "ミニコンバーチブル ジョン・クーパー・ワークス ワンオーナー 純正ナビ バックカメラ シートヒーター コンフォートアクセス アクティブクルーズコントロール Bluetooth 障害物ソナー ETC2.0 Yoursソフトトップ パーキングアシスト ACC ヘッドアップディスプレイ",
+      "price": 3490000,
+      "year": 2021,
+      "mileage": 41000,
+      "transmission": "フロアMTモード付8AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "オープン",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7182520370/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "オープン"
+      ],
+      "fun_tags": [
+        "オープン"
+      ],
+      "interesting_score": 10
+    },
+    {
+      "name": "シビックタイプR 2.0 純正ナビ バックカメラ ETC トリプルセンターマフラー 大型ウイング ブレンボキャリパー 純正20インチアルミホイール LEDヘッドライト 純正バケットシート エアロバンパー",
+      "model": "シビックタイプR 2.0 純正ナビ バックカメラ ETC トリプルセンターマフラー 大型ウイング ブレンボキャリパー 純正20インチアルミホイール LEDヘッドライト 純正バケットシート エアロバンパー",
+      "price": 3550000,
+      "year": 2017,
+      "mileage": 92000,
+      "transmission": "フロア6MT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "ハッチバック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7156904778/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "MT"
+      ],
+      "fun_tags": [
+        "MT"
+      ],
+      "interesting_score": 10
+    },
+    {
+      "name": "ロードスターRF 2.0 S 純正8.8インチディスプレイオーディオ/TV/バックカメラ/シートヒーター",
+      "model": "ロードスターRF 2.0 S 純正8.8インチディスプレイオーディオ/TV/バックカメラ/シートヒーター",
+      "price": 3600000,
+      "year": 2024,
+      "mileage": 8000,
+      "transmission": "フロアMTモード付6AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "オープン",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU6989772677/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "オープン"
+      ],
+      "fun_tags": [
+        "オープン"
+      ],
+      "interesting_score": 10
+    },
+    {
+      "name": "ロードスターRF 2.0 VS 新車保証継承付 ワンオーナー 本革 BOSE 8.8inディスプレイナビ ドラレコ ETC レーダークルコン クリアランスソナー レーンアシスト 衝突被害軽減 BSM シートヒーター LEDライト オートハイビーム 17AW",
+      "model": "ロードスターRF 2.0 VS 新車保証継承付 ワンオーナー 本革 BOSE 8.8inディスプレイナビ ドラレコ ETC レーダークルコン クリアランスソナー レーンアシスト 衝突被害軽減 BSM シートヒーター LEDライト オートハイビーム 17AW",
+      "price": 4000000,
+      "year": 2025,
+      "mileage": 7000,
+      "transmission": "フロア6AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "オープン",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7307758088/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "オープン"
+      ],
+      "fun_tags": [
+        "オープン"
+      ],
+      "interesting_score": 10
+    },
+    {
+      "name": "ミニコンバーチブル ジョン・クーパー・ワークス MINI認定中古車 MININEXT保証 新車保証継承 HDDナビゲーション ウインドウディフレクター ETC2.0 ドライブレコーダー バックカメラ+前後PDC 運転席・助手席シートヒーター LEDヘッドライト",
+      "model": "ミニコンバーチブル ジョン・クーパー・ワークス MINI認定中古車 MININEXT保証 新車保証継承 HDDナビゲーション ウインドウディフレクター ETC2.0 ドライブレコーダー バックカメラ+前後PDC 運転席・助手席シートヒーター LEDヘッドライト",
+      "price": 4450000,
+      "year": 2024,
+      "mileage": 24000,
+      "transmission": "フロアMTモード付8AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "オープン",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7145862689/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "オープン"
+      ],
+      "fun_tags": [
+        "オープン"
+      ],
+      "interesting_score": 10
+    },
+    {
+      "name": "86 2.0 GT リミテッド 社外トランクスポイラー/黒半革シート/シートヒーター/パドルシフト/スマートキー/ETC/横滑り防止装置/純正ナビ/地デジ/Bluetooth/バックカメラ/HIDオートライト/純正AW",
+      "model": "86 2.0 GT リミテッド 社外トランクスポイラー/黒半革シート/シートヒーター/パドルシフト/スマートキー/ETC/横滑り防止装置/純正ナビ/地デジ/Bluetooth/バックカメラ/HIDオートライト/純正AW",
+      "price": 1380000,
+      "year": 2015,
+      "mileage": 112000,
+      "transmission": "フロアMTモード付6AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "クーペ",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7216905279/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "クーペ"
+      ],
+      "fun_tags": [
+        "クーペ"
+      ],
+      "interesting_score": 9
+    },
+    {
+      "name": "ライトエーストラック 平ボディ 0.8t AT 普通免許 荷台 250×160×37 外寸 427×167×189 車両総重量3.5t 新普通免許 4ナンバー エンジン型式 3SZ 1500cc 保証付 小型 トラック 荷台地上高約74cm",
+      "model": "ライトエーストラック 平ボディ 0.8t AT 普通免許 荷台 250×160×37 外寸 427×167×189 車両総重量3.5t 新普通免許 4ナンバー エンジン型式 3SZ 1500cc 保証付 小型 トラック 荷台地上高約74cm",
+      "price": 1560000,
+      "year": 2017,
+      "mileage": 85000,
+      "transmission": "インパネ4AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU6774476733/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "トラック"
+      ],
+      "interesting_score": 9
+    },
+    {
+      "name": "ライトエーストラック 平 Xエディション 0.8t AT 内寸250×160×37 外寸427×167×189 車両総重量 3.5t未 普通免許 4ナンバー エンジン型式 3SZ 1500cc 保証付 小型 トラック",
+      "model": "ライトエーストラック 平 Xエディション 0.8t AT 内寸250×160×37 外寸427×167×189 車両総重量 3.5t未 普通免許 4ナンバー エンジン型式 3SZ 1500cc 保証付 小型 トラック",
+      "price": 1710000,
+      "year": 2016,
+      "mileage": 78000,
+      "transmission": "インパネ4AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7009729798/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "トラック"
+      ],
+      "interesting_score": 9
+    },
+    {
+      "name": "フェアレディZ 3.7 バージョン T ADVANRacing18AW/社外マフラー/HKS車高調/BOSEサウンド/半革電動シート/シートヒーター/デジタルインナーミラー/純正ナビ/Bluetooth/バックカメラ/HIDオートライト",
+      "model": "フェアレディZ 3.7 バージョン T ADVANRacing18AW/社外マフラー/HKS車高調/BOSEサウンド/半革電動シート/シートヒーター/デジタルインナーミラー/純正ナビ/Bluetooth/バックカメラ/HIDオートライト",
+      "price": 1970000,
+      "year": 2015,
+      "mileage": 55000,
+      "transmission": "フロアMTモード付7AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "クーペ",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7214848596/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "クーペ"
+      ],
+      "fun_tags": [
+        "クーペ"
+      ],
+      "interesting_score": 9
+    },
+    {
+      "name": "フェアレディZ 3.7 バージョン T 1オーナー/BOSEサウンド/半革電動シート/シートヒーター/クリアランスソナー/パドルシフト/スマートキー/ETC/横滑り防止装置/純正ナビ/Bluetooth/バックカメラ/地デジ/純正AW",
+      "model": "フェアレディZ 3.7 バージョン T 1オーナー/BOSEサウンド/半革電動シート/シートヒーター/クリアランスソナー/パドルシフト/スマートキー/ETC/横滑り防止装置/純正ナビ/Bluetooth/バックカメラ/地デジ/純正AW",
+      "price": 2300000,
+      "year": 2013,
+      "mileage": 23000,
+      "transmission": "フロアMTモード付7AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "クーペ",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7119988461/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "クーペ"
+      ],
+      "fun_tags": [
+        "クーペ"
+      ],
+      "interesting_score": 9
+    },
+    {
+      "name": "ロードスターRF 2.0 S シートヒーター/アドバンストSCBS/クルーズコントロール/リアパーキングセンサー/BSM/RCTA/アダプティブLEDヘッドライト/純正ナビ/Bluetooth/バックカメラ/地デジ/純正AW",
+      "model": "ロードスターRF 2.0 S シートヒーター/アドバンストSCBS/クルーズコントロール/リアパーキングセンサー/BSM/RCTA/アダプティブLEDヘッドライト/純正ナビ/Bluetooth/バックカメラ/地デジ/純正AW",
+      "price": 2450000,
+      "year": 2019,
+      "mileage": 56000,
+      "transmission": "フロアMTモード付6AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "オープン",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7305740421/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "オープン"
+      ],
+      "fun_tags": [
+        "オープン"
+      ],
+      "interesting_score": 9
+    },
+    {
+      "name": "BRZ BRZ S 整備記録簿 ナビTV キーレスアクセス リアビューカメラ 横滑り防止機能 ETC付き フルオートエアコン LEDヘットライト DVD視聴 サイドエアバッグ 運転席エアバッグ パワーウィンドウ イモビ",
+      "model": "BRZ BRZ S 整備記録簿 ナビTV キーレスアクセス リアビューカメラ 横滑り防止機能 ETC付き フルオートエアコン LEDヘットライト DVD視聴 サイドエアバッグ 運転席エアバッグ パワーウィンドウ イモビ",
+      "price": 2470000,
+      "year": 2021,
+      "mileage": 48000,
+      "transmission": "フロア6AT",
+      "region": "群馬県",
+      "repair": "なし",
+      "body_type": "クーペ",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7286924764/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "クーペ"
+      ],
+      "fun_tags": [
+        "クーペ"
+      ],
+      "interesting_score": 9
+    },
+    {
+      "name": "ロードスターRF 2.0 S 1オーナー/カープレイ/シートヒーター/クルーズコントロール/クリアランスソナー/PCS/BSM/ETC/パドルシフト/純正ナビ/Bluetooth/バックカメラ/LEDオートハイビーム/純正AW",
+      "model": "ロードスターRF 2.0 S 1オーナー/カープレイ/シートヒーター/クルーズコントロール/クリアランスソナー/PCS/BSM/ETC/パドルシフト/純正ナビ/Bluetooth/バックカメラ/LEDオートハイビーム/純正AW",
+      "price": 2750000,
+      "year": 2021,
+      "mileage": 55000,
+      "transmission": "フロアMTモード付6AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "オープン",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7216905682/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "オープン"
+      ],
+      "fun_tags": [
+        "オープン"
+      ],
+      "interesting_score": 9
+    },
+    {
+      "name": "GR86 2.4 SZ アイサイト・障害物センサー・フルセグTV・バックカメラ・CD/DVD・Bluetooth・LED・純正AW・ETC・スマートキー",
+      "model": "GR86 2.4 SZ アイサイト・障害物センサー・フルセグTV・バックカメラ・CD/DVD・Bluetooth・LED・純正AW・ETC・スマートキー",
+      "price": 2930000,
+      "year": 2023,
+      "mileage": 41000,
+      "transmission": "フロアMTモード付6AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "クーペ",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7226326226/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "クーペ"
+      ],
+      "fun_tags": [
+        "クーペ"
+      ],
+      "interesting_score": 9
+    },
+    {
+      "name": "BRZ 2.4 S 禁煙 1オナ Bカメ 自動追従 スマキー ETC",
+      "model": "BRZ 2.4 S 禁煙 1オナ Bカメ 自動追従 スマキー ETC",
+      "price": 3180000,
+      "year": 2025,
+      "mileage": 3000,
+      "transmission": "フロアMTモード付6AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "クーペ",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7298723787/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "クーペ"
+      ],
+      "fun_tags": [
+        "クーペ"
+      ],
+      "interesting_score": 9
+    },
+    {
+      "name": "ライトエーストラック キッチンカー移動販売車 移動販売車キッチンカー新品キッチンボックス断熱全塗装左側販売口収納式カウンター3層シンク200L給排水タンク防水フロア換気扇室内照明外部電源入力口",
+      "model": "ライトエーストラック キッチンカー移動販売車 移動販売車キッチンカー新品キッチンボックス断熱全塗装左側販売口収納式カウンター3層シンク200L給排水タンク防水フロア換気扇室内照明外部電源入力口",
+      "price": 3400000,
+      "year": 2014,
+      "mileage": 50000,
+      "transmission": "インパネ4AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7275313939/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "トラック"
+      ],
+      "interesting_score": 9
+    },
+    {
+      "name": "RC 300 Fスポーツ 社外ダウンサス レクサスセーフティシステム 追従クルコン パドルシフト 純正ナビ フルセグTV バックカメラ ETC2.0 ドラレコ 赤革シート シートヒーター ベンチレーション 純正アルミホイール",
+      "model": "RC 300 Fスポーツ 社外ダウンサス レクサスセーフティシステム 追従クルコン パドルシフト 純正ナビ フルセグTV バックカメラ ETC2.0 ドラレコ 赤革シート シートヒーター ベンチレーション 純正アルミホイール",
+      "price": 3550000,
+      "year": 2019,
+      "mileage": 48000,
+      "transmission": "フロアMTモード付8AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "クーペ",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7154109448/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "クーペ"
+      ],
+      "fun_tags": [
+        "クーペ"
+      ],
+      "interesting_score": 9
+    },
+    {
+      "name": "4シリーズクーペ 420i Mスポーツ 2年保証付き認定中古車・前席シートヒーター・ドライビングアシスタントプロフェッショナル・アップルカープレイ・バリアブルスポーツステアリング・レザーシート・パワーバックドア",
+      "model": "4シリーズクーペ 420i Mスポーツ 2年保証付き認定中古車・前席シートヒーター・ドライビングアシスタントプロフェッショナル・アップルカープレイ・バリアブルスポーツステアリング・レザーシート・パワーバックドア",
+      "price": 4180000,
+      "year": 2022,
+      "mileage": 12000,
+      "transmission": "フロアMTモード付8AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "クーペ",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7150392235/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "クーペ"
+      ],
+      "fun_tags": [
+        "クーペ"
+      ],
+      "interesting_score": 9
+    },
+    {
+      "name": "フェアレディZ 3.0 バージョン ST メーカーナビ・フルセグ・バックカメラ・LEDライト・エマージェンシーブレーキ・BOSE・レーダークルーズ・シートヒーター・USB・ETC・純正19インチアルミ・前後ソナー",
+      "model": "フェアレディZ 3.0 バージョン ST メーカーナビ・フルセグ・バックカメラ・LEDライト・エマージェンシーブレーキ・BOSE・レーダークルーズ・シートヒーター・USB・ETC・純正19インチアルミ・前後ソナー",
+      "price": 5320000,
+      "year": 2023,
+      "mileage": 18000,
+      "transmission": "フロアMTモード付9AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "クーペ",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7236182445/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "クーペ"
+      ],
+      "fun_tags": [
+        "クーペ"
+      ],
+      "interesting_score": 9
+    },
+    {
+      "name": "スープラ 3.0 RZ JBLサウンド/カープレイ/半革電動メモリーシート/シートヒーター/HUD/レーダークルコン/レーンアシスト/クリアランスソナー/BSM/RCTA/アダプティブハイビーム/純正ナビ/バックカメラ",
+      "model": "スープラ 3.0 RZ JBLサウンド/カープレイ/半革電動メモリーシート/シートヒーター/HUD/レーダークルコン/レーンアシスト/クリアランスソナー/BSM/RCTA/アダプティブハイビーム/純正ナビ/バックカメラ",
+      "price": 6900000,
+      "year": 2020,
+      "mileage": 36000,
+      "transmission": "フロアMTモード付8AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "クーペ",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7178066586/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "クーペ"
+      ],
+      "fun_tags": [
+        "クーペ"
+      ],
+      "interesting_score": 9
+    },
+    {
+      "name": "スープラ 3.0 RZ 1オーナー/カープレイ/黒赤半革電動シート/シートヒーター/レーダークルコン/レーンアシスト/PCS/BSM/HUD/LEDオートハイビーム/純正ナビ/地デジ/バックカメラ/純正19AW",
+      "model": "スープラ 3.0 RZ 1オーナー/カープレイ/黒赤半革電動シート/シートヒーター/レーダークルコン/レーンアシスト/PCS/BSM/HUD/LEDオートハイビーム/純正ナビ/地デジ/バックカメラ/純正19AW",
+      "price": 7240000,
+      "year": 2023,
+      "mileage": 50000,
+      "transmission": "フロアMTモード付8AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "クーペ",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7200437872/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "クーペ"
+      ],
+      "fun_tags": [
+        "クーペ"
+      ],
+      "interesting_score": 9
+    },
+    {
+      "name": "911 カレラT PDK スポーツクロノ PASM スポエグ ACC 純正20インチカレラSアルミホイール スポーツデザインドアミラー スポーツシートプラス ハーフレザーシート 純正ナビ バックカメラ ETC2.0",
+      "model": "911 カレラT PDK スポーツクロノ PASM スポエグ ACC 純正20インチカレラSアルミホイール スポーツデザインドアミラー スポーツシートプラス ハーフレザーシート 純正ナビ バックカメラ ETC2.0",
+      "price": 14570000,
+      "year": 2018,
+      "mileage": 11000,
+      "transmission": "フロアMTモード付7AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "クーペ",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7284883623/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "クーペ"
+      ],
+      "fun_tags": [
+        "クーペ"
+      ],
+      "interesting_score": 9
+    },
+    {
+      "name": "911 GT3 PDK ヴァイザッハPKG クロノPKG フロントアクスルリフトシステム マトリックスLEDヘッドライト Race-Texインテリア",
+      "model": "911 GT3 PDK ヴァイザッハPKG クロノPKG フロントアクスルリフトシステム マトリックスLEDヘッドライト Race-Texインテリア",
+      "price": 39880000,
+      "year": 2026,
+      "mileage": 51,
+      "transmission": "フロアMTモード付7AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "クーペ",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7214538863/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "クーペ"
+      ],
+      "fun_tags": [
+        "クーペ"
+      ],
+      "interesting_score": 9
+    },
+    {
+      "name": "フェアレディZ 3.7 社外フロントスポイラー/ニスモリアバンパー/TEIN車高調/デジタルインナーミラー/pivotスロコン/パドルシフト/スマートキー/ETC/横滑り防止装置/純正ナビ/バックカメラ/地デジ/純正AW",
+      "model": "フェアレディZ 3.7 社外フロントスポイラー/ニスモリアバンパー/TEIN車高調/デジタルインナーミラー/pivotスロコン/パドルシフト/スマートキー/ETC/横滑り防止装置/純正ナビ/バックカメラ/地デジ/純正AW",
+      "price": 2030000,
+      "year": 2015,
+      "mileage": 100000,
+      "transmission": "フロアMTモード付7AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "クーペ",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7279017515/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "クーペ"
+      ],
+      "fun_tags": [
+        "クーペ"
+      ],
+      "interesting_score": 8
+    },
+    {
+      "name": "86 2.0 GT 純正ナビ フルセグ Bカメ クルコン エンジンスタートボタン 横滑り防止装置 パドルシフト 純正フロアマット アルミペダル パワーウィンドウ スマートキー ステアリングスイッチ オートライト フォグ",
+      "model": "86 2.0 GT 純正ナビ フルセグ Bカメ クルコン エンジンスタートボタン 横滑り防止装置 パドルシフト 純正フロアマット アルミペダル パワーウィンドウ スマートキー ステアリングスイッチ オートライト フォグ",
+      "price": 2070000,
+      "year": 2019,
+      "mileage": 64000,
+      "transmission": "フロアMTモード付6AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "クーペ",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7210768236/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "クーペ"
+      ],
+      "fun_tags": [
+        "クーペ"
+      ],
+      "interesting_score": 8
+    },
+    {
+      "name": "ライトエーストラック 平 幌 Xエディション 0.8t AT 内寸233×155×160 外寸427×167×189 車両総重量 3.5t 普通免許 4ナンバー エンジン型式 3SZ 1500cc 保証付 小型 トラック",
+      "model": "ライトエーストラック 平 幌 Xエディション 0.8t AT 内寸233×155×160 外寸427×167×189 車両総重量 3.5t 普通免許 4ナンバー エンジン型式 3SZ 1500cc 保証付 小型 トラック",
+      "price": 1700000,
+      "year": 2017,
+      "mileage": 74000,
+      "transmission": "インパネ4AT",
+      "region": "",
+      "repair": "あり",
+      "body_type": "トラック",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7261478966/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "トラック"
+      ],
+      "fun_tags": [
+        "トラック"
+      ],
+      "interesting_score": 7
+    },
+    {
+      "name": "スープラ 3.0 RZ JBLサウンド/カープレイ/黒本革電動メモリーシート/シートヒーター/レーダークルコン/クリアランスソナー/レーンアシスト/BSM/RCTA/アダプティブハイビーム/純正ナビ/バックカメラ/純正AW",
+      "model": "スープラ 3.0 RZ JBLサウンド/カープレイ/黒本革電動メモリーシート/シートヒーター/レーダークルコン/クリアランスソナー/レーンアシスト/BSM/RCTA/アダプティブハイビーム/純正ナビ/バックカメラ/純正AW",
+      "price": 5300000,
+      "year": 2021,
+      "mileage": 108000,
+      "transmission": "フロアMTモード付8AT",
+      "region": "",
+      "repair": "なし",
+      "body_type": "クーペ",
+      "site": "カーセンサー",
+      "url": "https://www.carsensor.net/usedcar/detail/AU7137319828/index.html",
+      "updated_at": "2026-09-09T23:52:04+09:00",
+      "discovery_tags": [
+        "クーペ"
+      ],
+      "fun_tags": [
+        "クーペ"
+      ],
+      "interesting_score": 7
+    }
+  ],
   "stats": {
     "date": "2026-09-09",
-    "count": 0
+    "count": 141,
+    "by_tag": {
+      "100万円以下": 12,
+      "4WD": 56,
+      "MT": 64,
+      "トラック": 71,
+      "旧車": 5,
+      "オープン": 30,
+      "ピックアップ": 21,
+      "ターボ": 17,
+      "クーペ": 32
+    }
   },
-  "history": [],
+  "history": [
+    {
+      "date": "2026-09-09",
+      "count": 141,
+      "by_tag": {
+        "100万円以下": 12,
+        "4WD": 56,
+        "MT": 64,
+        "トラック": 71,
+        "旧車": 5,
+        "オープン": 30,
+        "ピックアップ": 21,
+        "ターボ": 17,
+        "クーペ": 32
+      }
+    }
+  ],
+  "debug": [
+    {
+      "discovery": "MT",
+      "page": 1,
+      "url": "https://www.carsensor.net/usedcar/index.html?SLST=MT",
+      "detail_links_found": 150,
+      "cars_parsed": 2
+    },
+    {
+      "discovery": "MT",
+      "page": 2,
+      "url": "https://www.carsensor.net/usedcar/index.html?SLST=MT&PAGE=2",
+      "detail_links_found": 150,
+      "cars_parsed": 1
+    },
+    {
+      "discovery": "MT",
+      "page": 3,
+      "url": "https://www.carsensor.net/usedcar/index.html?SLST=MT&PAGE=3",
+      "detail_links_found": 150,
+      "cars_parsed": 4
+    },
+    {
+      "discovery": "MT",
+      "page": 4,
+      "url": "https://www.carsensor.net/usedcar/index.html?SLST=MT&PAGE=4",
+      "detail_links_found": 150,
+      "cars_parsed": 1
+    },
+    {
+      "discovery": "MT",
+      "page": 5,
+      "url": "https://www.carsensor.net/usedcar/index.html?SLST=MT&PAGE=5",
+      "detail_links_found": 150,
+      "cars_parsed": 3
+    },
+    {
+      "discovery": "MT",
+      "page": 6,
+      "url": "https://www.carsensor.net/usedcar/index.html?SLST=MT&PAGE=6",
+      "detail_links_found": 150,
+      "cars_parsed": 3
+    },
+    {
+      "discovery": "MT",
+      "page": 7,
+      "url": "https://www.carsensor.net/usedcar/index.html?SLST=MT&PAGE=7",
+      "detail_links_found": 150,
+      "cars_parsed": 3
+    },
+    {
+      "discovery": "MT",
+      "page": 8,
+      "url": "https://www.carsensor.net/usedcar/index.html?SLST=MT&PAGE=8",
+      "detail_links_found": 150,
+      "cars_parsed": 2
+    },
+    {
+      "discovery": "MT",
+      "page": 9,
+      "url": "https://www.carsensor.net/usedcar/index.html?SLST=MT&PAGE=9",
+      "detail_links_found": 150,
+      "cars_parsed": 3
+    },
+    {
+      "discovery": "MT",
+      "page": 10,
+      "url": "https://www.carsensor.net/usedcar/index.html?SLST=MT&PAGE=10",
+      "detail_links_found": 150,
+      "cars_parsed": 3
+    },
+    {
+      "discovery": "ピックアップ",
+      "page": 1,
+      "url": "https://www.carsensor.net/usedcar/btP/index.html",
+      "detail_links_found": 150,
+      "cars_parsed": 3
+    },
+    {
+      "discovery": "ピックアップ",
+      "page": 2,
+      "url": "https://www.carsensor.net/usedcar/btP/index.html?PAGE=2",
+      "detail_links_found": 150,
+      "cars_parsed": 3
+    },
+    {
+      "discovery": "ピックアップ",
+      "page": 3,
+      "url": "https://www.carsensor.net/usedcar/btP/index.html?PAGE=3",
+      "detail_links_found": 150,
+      "cars_parsed": 0
+    },
+    {
+      "discovery": "ピックアップ",
+      "page": 4,
+      "url": "https://www.carsensor.net/usedcar/btP/index.html?PAGE=4",
+      "detail_links_found": 150,
+      "cars_parsed": 4
+    },
+    {
+      "discovery": "ピックアップ",
+      "page": 5,
+      "url": "https://www.carsensor.net/usedcar/btP/index.html?PAGE=5",
+      "detail_links_found": 150,
+      "cars_parsed": 2
+    },
+    {
+      "discovery": "ピックアップ",
+      "page": 6,
+      "url": "https://www.carsensor.net/usedcar/btP/index.html?PAGE=6",
+      "detail_links_found": 150,
+      "cars_parsed": 3
+    },
+    {
+      "discovery": "ピックアップ",
+      "page": 7,
+      "url": "https://www.carsensor.net/usedcar/btP/index.html?PAGE=7",
+      "detail_links_found": 150,
+      "cars_parsed": 1
+    },
+    {
+      "discovery": "ピックアップ",
+      "page": 8,
+      "url": "https://www.carsensor.net/usedcar/btP/index.html?PAGE=8",
+      "detail_links_found": 150,
+      "cars_parsed": 0
+    },
+    {
+      "discovery": "ピックアップ",
+      "page": 9,
+      "url": "https://www.carsensor.net/usedcar/btP/index.html?PAGE=9",
+      "detail_links_found": 150,
+      "cars_parsed": 4
+    },
+    {
+      "discovery": "ピックアップ",
+      "page": 10,
+      "url": "https://www.carsensor.net/usedcar/btP/index.html?PAGE=10",
+      "detail_links_found": 150,
+      "cars_parsed": 1
+    },
+    {
+      "discovery": "オープン",
+      "page": 1,
+      "url": "https://www.carsensor.net/usedcar/btO/index.html",
+      "detail_links_found": 150,
+      "cars_parsed": 1
+    },
+    {
+      "discovery": "オープン",
+      "page": 2,
+      "url": "https://www.carsensor.net/usedcar/btO/index.html?PAGE=2",
+      "detail_links_found": 150,
+      "cars_parsed": 2
+    },
+    {
+      "discovery": "オープン",
+      "page": 3,
+      "url": "https://www.carsensor.net/usedcar/btO/index.html?PAGE=3",
+      "detail_links_found": 150,
+      "cars_parsed": 1
+    },
+    {
+      "discovery": "オープン",
+      "page": 4,
+      "url": "https://www.carsensor.net/usedcar/btO/index.html?PAGE=4",
+      "detail_links_found": 150,
+      "cars_parsed": 2
+    },
+    {
+      "discovery": "オープン",
+      "page": 5,
+      "url": "https://www.carsensor.net/usedcar/btO/index.html?PAGE=5",
+      "detail_links_found": 150,
+      "cars_parsed": 3
+    },
+    {
+      "discovery": "オープン",
+      "page": 6,
+      "url": "https://www.carsensor.net/usedcar/btO/index.html?PAGE=6",
+      "detail_links_found": 150,
+      "cars_parsed": 5
+    },
+    {
+      "discovery": "オープン",
+      "page": 7,
+      "url": "https://www.carsensor.net/usedcar/btO/index.html?PAGE=7",
+      "detail_links_found": 150,
+      "cars_parsed": 3
+    },
+    {
+      "discovery": "オープン",
+      "page": 8,
+      "url": "https://www.carsensor.net/usedcar/btO/index.html?PAGE=8",
+      "detail_links_found": 150,
+      "cars_parsed": 2
+    },
+    {
+      "discovery": "オープン",
+      "page": 9,
+      "url": "https://www.carsensor.net/usedcar/btO/index.html?PAGE=9",
+      "detail_links_found": 150,
+      "cars_parsed": 2
+    },
+    {
+      "discovery": "オープン",
+      "page": 10,
+      "url": "https://www.carsensor.net/usedcar/btO/index.html?PAGE=10",
+      "detail_links_found": 150,
+      "cars_parsed": 4
+    },
+    {
+      "discovery": "クーペ",
+      "page": 1,
+      "url": "https://www.carsensor.net/usedcar/btC/index.html",
+      "detail_links_found": 150,
+      "cars_parsed": 3
+    },
+    {
+      "discovery": "クーペ",
+      "page": 2,
+      "url": "https://www.carsensor.net/usedcar/btC/index.html?PAGE=2",
+      "detail_links_found": 150,
+      "cars_parsed": 5
+    },
+    {
+      "discovery": "クーペ",
+      "page": 3,
+      "url": "https://www.carsensor.net/usedcar/btC/index.html?PAGE=3",
+      "detail_links_found": 150,
+      "cars_parsed": 5
+    },
+    {
+      "discovery": "クーペ",
+      "page": 4,
+      "url": "https://www.carsensor.net/usedcar/btC/index.html?PAGE=4",
+      "detail_links_found": 150,
+      "cars_parsed": 3
+    },
+    {
+      "discovery": "クーペ",
+      "page": 5,
+      "url": "https://www.carsensor.net/usedcar/btC/index.html?PAGE=5",
+      "detail_links_found": 150,
+      "cars_parsed": 2
+    },
+    {
+      "discovery": "クーペ",
+      "page": 6,
+      "url": "https://www.carsensor.net/usedcar/btC/index.html?PAGE=6",
+      "detail_links_found": 150,
+      "cars_parsed": 4
+    },
+    {
+      "discovery": "クーペ",
+      "page": 7,
+      "url": "https://www.carsensor.net/usedcar/btC/index.html?PAGE=7",
+      "detail_links_found": 150,
+      "cars_parsed": 1
+    },
+    {
+      "discovery": "クーペ",
+      "page": 8,
+      "url": "https://www.carsensor.net/usedcar/btC/index.html?PAGE=8",
+      "detail_links_found": 150,
+      "cars_parsed": 2
+    },
+    {
+      "discovery": "クーペ",
+      "page": 9,
+      "url": "https://www.carsensor.net/usedcar/btC/index.html?PAGE=9",
+      "detail_links_found": 150,
+      "cars_parsed": 4
+    },
+    {
+      "discovery": "クーペ",
+      "page": 10,
+      "url": "https://www.carsensor.net/usedcar/btC/index.html?PAGE=10",
+      "detail_links_found": 150,
+      "cars_parsed": 3
+    },
+    {
+      "discovery": "トラック",
+      "page": 1,
+      "url": "https://www.carsensor.net/usedcar/btT/index.html",
+      "detail_links_found": 150,
+      "cars_parsed": 3
+    },
+    {
+      "discovery": "トラック",
+      "page": 2,
+      "url": "https://www.carsensor.net/usedcar/btT/index.html?PAGE=2",
+      "detail_links_found": 150,
+      "cars_parsed": 5
+    },
+    {
+      "discovery": "トラック",
+      "page": 3,
+      "url": "https://www.carsensor.net/usedcar/btT/index.html?PAGE=3",
+      "detail_links_found": 150,
+      "cars_parsed": 7
+    },
+    {
+      "discovery": "トラック",
+      "page": 4,
+      "url": "https://www.carsensor.net/usedcar/btT/index.html?PAGE=4",
+      "detail_links_found": 148,
+      "cars_parsed": 2
+    },
+    {
+      "discovery": "トラック",
+      "page": 5,
+      "url": "https://www.carsensor.net/usedcar/btT/index.html?PAGE=5",
+      "detail_links_found": 150,
+      "cars_parsed": 3
+    },
+    {
+      "discovery": "トラック",
+      "page": 6,
+      "url": "https://www.carsensor.net/usedcar/btT/index.html?PAGE=6",
+      "detail_links_found": 150,
+      "cars_parsed": 7
+    },
+    {
+      "discovery": "トラック",
+      "page": 7,
+      "url": "https://www.carsensor.net/usedcar/btT/index.html?PAGE=7",
+      "detail_links_found": 150,
+      "cars_parsed": 4
+    },
+    {
+      "discovery": "トラック",
+      "page": 8,
+      "url": "https://www.carsensor.net/usedcar/btT/index.html?PAGE=8",
+      "detail_links_found": 150,
+      "cars_parsed": 4
+    },
+    {
+      "discovery": "トラック",
+      "page": 9,
+      "url": "https://www.carsensor.net/usedcar/btT/index.html?PAGE=9",
+      "detail_links_found": 150,
+      "cars_parsed": 5
+    },
+    {
+      "discovery": "トラック",
+      "page": 10,
+      "url": "https://www.carsensor.net/usedcar/btT/index.html?PAGE=10",
+      "detail_links_found": 150,
+      "cars_parsed": 10
+    }
+  ],
   "errors": []
 }
