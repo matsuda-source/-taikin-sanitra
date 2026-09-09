@@ -6,645 +6,1229 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="退勤とサニトラ">
-<meta name="theme-color" content="#101318">
-<title>退勤とサニトラ</title>
+<meta name="theme-color" content="#0f1720">
+<title>退勤とサニトラ v0.2</title>
 <style>
-:root{
-  --bg:#f4f5f7;--card:#fff;--text:#14171c;--sub:#737984;
-  --line:#e5e7eb;--accent:#20242b;--good:#228b57;
-}
-@media(prefers-color-scheme:dark){
-  :root{--bg:#0e1116;--card:#181c23;--text:#f5f7fa;--sub:#a6abb5;--line:#2b3039;--accent:#f5f7fa}
-}
+:root{--bg:#f4f6f8;--card:#fff;--text:#12161d;--sub:#727986;--line:#e5e8ec;--accent:#18212c;--good:#21865a;--warn:#b8741b;--bad:#cf4c4c;--soft:#eef2f5}
+@media(prefers-color-scheme:dark){:root{--bg:#0d1117;--card:#171c24;--text:#f5f7f9;--sub:#a5abb5;--line:#2a313b;--accent:#f5f7f9;--soft:#202731}}
 *{box-sizing:border-box}
-body{
-  margin:0;background:var(--bg);color:var(--text);
-  font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;
-}
-.wrap{max-width:620px;margin:auto;padding:18px 14px 100px}
-header{padding:8px 4px 14px}
-h1{font-size:27px;margin:0 0 3px}
-.sub{color:var(--sub);font-size:14px}
-.card{
-  background:var(--card);border-radius:22px;padding:18px;
-  margin:12px 0;box-shadow:0 2px 14px #0000000d
-}
-.card h2{font-size:17px;margin:0 0 15px}
-.big{font-size:34px;font-weight:750;letter-spacing:-1px}
-.mid{font-size:21px;font-weight:700}
-.muted{color:var(--sub);font-size:13px}
-.row{display:flex;gap:10px}
-.row>*{flex:1}
-.stat{padding:12px 0}
-button{
-  border:0;border-radius:14px;padding:13px 15px;font-size:16px;
-  font-weight:650;background:var(--accent);color:var(--bg)
-}
-button.secondary{
-  background:var(--bg);color:var(--text);border:1px solid var(--line)
-}
-button.good{background:#228b57;color:white}
-button.warn{background:#b66b19;color:white}
-.quick{
-  display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:10px
-}
+body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif}
+.wrap{max-width:660px;margin:auto;padding:16px 13px 106px}
+header{padding:6px 4px 10px}
+h1{font-size:27px;margin:0 0 2px;letter-spacing:-.5px}
+.sub,.muted{color:var(--sub);font-size:13px}
+.card{background:var(--card);border-radius:22px;padding:18px;margin:12px 0;box-shadow:0 3px 16px #0000000c}
+.card h2{font-size:17px;margin:0 0 14px}
+.big{font-size:34px;font-weight:780;letter-spacing:-1px}
+.mid{font-size:20px;font-weight:720}
+.row{display:flex;gap:10px}.row>*{flex:1}
+button{border:0;border-radius:14px;padding:13px 15px;font-size:16px;font-weight:700;background:var(--accent);color:var(--bg)}
+button.secondary{background:var(--soft);color:var(--text);border:1px solid var(--line)}
+button.good{background:var(--good);color:#fff}
+.quick{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:10px}
 .quick button{padding:10px 4px;font-size:14px}
 label{font-size:13px;color:var(--sub);display:block;margin:12px 0 6px}
-input,select{
-  width:100%;padding:13px;border-radius:12px;border:1px solid var(--line);
-  background:var(--bg);color:var(--text);font-size:16px
-}
-.progress{
-  height:11px;border-radius:99px;background:var(--line);overflow:hidden;margin:10px 0
-}
-.progress span{display:block;height:100%;background:#228b57;border-radius:99px}
-.tabs{
-  position:fixed;bottom:0;left:0;right:0;background:var(--card);
-  border-top:1px solid var(--line);display:flex;justify-content:center;
-  padding-bottom:max(7px,env(safe-area-inset-bottom));z-index:10
-}
-.tabs button{
-  color:var(--sub);background:none;font-size:12px;padding:10px 13px;min-width:70px
-}
+input,select{width:100%;padding:13px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--text);font-size:16px}
+.progress{height:12px;border-radius:99px;background:var(--line);overflow:hidden;margin:10px 0}
+.progress span{display:block;height:100%;background:var(--good);border-radius:99px}
+.tabs{position:fixed;bottom:0;left:0;right:0;background:var(--card);border-top:1px solid var(--line);display:flex;justify-content:center;padding-bottom:max(7px,env(safe-area-inset-bottom));z-index:20}
+.tabs button{color:var(--sub);background:none;font-size:11px;padding:10px 8px;min-width:60px}
 .tabs button.active{color:var(--text)}
 .page{display:none}.page.active{display:block}
-.item{
-  border-top:1px solid var(--line);padding:12px 0;
-  display:flex;justify-content:space-between;gap:10px
-}
+.item{border-top:1px solid var(--line);padding:12px 0;display:flex;justify-content:space-between;gap:10px}
 .item:first-child{border-top:0}
-.danger{color:#d34b4b}
-.badge{
-  display:inline-block;padding:5px 9px;border-radius:20px;
-  background:var(--bg);font-size:12px;font-weight:650
-}
+.badge{display:inline-block;padding:5px 9px;border-radius:20px;background:var(--soft);font-size:12px;font-weight:700}
+.hero{background:linear-gradient(160deg,var(--card),var(--soft))}
+.road{font-size:23px;white-space:nowrap;overflow:hidden;margin:10px 0 4px}
+.kpi{padding:10px 0}
+.callout{padding:13px;border-radius:16px;background:var(--soft);margin-top:12px}
+.reward{font-size:16px;line-height:1.6}
+.car{padding:13px 0;border-top:1px solid var(--line)}
+.car:first-child{border-top:0}
+.car-title{font-weight:750}
+.car-meta{font-size:13px;color:var(--sub);margin-top:4px}
+a.carlink{display:inline-block;margin-top:7px;color:inherit;font-weight:700}
+.smallbtn{padding:7px 10px!important;font-size:12px!important}
 </style>
 </head>
-
 <body>
-<div class="wrap">
 
+<div class="wrap">
 <header>
-  <div class="sub" id="todayText"></div>
-  <h1>退勤とサニトラ 🚚</h1>
+<div class="sub" id="todayText"></div>
+<h1>退勤とサニトラ 🚚</h1>
 </header>
 
 <section id="home" class="page active">
 
-<div class="card">
-  <h2>今日の勤務</h2>
-
-  <button class="good" style="width:100%" onclick="fixedShift()">定時勤務を1タップ登録</button>
-
-  <div class="row">
-    <div>
-      <label>出勤</label>
-      <input id="start" type="time" value="08:30">
-    </div>
-    <div>
-      <label>退勤</label>
-      <input id="end" type="time" value="17:00">
-    </div>
-  </div>
-
-  <div class="quick">
-    <button class="secondary" onclick="setEnd('17:00')">17:00</button>
-    <button class="secondary" onclick="setEnd('17:30')">17:30</button>
-    <button class="secondary" onclick="setEnd('18:00')">18:00</button>
-    <button class="secondary" onclick="setEnd('18:30')">18:30</button>
-    <button class="secondary" onclick="setEnd('19:00')">19:00</button>
-    <button class="secondary" onclick="setEnd('19:30')">19:30</button>
-    <button class="secondary" onclick="setEnd('20:00')">20:00</button>
-    <button class="secondary" onclick="setEnd('20:30')">20:30</button>
-  </div>
-
-  <button style="width:100%;margin-top:10px" onclick="saveWork()">この勤務を登録</button>
-
-  <div class="row" style="margin-top:16px">
-    <div class="stat">
-      <div class="muted">今日の残業</div>
-      <div class="mid" id="todayOT">0時間00分</div>
-    </div>
-    <div class="stat">
-      <div class="muted">残業代目安</div>
-      <div class="mid" id="todayPay">0円</div>
-    </div>
-  </div>
+<div class="card hero">
+<div class="muted">サニトラまで</div>
+<div class="big" id="heroRemain">―</div>
+<div class="road" id="road">🚚━━━━━━━━🏁</div>
+<div class="muted" id="heroSub">―</div>
+<div class="callout">
+<div class="muted">今月の前進</div>
+<div class="mid" id="monthForward">0円</div>
+<div class="muted" id="monthForwardSub">貯金 + 残業代相当</div>
+</div>
 </div>
 
 <div class="card">
-  <h2>今月の残業</h2>
-  <div class="big" id="monthOT">0時間00分</div>
-  <div class="progress"><span id="otBar"></span></div>
-  <div id="otStatus" class="muted"></div>
+<h2>今日の勤務</h2>
 
-  <div class="row" style="margin-top:15px">
-    <div>
-      <div class="muted">45時間まで</div>
-      <div class="mid" id="otRemain">45時間00分</div>
-    </div>
-    <div>
-      <div class="muted">残業代予測</div>
-      <div class="mid" id="monthPay">0円</div>
-    </div>
-  </div>
+<button class="good" style="width:100%" onclick="fixedShift()">
+定時勤務を1タップ登録
+</button>
+
+<div class="row">
+<div>
+<label>出勤</label>
+<input id="start" type="time" value="08:30">
+</div>
+<div>
+<label>退勤</label>
+<input id="end" type="time" value="17:00">
+</div>
+</div>
+
+<div class="quick">
+<button class="secondary" onclick="setEnd('17:00')">17:00</button>
+<button class="secondary" onclick="setEnd('17:30')">17:30</button>
+<button class="secondary" onclick="setEnd('18:00')">18:00</button>
+<button class="secondary" onclick="setEnd('18:30')">18:30</button>
+<button class="secondary" onclick="setEnd('19:00')">19:00</button>
+<button class="secondary" onclick="setEnd('19:30')">19:30</button>
+<button class="secondary" onclick="setEnd('20:00')">20:00</button>
+<button class="secondary" onclick="setEnd('20:30')">20:30</button>
+</div>
+
+<button style="width:100%;margin-top:10px" onclick="saveWork()">
+この勤務を登録
+</button>
+
+<div class="row" style="margin-top:14px">
+<div class="kpi">
+<div class="muted">今日の残業</div>
+<div class="mid" id="todayOT">0時間00分</div>
+</div>
+<div class="kpi">
+<div class="muted">残業代相当</div>
+<div class="mid" id="todayPay">0円</div>
+</div>
+</div>
+
+<div class="callout reward" id="todayReward"></div>
 </div>
 
 <div class="card">
-  <h2>サニトラ貯金 🚚</h2>
+<h2>今月の残業</h2>
+<div class="big" id="monthOT">0時間00分</div>
+<div class="progress"><span id="otBar"></span></div>
+<div id="otStatus" class="muted"></div>
 
-  <div class="muted">現在</div>
-  <div class="big" id="savingNow">0円</div>
+<div class="row" style="margin-top:15px">
+<div>
+<div class="muted">45時間まで</div>
+<div class="mid" id="otRemain">45時間00分</div>
+</div>
+<div>
+<div class="muted">残業代予測</div>
+<div class="mid" id="monthPay">0円</div>
+</div>
+</div>
+</div>
 
-  <div class="progress"><span id="saveBar"></span></div>
-  <div class="muted" id="saveRate"></div>
+<div class="card">
+<h2>サニトラ貯金 🚚</h2>
+<div class="muted">現在</div>
+<div class="big" id="savingNow">0円</div>
 
-  <div class="row" style="margin-top:16px">
-    <div>
-      <div class="muted">目標</div>
-      <div class="mid" id="savingGoal">1,800,000円</div>
-    </div>
-    <div>
-      <div class="muted">あと</div>
-      <div class="mid" id="savingRemain">1,800,000円</div>
-    </div>
-  </div>
+<div class="progress"><span id="saveBar"></span></div>
+<div class="muted" id="saveRate"></div>
 
-  <div style="margin-top:16px">
-    <div class="muted">このペースなら</div>
-    <div class="mid" id="goalDate">―</div>
-  </div>
+<div class="row" style="margin-top:16px">
+<div>
+<div class="muted">目標</div>
+<div class="mid" id="savingGoal"></div>
+</div>
+<div>
+<div class="muted">あと</div>
+<div class="mid" id="savingRemain"></div>
+</div>
+</div>
 
-  <button class="good" style="width:100%;margin-top:16px" onclick="quickMonthly()">
-    今月の50,000円を追加
-  </button>
+<div style="margin-top:16px">
+<div class="muted">目標達成予測</div>
+<div class="mid" id="goalDate"></div>
+</div>
+
+<button class="good" style="width:100%;margin-top:16px" id="monthlyBtn" onclick="quickMonthly()">
+今月分を追加
+</button>
+</div>
+
+<div class="card">
+<h2>今の貯金で買えるもの 🎁</h2>
+<div id="affordStuff"></div>
+</div>
+
+<div class="card">
+<div style="display:flex;justify-content:space-between;align-items:center;gap:10px">
+<h2 style="margin:0">今の貯金で届く中古車 🚗</h2>
+<button class="secondary smallbtn" onclick="refreshCars()">更新</button>
+</div>
+<div class="muted" style="margin:8px 0 4px" id="carFeedStatus"></div>
+<div id="carListHome"></div>
 </div>
 
 </section>
 
 <section id="history" class="page">
 <div class="card">
-  <h2>勤務履歴</h2>
-  <div id="workList"></div>
+<h2>勤務履歴</h2>
+<div id="workList"></div>
 </div>
 </section>
 
 <section id="saving" class="page">
 
 <div class="card">
-  <h2>貯金を追加</h2>
+<h2>貯金を追加</h2>
 
-  <label>金額</label>
-  <input id="saveAmount" type="number" inputmode="numeric" placeholder="50000">
+<label>金額</label>
+<input id="saveAmount" type="number" inputmode="numeric" placeholder="50000">
 
-  <label>種類</label>
-  <select id="saveType">
-    <option>毎月貯金</option>
-    <option>ボーナス</option>
-    <option>臨時収入</option>
-    <option>その他</option>
-    <option>出金</option>
-  </select>
+<label>種類</label>
+<select id="saveType">
+<option>毎月貯金</option>
+<option>ボーナス</option>
+<option>臨時収入</option>
+<option>その他</option>
+<option>出金</option>
+</select>
 
-  <label>メモ</label>
-  <input id="saveMemo" placeholder="任意">
+<label>メモ</label>
+<input id="saveMemo" placeholder="任意">
 
-  <button style="width:100%;margin-top:14px" onclick="addSaving()">追加する</button>
+<button style="width:100%;margin-top:14px" onclick="addSaving()">追加する</button>
 </div>
 
 <div class="card">
-  <h2>貯金履歴</h2>
-  <div id="saveList"></div>
+<h2>貯金履歴</h2>
+<div id="saveList"></div>
 </div>
 
 <div class="card">
-  <h2>到達予測</h2>
-  <div id="targets"></div>
+<h2>到達予測</h2>
+<div id="targets"></div>
+</div>
+
+</section>
+
+<section id="cars" class="page">
+
+<div class="card">
+<h2>中古車ウォッチ 🚗</h2>
+<div class="muted">
+中古車情報を読み込み、現在のサニトラ貯金との差額を表示します。
+</div>
+<button style="width:100%;margin-top:14px" onclick="refreshCars()">
+中古車情報を更新
+</button>
+</div>
+
+<div class="card">
+<div id="carListAll"></div>
 </div>
 
 </section>
 
 <section id="sim" class="page">
+
 <div class="card">
-  <h2>サニトラ購入シミュレーター</h2>
+<h2>サニトラ購入シミュレーター</h2>
 
-  <label>仮の現在貯金額</label>
-  <input id="simNow" type="number" value="300000">
+<label>仮の現在貯金額</label>
+<input id="simNow" type="number" value="300000">
 
-  <label>毎月の積立</label>
-  <input id="simMonthly" type="number" value="50000">
+<label>毎月の積立</label>
+<input id="simMonthly" type="number" value="50000">
 
-  <label>追加の臨時収入</label>
-  <input id="simExtra" type="number" value="0">
+<label>追加の臨時収入</label>
+<input id="simExtra" type="number" value="0">
 
-  <button style="width:100%;margin-top:14px" onclick="runSim()">計算する</button>
+<button style="width:100%;margin-top:14px" onclick="runSim()">計算する</button>
 
-  <div id="simResult" style="margin-top:18px"></div>
+<div id="simResult" style="margin-top:18px"></div>
 </div>
+
 </section>
 
 <section id="settings" class="page">
+
 <div class="card">
-  <h2>設定</h2>
+<h2>設定</h2>
 
-  <label>標準出勤時刻</label>
-  <input id="setStart" type="time">
+<label>標準出勤時刻</label>
+<input id="setStart" type="time">
 
-  <label>標準退勤時刻</label>
-  <input id="setEnd" type="time">
+<label>標準退勤時刻</label>
+<input id="setEnd" type="time">
 
-  <label>残業警告ライン（時間）</label>
-  <input id="setLimit" type="number">
+<label>残業警告ライン（時間）</label>
+<input id="setLimit" type="number">
 
-  <label>残業代単価（円 / 時間）</label>
-  <input id="setHourly" type="number">
+<label>残業代単価（円 / 時間）</label>
+<input id="setHourly" type="number">
 
-  <label>毎月のサニトラ積立額</label>
-  <input id="setMonthly" type="number">
+<label>毎月のサニトラ積立額</label>
+<input id="setMonthly" type="number">
 
-  <label>車両価格</label>
-  <input id="setCar" type="number">
+<label>車両価格</label>
+<input id="setCar" type="number">
 
-  <label>諸費用・整備予備費</label>
-  <input id="setExtra" type="number">
+<label>諸費用・整備予備費</label>
+<input id="setExtra" type="number">
 
-  <label>初期サニトラ貯金額</label>
-  <input id="setInitial" type="number">
+<label>初期サニトラ貯金額</label>
+<input id="setInitial" type="number">
 
-  <button style="width:100%;margin-top:16px" onclick="saveSettings()">設定を保存</button>
+<label>中古車JSONフィードURL</label>
+<input id="setCarFeed" placeholder="https://.../cars.json">
 
-  <button class="secondary" style="width:100%;margin-top:10px" onclick="exportData()">バックアップを書き出す</button>
+<div class="muted" style="margin-top:6px">
+空欄ならデモ中古車を表示。あとから実データに接続できます。
+</div>
+
+<button style="width:100%;margin-top:16px" onclick="saveSettings()">設定を保存</button>
+
+<button class="secondary" style="width:100%;margin-top:10px" onclick="exportData()">
+バックアップを書き出す
+</button>
+
+<label>バックアップから復元</label>
+<input id="restoreFile" type="file" accept="application/json">
+
+<button class="secondary" style="width:100%;margin-top:10px" onclick="restoreData()">
+復元する
+</button>
+
 </div>
 </section>
 
 </div>
 
 <nav class="tabs">
-  <button class="active" onclick="showPage('home',this)">ホーム</button>
-  <button onclick="showPage('history',this)">勤務</button>
-  <button onclick="showPage('saving',this)">貯金</button>
-  <button onclick="showPage('sim',this)">試算</button>
-  <button onclick="showPage('settings',this)">設定</button>
+<button class="active" onclick="showPage('home',this)">ホーム</button>
+<button onclick="showPage('history',this)">勤務</button>
+<button onclick="showPage('saving',this)">貯金</button>
+<button onclick="showPage('cars',this)">中古車</button>
+<button onclick="showPage('sim',this)">試算</button>
+<button onclick="showPage('settings',this)">設定</button>
 </nav>
 
 <script>
-const KEY="taikinSanitraV1";
+
+const KEY="taikinSanitraV2";
+const OLDKEY="taikinSanitraV1";
 
 const defaults={
-  settings:{
-    start:"08:30",
-    end:"17:00",
-    limit:45,
-    hourly:2679,
-    monthly:50000,
-    car:1500000,
-    extra:300000,
-    initial:0
-  },
-  work:[],
-  savings:[]
+ settings:{
+  start:"08:30",
+  end:"17:00",
+  limit:45,
+  hourly:2679,
+  monthly:50000,
+  car:1500000,
+  extra:300000,
+  initial:0,
+  carFeed:""
+ },
+ work:[],
+ savings:[],
+ cars:[]
 };
+
+const demoCars=[
+ {name:"日産 サニートラック",price:798000,year:"1991",mileage:118000,site:"デモ",url:""},
+ {name:"ダイハツ コペン",price:598000,year:"2012",mileage:92000,site:"デモ",url:""},
+ {name:"トヨタ セリカ SS-II",price:1280000,year:"2003",mileage:86000,site:"デモ",url:""},
+ {name:"スズキ アルトワークス",price:890000,year:"2017",mileage:73000,site:"デモ",url:""},
+ {name:"マツダ ロードスター",price:1080000,year:"2010",mileage:81000,site:"デモ",url:""}
+];
 
 let db=load();
 
+function clone(o){
+ return JSON.parse(JSON.stringify(o));
+}
+
 function load(){
-  try{
-    const d=JSON.parse(localStorage.getItem(KEY));
-    return d?{...defaults,...d,settings:{...defaults.settings,...d.settings}}:structuredClone(defaults);
-  }catch(e){
-    return structuredClone(defaults);
+ try{
+  let raw=localStorage.getItem(KEY);
+
+  if(!raw && localStorage.getItem(OLDKEY)){
+   const old=JSON.parse(localStorage.getItem(OLDKEY));
+
+   const migrated={
+    ...clone(defaults),
+    ...old,
+    settings:{
+     ...defaults.settings,
+     ...(old.settings||{})
+    },
+    cars:[]
+   };
+
+   localStorage.setItem(KEY,JSON.stringify(migrated));
+   return migrated;
   }
+
+  const d=raw?JSON.parse(raw):null;
+
+  return d
+   ?{
+     ...clone(defaults),
+     ...d,
+     settings:{
+      ...defaults.settings,
+      ...(d.settings||{})
+     }
+    }
+   :clone(defaults);
+
+ }catch(e){
+  return clone(defaults);
+ }
 }
 
 function persist(){
-  localStorage.setItem(KEY,JSON.stringify(db));
-  render();
+ localStorage.setItem(KEY,JSON.stringify(db));
+ render();
+}
+
+function localDateISO(){
+ const d=new Date();
+ const off=d.getTimezoneOffset();
+ return new Date(d.getTime()-off*60000).toISOString().slice(0,10);
 }
 
 function today(){
-  return new Date().toISOString().slice(0,10);
+ return localDateISO();
 }
 
 function ym(){
-  return today().slice(0,7);
+ return today().slice(0,7);
 }
 
 function min(t){
-  const [h,m]=t.split(":").map(Number);
-  return h*60+m;
+ const [h,m]=t.split(":").map(Number);
+ return h*60+m;
 }
 
 function formatMin(m){
-  m=Math.max(0,Math.round(m));
-  return `${Math.floor(m/60)}時間${String(m%60).padStart(2,"0")}分`;
+ m=Math.max(0,Math.round(m));
+ return `${Math.floor(m/60)}時間${String(m%60).padStart(2,"0")}分`;
 }
 
 function yen(n){
-  return Math.round(n).toLocaleString("ja-JP")+"円";
+ return Math.round(n).toLocaleString("ja-JP")+"円";
 }
 
-/* 17:00〜17:15は残業に含めない */
+/* 17:00〜17:15は休憩 */
 function overtime(start,end){
-  const scheduledEnd=min(db.settings.end);
-  const e=min(end);
 
-  if(e<=scheduledEnd) return 0;
+ const scheduledEnd=min(db.settings.end);
+ const e=min(end);
 
-  let ot=e-scheduledEnd;
+ if(e<=scheduledEnd)return 0;
 
-  const restStart=17*60;
-  const restEnd=17*60+15;
+ let ot=e-scheduledEnd;
 
-  const overlap=Math.max(0,Math.min(e,restEnd)-Math.max(scheduledEnd,restStart));
-  ot-=overlap;
+ const restStart=17*60;
+ const restEnd=17*60+15;
 
-  return Math.max(0,ot);
+ const overlap=Math.max(
+  0,
+  Math.min(e,restEnd)-Math.max(scheduledEnd,restStart)
+ );
+
+ return Math.max(0,ot-overlap);
 }
 
 function fixedShift(){
-  document.getElementById("start").value=db.settings.start;
-  document.getElementById("end").value=db.settings.end;
-  saveWork();
+
+ document.getElementById("start").value=db.settings.start;
+ document.getElementById("end").value=db.settings.end;
+
+ saveWork();
 }
 
 function setEnd(t){
-  document.getElementById("end").value=t;
-  previewToday();
+
+ document.getElementById("end").value=t;
+
+ previewToday();
 }
 
 function saveWork(){
-  const date=today();
-  const start=document.getElementById("start").value;
-  const end=document.getElementById("end").value;
 
-  const record={
-    date,start,end,
-    overtime:overtime(start,end),
-    type:"勤務"
-  };
+ const date=today();
 
-  const i=db.work.findIndex(x=>x.date===date);
-  if(i>=0) db.work[i]=record;
-  else db.work.push(record);
+ const start=document.getElementById("start").value;
+ const end=document.getElementById("end").value;
 
-  persist();
+ const record={
+  date,
+  start,
+  end,
+  overtime:overtime(start,end),
+  type:"勤務"
+ };
+
+ const i=db.work.findIndex(x=>x.date===date);
+
+ if(i>=0){
+  db.work[i]=record;
+ }else{
+  db.work.push(record);
+ }
+
+ persist();
 }
 
 function deleteWork(date){
-  if(!confirm("この勤務記録を削除しますか？"))return;
+
+ if(confirm("この勤務記録を削除しますか？")){
+
   db.work=db.work.filter(x=>x.date!==date);
+
   persist();
+ }
 }
 
 function previewToday(){
-  const s=document.getElementById("start").value;
-  const e=document.getElementById("end").value;
-  const ot=overtime(s,e);
-  document.getElementById("todayOT").textContent=formatMin(ot);
-  document.getElementById("todayPay").textContent=yen(ot/60*db.settings.hourly);
+
+ const s=document.getElementById("start").value;
+ const e=document.getElementById("end").value;
+
+ const ot=overtime(s,e);
+
+ const pay=ot/60*db.settings.hourly;
+
+ document.getElementById("todayOT").textContent=formatMin(ot);
+ document.getElementById("todayPay").textContent=yen(pay);
+
+ document.getElementById("todayReward").innerHTML=rewardText(pay,ot);
 }
 
 function monthOT(){
-  return db.work
-    .filter(x=>x.date.startsWith(ym()))
-    .reduce((a,b)=>a+(b.overtime||0),0);
+
+ return db.work
+  .filter(x=>x.date.startsWith(ym()))
+  .reduce((a,b)=>a+(b.overtime||0),0);
+}
+
+function monthSavings(){
+
+ return db.savings
+  .filter(x=>x.date&&x.date.startsWith(ym()))
+  .reduce((a,b)=>a+b.amount,0);
 }
 
 function currentSaving(){
-  const transactions=db.savings.reduce((a,b)=>a+b.amount,0);
-  return db.settings.initial+transactions;
+
+ return Number(db.settings.initial)+
+ db.savings.reduce((a,b)=>a+b.amount,0);
 }
 
 function goal(){
-  return Number(db.settings.car)+Number(db.settings.extra);
+
+ return Number(db.settings.car)+Number(db.settings.extra);
 }
 
 function monthsTo(target,now=currentSaving(),monthly=db.settings.monthly){
-  if(now>=target)return 0;
-  if(monthly<=0)return null;
-  return Math.ceil((target-now)/monthly);
+
+ if(now>=target)return 0;
+
+ if(monthly<=0)return null;
+
+ return Math.ceil((target-now)/monthly);
 }
 
 function futureDate(months){
-  if(months===null)return "積立額を設定してください";
-  const d=new Date();
-  d.setMonth(d.getMonth()+months);
-  return `${d.getFullYear()}年${d.getMonth()+1}月`;
+
+ if(months===null)return "積立額を設定してください";
+
+ const d=new Date();
+
+ d.setMonth(d.getMonth()+months);
+
+ return `${d.getFullYear()}年${d.getMonth()+1}月`;
 }
 
 function quickMonthly(){
-  const month=ym();
-  const exists=db.savings.some(x=>x.monthKey===month && x.type==="毎月貯金");
 
-  if(exists){
-    alert("今月分はすでに登録されています");
-    return;
-  }
+ const month=ym();
 
-  db.savings.push({
-    id:Date.now(),
-    date:today(),
-    amount:Number(db.settings.monthly),
-    type:"毎月貯金",
-    memo:"",
-    monthKey:month
-  });
+ const exists=db.savings.some(
+  x=>x.monthKey===month&&x.type==="毎月貯金"
+ );
 
-  persist();
+ if(exists){
+  return alert("今月分はすでに登録されています");
+ }
+
+ db.savings.push({
+  id:Date.now(),
+  date:today(),
+  amount:Number(db.settings.monthly),
+  type:"毎月貯金",
+  memo:"",
+  monthKey:month
+ });
+
+ persist();
 }
 
 function addSaving(){
-  let amount=Number(document.getElementById("saveAmount").value);
-  const type=document.getElementById("saveType").value;
-  const memo=document.getElementById("saveMemo").value;
 
-  if(!amount)return alert("金額を入力してください");
-  if(type==="出金")amount=-Math.abs(amount);
+ let amount=Number(document.getElementById("saveAmount").value);
 
-  const before=currentSaving();
-  const beforeMonths=monthsTo(goal(),before);
+ const type=document.getElementById("saveType").value;
 
-  db.savings.push({
-    id:Date.now(),
-    date:today(),
-    amount,
-    type,
-    memo
-  });
+ const memo=document.getElementById("saveMemo").value;
 
-  const after=before+amount;
-  const afterMonths=monthsTo(goal(),after);
+ if(!amount){
+  return alert("金額を入力してください");
+ }
 
-  persist();
+ if(type==="出金"){
+  amount=-Math.abs(amount);
+ }
 
-  document.getElementById("saveAmount").value="";
-  document.getElementById("saveMemo").value="";
+ const before=currentSaving();
+ const beforeMonths=monthsTo(goal(),before);
 
-  if(amount>0 && beforeMonths!==null && afterMonths!==null){
-    const faster=Math.max(0,beforeMonths-afterMonths);
-    if(faster>0) alert(`購入予定が約${faster}ヶ月早まりました！ 🚚`);
+ db.savings.push({
+  id:Date.now(),
+  date:today(),
+  amount,
+  type,
+  memo
+ });
+
+ const after=before+amount;
+ const afterMonths=monthsTo(goal(),after);
+
+ persist();
+
+ document.getElementById("saveAmount").value="";
+ document.getElementById("saveMemo").value="";
+
+ if(
+  amount>0 &&
+  beforeMonths!==null &&
+  afterMonths!==null
+ ){
+  const faster=Math.max(0,beforeMonths-afterMonths);
+
+  if(faster>0){
+   alert(`購入予定が約${faster}ヶ月早まりました！ 🚚`);
   }
+ }
 }
 
 function deleteSaving(id){
-  if(!confirm("この入出金を削除しますか？"))return;
+
+ if(confirm("この入出金を削除しますか？")){
+
   db.savings=db.savings.filter(x=>x.id!==id);
+
   persist();
+ }
+}
+
+/* 今日の残業代で買えるもの */
+function rewardText(pay,ot){
+
+ if(ot<=0){
+
+  return `
+  🎉 <b>今日は残業0分。</b><br>
+  <span class="muted">
+  お金ではなく、自由時間を持って帰れた日。
+  </span>
+  `;
+ }
+
+ const items=[
+  [500,"コンビニスイーツ"],
+  [900,"ちょっといい昼ごはん"],
+  [1200,"ラーメン1杯"],
+  [1800,"映画1回"],
+  [2500,"ガソリン約10Lぶんの足し"],
+  [3500,"ちょっといい晩ごはん"],
+  [5000,"ゲームや趣味代の足し"],
+  [8000,"小さめのカー用品"],
+  [12000,"日帰りドライブ代の足し"]
+ ];
+
+ const eligible=items.filter(x=>pay>=x[0]);
+
+ const pick=eligible.length
+  ?eligible[(new Date().getDate()+eligible.length)%eligible.length]
+  :items[0];
+
+ return `
+ 💰 今日の残業代相当は <b>${yen(pay)}</b><br>
+ 今日は「${pick[1]}」くらい。<br>
+ <span class="muted">
+ 全部サニトラ貯金に回すなら、そのまま${yen(pay)}前進。
+ </span>
+ `;
+}
+
+/* 今の貯金で買えるもの */
+function stuffText(s){
+
+ const stuff=[
+  [50000,"ちょっと良い工具・カー用品"],
+  [100000,"原付の中古車クラス"],
+  [200000,"古めの軽自動車の入口"],
+  [300000,"格安中古車の選択肢が見え始める"],
+  [500000,"軽・コンパクト中古車の現実的な価格帯"],
+  [800000,"サニトラや趣味車の安め個体が射程圏に入り始める"],
+  [1000000,"100万円クラスの中古車"],
+  [1500000,"趣味車の選択肢がかなり増える"],
+  [2000000,"200万円クラスまで現金圏"]
+ ];
+
+ const passed=stuff.filter(x=>s>=x[0]);
+
+ const next=stuff.find(x=>s<x[0]);
+
+ let html;
+
+ if(passed.length){
+
+  html=`
+  <div class="mid">
+  今なら「${passed[passed.length-1][1]}」圏
+  </div>
+  `;
+
+ }else{
+
+  html=`
+  <div class="mid">
+  まず5万円ラインへ
+  </div>
+  `;
+ }
+
+ if(next){
+
+  html+=`
+  <div class="muted" style="margin-top:6px">
+  次の節目「${next[1]}」まであと ${yen(next[0]-s)}
+  </div>
+  `;
+ }
+
+ return html;
 }
 
 function runSim(){
-  const now=Number(document.getElementById("simNow").value);
-  const monthly=Number(document.getElementById("simMonthly").value);
-  const extra=Number(document.getElementById("simExtra").value);
-  const base=now+extra;
 
-  const list=[1000000,1500000,2000000];
+ const now=Number(document.getElementById("simNow").value);
 
-  document.getElementById("simResult").innerHTML=list.map(t=>{
-    const m=monthsTo(t,base,monthly);
-    return `<div class="item">
-      <div><b>${yen(t)}</b></div>
-      <div>${futureDate(m)}</div>
-    </div>`;
-  }).join("");
+ const monthly=Number(document.getElementById("simMonthly").value);
+
+ const extra=Number(document.getElementById("simExtra").value);
+
+ const base=now+extra;
+
+ document.getElementById("simResult").innerHTML=
+ [1000000,1500000,2000000]
+ .map(t=>`
+ <div class="item">
+ <b>${yen(t)}</b>
+ <span>${futureDate(monthsTo(t,base,monthly))}</span>
+ </div>
+ `).join("");
 }
 
 function saveSettings(){
-  db.settings.start=document.getElementById("setStart").value;
-  db.settings.end=document.getElementById("setEnd").value;
-  db.settings.limit=Number(document.getElementById("setLimit").value);
-  db.settings.hourly=Number(document.getElementById("setHourly").value);
-  db.settings.monthly=Number(document.getElementById("setMonthly").value);
-  db.settings.car=Number(document.getElementById("setCar").value);
-  db.settings.extra=Number(document.getElementById("setExtra").value);
-  db.settings.initial=Number(document.getElementById("setInitial").value);
 
-  persist();
-  alert("設定を保存しました");
+ const s=db.settings;
+
+ s.start=document.getElementById("setStart").value;
+ s.end=document.getElementById("setEnd").value;
+ s.limit=Number(document.getElementById("setLimit").value);
+ s.hourly=Number(document.getElementById("setHourly").value);
+ s.monthly=Number(document.getElementById("setMonthly").value);
+ s.car=Number(document.getElementById("setCar").value);
+ s.extra=Number(document.getElementById("setExtra").value);
+ s.initial=Number(document.getElementById("setInitial").value);
+ s.carFeed=document.getElementById("setCarFeed").value.trim();
+
+ persist();
+
+ alert("設定を保存しました");
 }
 
 function exportData(){
-  const text=JSON.stringify(db,null,2);
-  const blob=new Blob([text],{type:"application/json"});
-  const a=document.createElement("a");
-  a.href=URL.createObjectURL(blob);
-  a.download="taikin-sanitra-backup.json";
-  a.click();
+
+ const text=JSON.stringify(db,null,2);
+
+ const blob=new Blob(
+  [text],
+  {type:"application/json"}
+ );
+
+ const a=document.createElement("a");
+
+ a.href=URL.createObjectURL(blob);
+
+ a.download="taikin-sanitra-backup.json";
+
+ a.click();
+}
+
+function restoreData(){
+
+ const f=document.getElementById("restoreFile").files[0];
+
+ if(!f){
+  return alert("バックアップJSONを選んでください");
+ }
+
+ const r=new FileReader();
+
+ r.onload=()=>{
+
+  try{
+
+   const d=JSON.parse(r.result);
+
+   db={
+    ...clone(defaults),
+    ...d,
+    settings:{
+     ...defaults.settings,
+     ...(d.settings||{})
+    }
+   };
+
+   persist();
+
+   alert("復元しました");
+
+  }catch(e){
+
+   alert("復元に失敗しました");
+  }
+ };
+
+ r.readAsText(f);
 }
 
 function showPage(name,btn){
-  document.querySelectorAll(".page").forEach(x=>x.classList.remove("active"));
-  document.getElementById(name).classList.add("active");
 
-  document.querySelectorAll(".tabs button").forEach(x=>x.classList.remove("active"));
-  btn.classList.add("active");
+ document.querySelectorAll(".page")
+ .forEach(x=>x.classList.remove("active"));
 
-  render();
+ document.getElementById(name)
+ .classList.add("active");
+
+ document.querySelectorAll(".tabs button")
+ .forEach(x=>x.classList.remove("active"));
+
+ btn.classList.add("active");
+
+ render();
+}
+
+/* 中古車情報 */
+async function refreshCars(){
+
+ const url=(db.settings.carFeed||"").trim();
+
+ document.getElementById("carFeedStatus").textContent="更新中…";
+
+ if(!url){
+
+  db.cars=demoCars;
+
+  persist();
+
+  document.getElementById("carFeedStatus").textContent=
+  "現在は内蔵デモデータ";
+
+  return;
+ }
+
+ try{
+
+  const res=await fetch(
+   url,
+   {cache:"no-store"}
+  );
+
+  if(!res.ok){
+   throw new Error("HTTP "+res.status);
+  }
+
+  const data=await res.json();
+
+  const arr=Array.isArray(data)
+   ?data
+   :(data.cars||[]);
+
+  db.cars=arr.map(x=>({
+
+   name:x.name||x.title||"中古車",
+
+   price:Number(x.price)||0,
+
+   year:x.year||"",
+
+   mileage:Number(x.mileage)||0,
+
+   site:x.site||"",
+
+   url:x.url||""
+
+  }));
+
+  persist();
+
+  document.getElementById("carFeedStatus").textContent=
+  `${db.cars.length}台を更新`;
+
+ }catch(e){
+
+  document.getElementById("carFeedStatus").textContent=
+  "更新失敗。URL/CORS/JSON形式を確認";
+
+  alert("中古車情報の取得に失敗しました");
+ }
+}
+
+function renderCars(){
+
+ const cars=
+ (db.cars&&db.cars.length
+  ?db.cars
+  :demoCars)
+ .slice()
+ .sort((a,b)=>a.price-b.price);
+
+ const s=currentSaving();
+
+ const card=x=>{
+
+  const gap=x.price-s;
+
+  const status=
+  gap<=0
+   ?`<span class="badge">今の貯金で届く</span>`
+   :`<span class="badge">あと ${yen(gap)}</span>`;
+
+  return `
+  <div class="car">
+
+   <div class="car-title">
+   ${x.name}
+   </div>
+
+   <div class="mid">
+   ${yen(x.price)}
+   </div>
+
+   <div class="car-meta">
+   ${x.year?x.year+"年 ":""}
+   ${x.mileage?Math.round(x.mileage/1000)/10+"万km ":""}
+   ${x.site?x.site:""}
+   </div>
+
+   <div style="margin-top:7px">
+   ${status}
+   </div>
+
+   ${
+    x.url
+    ?`<a class="carlink"
+       href="${x.url}"
+       target="_blank"
+       rel="noopener">
+       掲載ページを見る →
+      </a>`
+    :""
+   }
+
+  </div>
+  `;
+ };
+
+ const home=cars
+ .filter(x=>x.price<=Math.max(s,3000000))
+ .slice(0,4);
+
+ document.getElementById("carListHome").innerHTML=
+ home.length
+ ?home.map(card).join("")
+ :`<div class="muted">候補なし</div>`;
+
+ document.getElementById("carListAll").innerHTML=
+ cars.map(card).join("");
+
+ if(!db.settings.carFeed){
+
+  document.getElementById("carFeedStatus").textContent=
+  "現在は内蔵デモデータ。設定から実データJSONに接続できます。";
+ }
+}
+
+function renderRoad(rate){
+
+ const slots=8;
+
+ const pos=Math.max(
+  0,
+  Math.min(
+   slots,
+   Math.round(rate/100*slots)
+  )
+ );
+
+ let s="";
+
+ for(let i=0;i<=slots;i++){
+
+  if(i===pos){
+   s+="🚚";
+  }else{
+   s+="━";
+  }
+ }
+
+ s+="🏁";
+
+ return s;
 }
 
 function render(){
-  const now=new Date();
-  document.getElementById("todayText").textContent=
-    new Intl.DateTimeFormat("ja-JP",{year:"numeric",month:"long",day:"numeric",weekday:"short"}).format(now);
 
-  const todayRec=db.work.find(x=>x.date===today());
+ const now=new Date();
 
-  document.getElementById("start").value=todayRec?.start||db.settings.start;
-  document.getElementById("end").value=todayRec?.end||db.settings.end;
+ document.getElementById("todayText").textContent=
+ new Intl.DateTimeFormat(
+  "ja-JP",
+  {
+   year:"numeric",
+   month:"long",
+   day:"numeric",
+   weekday:"short"
+  }
+ ).format(now);
 
-  previewToday();
+ const rec=db.work.find(
+  x=>x.date===today()
+ );
 
-  const mot=monthOT();
-  const limit=db.settings.limit*60;
-  const remain=Math.max(0,limit-mot);
+ document.getElementById("start").value=
+ rec?.start||db.settings.start;
 
-  document.getElementById("monthOT").textContent=formatMin(mot);
-  document.getElementById("otRemain").textContent=formatMin(remain);
-  document.getElementById("monthPay").textContent=yen(mot/60*db.settings.hourly);
+ document.getElementById("end").value=
+ rec?.end||db.settings.end;
 
-  const percent=Math.min(100,mot/limit*100);
-  document.getElementById("otBar").style.width=percent+"%";
+ previewToday();
 
-  let state="通常";
-  if(mot>=45*60)state="警告：45時間以上";
-  else if(mot>=40*60)state="かなり注意";
-  else if(mot>=30*60)state="注意";
+ const mot=monthOT();
 
-  document.getElementById("otStatus").textContent=
-    `${formatMin(mot)} / ${db.settings.limit}時間　${state}`;
+ const limit=db.settings.limit*60;
 
-  const s=currentSaving();
-  const g=goal();
-  const r=Math.max(0,g-s);
-  const rate=g?Math.min(100,s/g*100):0;
+ const remain=Math.max(
+  0,
+  limit-mot
+ );
 
-  document.getElementById("savingNow").textContent=yen(s);
-  document.getElementById("savingGoal").textContent=yen(g);
-  document.getElementById("savingRemain").textContent=yen(r);
-  document.getElementById("saveRate").textContent=`達成率 ${rate.toFixed(1)}%`;
-  document.getElementById("saveBar").style.width=rate+"%";
-  document.getElementById("goalDate").textContent=
-    futureDate(monthsTo(g));
+ const pct=limit
+ ?Math.min(100,mot/limit*100)
+ :0;
 
-  const wl=[...db.work].sort((a,b)=>b.date.localeCompare(a.date));
+ document.getElementById("monthOT").textContent=
+ formatMin(mot);
 
-  document.getElementById("workList").innerHTML=wl.length?wl.map(x=>`
-    <div class="item">
-      <div>
-        <b>${x.date}</b><br>
-        <span class="muted">${x.start} → ${x.end}</span>
-      </div>
-      <div style="text-align:right">
-        <b>${formatMin(x.overtime)}</b><br>
-        <button class="secondary" style="padding:5px 8px;font-size:11px"
-          onclick="deleteWork('${x.date}')">削除</button>
-      </div>
-    </div>
-  `).join(""):`<div class="muted">まだ勤務記録がありません</div>`;
+ document.getElementById("otRemain").textContent=
+ formatMin(remain);
 
-  const sl=[...db.savings].sort((a,b)=>b.id-a.id);
+ document.getElementById("monthPay").textContent=
+ yen(mot/60*db.settings.hourly);
 
-  document.getElementById("saveList").innerHTML=sl.length?sl.map(x=>`
-    <div class="item">
-      <div>
-        <b>${x.type}</b><br>
-        <span class="muted">${x.date}${x.memo?" ・ "+x.memo:""}</span>
-      </div>
-      <div style="text-align:right">
-        <b>${x.amount>=0?"+":""}${yen(x.amount)}</b><br>
-        <button class="secondary" style="padding:5px 8px;font-size:11px"
-          onclick="deleteSaving(${x.id})">削除</button>
-      </div>
-    </div>
-  `).join(""):`<div class="muted">まだ貯金記録がありません</div>`;
+ document.getElementById("otBar").style.width=
+ pct+"%";
 
-  document.getElementById("targets").innerHTML=
-    [1000000,1500000,2000000].map(t=>`
-      <div class="item">
-        <b>${yen(t)}</b>
-        <span>${futureDate(monthsTo(t))}</span>
-      </div>
-    `).join("");
+ let state="通常";
 
-  const s2=db.settings;
-  document.getElementById("setStart").value=s2.start;
-  document.getElementById("setEnd").value=s2.end;
-  document.getElementById("setLimit").value=s2.limit;
-  document.getElementById("setHourly").value=s2.hourly;
-  document.getElementById("setMonthly").value=s2.monthly;
-  document.getElementById("setCar").value=s2.car;
-  document.getElementById("setExtra").value=s2.extra;
-  document.getElementById("setInitial").value=s2.initial;
+ if(mot>=45*60){
+  state="警告：45時間以上";
+ }else if(mot>=40*60){
+  state="かなり注意";
+ }else if(mot>=30*60){
+  state="注意";
+ }
 
-  document.querySelector("#home .good:last-child").textContent=
-    `今月の${yen(db.settings.monthly)}を追加`;
+ document.getElementById("otStatus").textContent=
+ `${formatMin(mot)} / ${db.settings.limit}時間　${state}`;
+
+ const s=currentSaving();
+
+ const g=goal();
+
+ const r=Math.max(
+  0,
+  g-s
+ );
+
+ const rate=g
+ ?Math.min(100,s/g*100)
+ :0;
+
+ document.getElementById("savingNow").textContent=
+ yen(s);
+
+ document.getElementById("savingGoal").textContent=
+ yen(g);
+
+ document.getElementById("savingRemain").textContent=
+ yen(r);
+
+ document.getElementById("saveRate").textContent=
+ `達成率 ${rate.toFixed(1)}%`;
+
+ document.getElementById("saveBar").style.width=
+ rate+"%";
+
+ document.getElementById("goalDate").textContent=
+ futureDate(monthsTo(g));
+
+ document.getElementById("heroRemain").textContent=
+ `あと ${yen(r)}`;
+
+ document.getElementById("road").textContent=
+ renderRoad(rate);
+
+ document.getElementById("heroSub").textContent=
+ `${rate.toFixed(1)}%達成 ・ ${futureDate(monthsTo(g))}ごろ`;
+
+ const forward=
+ monthSavings()+
+ mot/60*db.settings.hourly;
+
+ document.getElementById("monthForward").textContent=
+ yen(forward);
+
+ document.getElementById("monthForwardSub").textContent=
+ `実貯金 ${yen(monthSavings())} + 残業代相当 ${yen(mot/60*db.settings.hourly)}`;
+
+ document.getElementById("affordStuff").innerHTML=
+ stuffText(s);
+
+ document.getElementById("monthlyBtn").textContent=
+ `今月の${yen(db.settings.monthly)}を追加`;
+
+ const wl=[...db.work]
+ .sort((a,b)=>b.date.localeCompare(a.date));
+
+ document.getElementById("workList").innerHTML=
+ wl.length
+ ?wl.map(x=>`
+ <div class="item">
+  <div>
+   <b>${x.date}</b><br>
+   <span class="muted">${x.start} → ${x.end}</span>
+  </div>
+  <div style="text-align:right">
+   <b>${formatMin(x.overtime)}</b><br>
+   <button class="secondary smallbtn"
+    onclick="deleteWork('${x.date}')">
+    削除
+   </button>
+  </div>
+ </div>
+ `).join("")
+ :`<div class="muted">まだ勤務記録がありません</div>`;
+
+ const sl=[...db.savings]
+ .sort((a,b)=>b.id-a.id);
+
+ document.getElementById("saveList").innerHTML=
+ sl.length
+ ?sl.map(x=>`
+ <div class="item">
+  <div>
+   <b>${x.type}</b><br>
+   <span class="muted">
+   ${x.date}${x.memo?" ・ "+x.memo:""}
+   </span>
+  </div>
+  <div style="text-align:right">
+   <b>${x.amount>=0?"+":""}${yen(x.amount)}</b><br>
+   <button class="secondary smallbtn"
+    onclick="deleteSaving(${x.id})">
+    削除
+   </button>
+  </div>
+ </div>
+ `).join("")
+ :`<div class="muted">まだ貯金記録がありません</div>`;
+
+ document.getElementById("targets").innerHTML=
+ [1000000,1500000,2000000]
+ .map(t=>`
+ <div class="item">
+  <b>${yen(t)}</b>
+  <span>${futureDate(monthsTo(t))}</span>
+ </div>
+ `).join("");
+
+ const st=db.settings;
+
+ document.getElementById("setStart").value=st.start;
+ document.getElementById("setEnd").value=st.end;
+ document.getElementById("setLimit").value=st.limit;
+ document.getElementById("setHourly").value=st.hourly;
+ document.getElementById("setMonthly").value=st.monthly;
+ document.getElementById("setCar").value=st.car;
+ document.getElementById("setExtra").value=st.extra;
+ document.getElementById("setInitial").value=st.initial;
+ document.getElementById("setCarFeed").value=st.carFeed||"";
+
+ renderCars();
 }
 
-document.getElementById("start").addEventListener("change",previewToday);
-document.getElementById("end").addEventListener("change",previewToday);
+document
+.getElementById("start")
+.addEventListener(
+ "change",
+ previewToday
+);
+
+document
+.getElementById("end")
+.addEventListener(
+ "change",
+ previewToday
+);
 
 render();
+
 runSim();
+
 </script>
+
 </body>
 </html>
