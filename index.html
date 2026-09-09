@@ -839,59 +839,50 @@ async function refreshCars(){
       ?data
       :(data.cars||[]);
 
-    db.cars=arr.map(
-      x=>({
-        name:
-          x.name||
-          x.title||
-          "中古車",
+    db.cars=arr.map(x=>({
+  name:x.name||x.title||"中古車",
+  model:x.model||x.name||x.title||"",
+  price:Number(x.price)||0,
+  year:x.year||"",
+  mileage:Number(x.mileage)||0,
 
-        model:
-          x.model||
-          x.name||
-          x.title||
-          "",
+  transmission:
+    (x.transmission||x.mission||"").toUpperCase(),
 
-        price:
-          Number(x.price)||0,
+  region:
+    x.region||x.prefecture||"",
 
-        year:
-          x.year||"",
+  repair:
+    x.repair||x.repair_history||"",
 
-        mileage:
-          Number(x.mileage)||0,
+  body_type:
+    x.body_type||"",
 
-        transmission:
-          (
-            x.transmission||
-            x.mission||
-            ""
-          ).toUpperCase(),
+  fun_tags:
+    Array.isArray(x.fun_tags)
+      ? x.fun_tags
+      : [],
 
-        region:
-          x.region||
-          x.prefecture||
-          "",
+  discovery_tags:
+    Array.isArray(x.discovery_tags)
+      ? x.discovery_tags
+      : [],
 
-        repair:
-          x.repair||
-          x.repair_history||
-          "",
+  interesting_score:
+    Number(x.interesting_score)||0,
 
-        site:
-          x.site||"",
+  site:
+    x.site||"",
 
-        url:
-          x.url||"",
+  url:
+    x.url||"",
 
-        updated_at:
-          x.updated_at||
-          x.fetched_at||
-          data.updated_at||
-          ""
-      })
-    );
-
+  updated_at:
+    x.updated_at||
+    x.fetched_at||
+    data.updated_at||
+    ""
+}));
     db.carMeta={
       updated_at:data.updated_at||"",
       stats:data.stats||{},
@@ -1183,7 +1174,23 @@ function renderCars(){
     ]
     .filter(Boolean)
     .join(" ・ ");
+　　　const tags=[
+  ...(x.fun_tags||[]),
+  ...(x.discovery_tags||[])
+]
+.filter((v,i,a)=>v && a.indexOf(v)===i)
+.slice(0,6);
 
+const fun=
+  x.interesting_score>0
+    ?`<span class="badge">🔥 面白そう度 ${x.interesting_score}</span>`
+    :"";
+
+const tagHtml=tags.length
+  ?`<div style="margin-top:7px">
+      ${tags.map(t=>`<span class="badge">${t}</span>`).join(" ")}
+    </div>`
+  :"";
     return `
       <div class="car">
         <div class="car-title">
@@ -1201,7 +1208,10 @@ function renderCars(){
         <div style="margin-top:7px">
           ${status}
         </div>
-
+　　　　　<div style="margin-top:7px">
+  ${fun}
+</div>
+${tagHtml}
         ${
           x.url
           ?`
