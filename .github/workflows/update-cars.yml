@@ -1,0 +1,498 @@
+name: Discover interesting used cars
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 毎日 06:15 JST
+    - cron: "15 21 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install packages
+        run: pip install requests beautifulsoup4
+
+      - name: Discover cars
+        shell: bash
+        run: |
+          cat > /tmp/discover.py <<'PY'
+          import json
+          import re
+          import statistics
+          import time
+          import sys
+
+          from datetime import datetime, timezone, timedelta
+          from pathlib import Path
+          from urllib.parse import urljoin
+
+          import requests
+          from bs4 import BeautifulSoup
+
+          OUT = Path("cars.json")
+          JST = timezone(timedelta(hours=9))
+
+          HEADERS = {
+              "User-Agent":
+              "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) "
+              "AppleWebKit/605.1.15 Safari/604.1"
+          }
+
+          # 車種は固定しない。
+          # 中古車一覧を広く見て、面白そうな車を発掘する。
+          URLS = [
+              f"https://www.carsensor.net/usedcar/index{i}.html"
+              for i in range(1, 11)
+          ]
+
+          PREFS = [
+              "北海道","青森","岩手","宮城","秋田","山形","福島",
+              "茨城","栃木","群馬","埼玉","千葉","東京","神奈川",
+              "新潟","富山","石川","福井","山梨","長野",
+              "岐阜","静岡","愛知","三重",
+              "滋賀","京都","大阪","兵庫","奈良","和歌山",
+              "鳥取","島根","岡山","広島","山口",
+              "徳島","香川","愛媛","高知",
+              "福岡","佐賀","長崎","熊本","大分","宮崎","鹿児島","沖縄"
+          ]
+
+          def clean(s):
+              return re.sub(r"\s+", " ", s or "").strip()
+
+          def get_price(text):
+              patterns = [
+                  r"支払総額\s*([\d,.]+)\s*万円",
+                  r"総額\s*([\d,.]+)\s*万円"
+              ]
+
+              for pattern in patterns:
+                  m = re.search(pattern, text)
+
+                  if m:
+                      return int(
+                          float(
+                              m.group(1).replace(",", "")
+                          ) * 10000
+                      )
+
+              return 0
+
+          def get_year(text):
+              m = re.search(
+                  r"\b((?:19|20)\d{2})(?:年|\()",
+                  text
+              )
+
+              return m.group(1) if m else ""
+
+          def get_mileage(text):
+              m = re.search(
+                  r"([\d.]+)\s*万\s*km",
+                  text,
+                  re.I
+              )
+
+              if m:
+                  return int(
+                      float(m.group(1)) * 10000
+                  )
+
+              m = re.search(
+                  r"([\d,]+)\s*km",
+                  text,
+                  re.I
+              )
+
+              if m:
+                  return int(
+                      m.group(1).replace(",", "")
+                  )
+
+              return 0
+
+          def get_transmission(text):
+              m = re.search(
+                  r"(?:フロア|インパネ|コラム)?\s*"
+                  r"(\d+\s*MT|MT|CVT|\d+\s*AT|AT)",
+                  text,
+                  re.I
+              )
+
+              if not m:
+                  return ""
+
+              return re.sub(
+                  r"\s+",
+                  "",
+                  m.group(1)
+              ).upper()
+
+          def get_repair(text):
+              if re.search(
+                  r"修復歴\s*なし",
+                  text
+              ):
+                  return "なし"
+
+              if re.search(
+                  r"修復歴\s*あり",
+                  text
+              ):
+                  return "あり"
+
+              return ""
+
+          def get_region(text):
+              for pref in PREFS:
+                  if pref in text:
+                      return pref
+
+              return ""
+
+          def find_block(a):
+              node = a
+              best = a
+
+              for _ in range(8):
+                  if not getattr(
+                      node,
+                      "parent",
+                      None
+                  ):
+                      break
+
+                  node = node.parent
+
+                  text = clean(
+                      node.get_text(
+                          " ",
+                          strip=True
+                      )
+                  )
+
+                  if 80 <= len(text) <= 4000:
+                      best = node
+
+                      if (
+                          "支払総額" in text
+                          and (
+                              "走行距離" in text
+                              or "万km" in text
+                          )
+                      ):
+                          break
+
+              return best
+
+          rows = []
+          errors = []
+
+          for url in URLS:
+              try:
+                  response = requests.get(
+                      url,
+                      headers=HEADERS,
+                      timeout=30
+                  )
+
+                  response.raise_for_status()
+
+                  soup = BeautifulSoup(
+                      response.text,
+                      "html.parser"
+                  )
+
+                  links = soup.select(
+                      'a[href*="/usedcar/detail/"]'
+                  )
+
+                  for a in links:
+                      href = a.get("href")
+
+                      if not href:
+                          continue
+
+                      block = find_block(a)
+
+                      text = clean(
+                          block.get_text(
+                              " ",
+                              strip=True
+                          )
+                      )
+
+                      price = get_price(text)
+
+                      # 趣味車として現実的な価格帯を中心にする
+                      if not 200000 <= price <= 2500000:
+                          continue
+
+                      title = clean(
+                          a.get_text(
+                              " ",
+                              strip=True
+                          )
+                      )
+
+                      if len(title) < 4:
+                          h = block.find(
+                              ["h2", "h3", "h4"]
+                          )
+
+                          if h:
+                              title = clean(
+                                  h.get_text(
+                                      " ",
+                                      strip=True
+                                  )
+                              )
+
+                      if not title:
+                          continue
+
+                      transmission = get_transmission(
+                          text
+                      )
+
+                      tags = []
+
+                      if "MT" in transmission:
+                          tags.append("MT")
+
+                      if any(
+                          x in text
+                          for x in [
+                              "ターボ",
+                              "スーパーチャージャー"
+                          ]
+                      ):
+                          tags.append("過給機")
+
+                      if any(
+                          x in text
+                          for x in [
+                              "オープン",
+                              "カブリオレ",
+                              "ロードスター"
+                          ]
+                      ):
+                          tags.append("オープン")
+
+                      if any(
+                          x in text
+                          for x in [
+                              "軽トラック",
+                              "軽トラ",
+                              "トラック"
+                          ]
+                      ):
+                          tags.append(
+                              "商用・トラック"
+                          )
+
+                      year = get_year(text)
+
+                      if (
+                          year
+                          and int(year) <= 2000
+                      ):
+                          tags.append("旧め")
+
+                      rows.append({
+                          "name": title[:140],
+                          "model": title[:70],
+                          "price": price,
+                          "year": year,
+                          "mileage":
+                              get_mileage(text),
+                          "transmission":
+                              transmission,
+                          "region":
+                              get_region(text),
+                          "repair":
+                              get_repair(text),
+                          "site":
+                              "カーセンサー",
+                          "url":
+                              urljoin(url, href),
+                          "tags":
+                              tags,
+                          "updated_at":
+                              datetime.now(
+                                  JST
+                              ).isoformat(
+                                  timespec="seconds"
+                              )
+                      })
+
+              except Exception as e:
+                  errors.append(
+                      f"{url}: "
+                      f"{type(e).__name__}: "
+                      f"{e}"
+                  )
+
+              time.sleep(1)
+
+          # 同じURLの車は1台にまとめる
+          cars = list(
+              {
+                  car["url"]: car
+                  for car in rows
+              }.values()
+          )
+
+          # 取得失敗時に今までのデータを消さない
+          if len(cars) < 5:
+              print(
+                  "Too few listings. "
+                  "Preserving last good cars.json",
+                  file=sys.stderr
+              )
+
+              sys.exit(0)
+
+          # 面白そう度
+          def interesting_score(car):
+              score = 0
+
+              if "MT" in car["transmission"]:
+                  score += 5
+
+              score += 2 * len(
+                  car["tags"]
+              )
+
+              if (
+                  car["year"]
+                  and int(car["year"]) <= 1999
+              ):
+                  score += 2
+
+              if car["price"] <= 1000000:
+                  score += 1
+
+              return score
+
+          for car in cars:
+              car["interesting_score"] = (
+                  interesting_score(car)
+              )
+
+          cars.sort(
+              key=lambda car: (
+                  -car["interesting_score"],
+                  car["price"]
+              )
+          )
+
+          old = {}
+
+          if OUT.exists():
+              try:
+                  old = json.loads(
+                      OUT.read_text(
+                          encoding="utf-8"
+                      )
+                  )
+              except Exception:
+                  pass
+
+          prices = [
+              car["price"]
+              for car in cars
+          ]
+
+          mileages = [
+              car["mileage"]
+              for car in cars
+              if car["mileage"]
+          ]
+
+          today = datetime.now(
+              JST
+          ).date().isoformat()
+
+          stats = {
+              "date": today,
+              "count": len(cars),
+              "min_price": min(prices),
+              "median_price": int(
+                  statistics.median(
+                      prices
+                  )
+              ),
+              "max_price": max(prices),
+              "avg_price": int(
+                  statistics.mean(
+                      prices
+                  )
+              ),
+              "avg_mileage": int(
+                  statistics.mean(
+                      mileages
+                  )
+              ) if mileages else 0
+          }
+
+          history = [
+              x
+              for x in old.get(
+                  "history",
+                  []
+              )
+              if x.get("date") != today
+          ]
+
+          history.append(stats)
+
+          result = {
+              "updated_at":
+                  datetime.now(
+                      JST
+                  ).isoformat(
+                      timespec="seconds"
+                  ),
+              "cars": cars,
+              "stats": stats,
+              "history":
+                  history[-365:],
+              "errors": errors
+          }
+
+          OUT.write_text(
+              json.dumps(
+                  result,
+                  ensure_ascii=False,
+                  indent=2
+              ),
+              encoding="utf-8"
+          )
+          PY
+
+          python /tmp/discover.py
+
+      - name: Commit cars.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add cars.json
+
+          git diff --cached --quiet && exit 0
+
+          git commit -m "Update used-car data"
+          git push
