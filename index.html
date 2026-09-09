@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="退勤とサニトラ">
+<meta name="theme-color" content="#101318">
+<title>退勤とサニトラ</title>
+<style>
+:root{
+  --bg:#f4f5f7;--card:#fff;--text:#14171c;--sub:#737984;
+  --line:#e5e7eb;--accent:#20242b;--good:#228b57;
+}
+@media(prefers-color-scheme:dark){
+  :root{--bg:#0e1116;--card:#181c23;--text:#f5f7fa;--sub:#a6abb5;--line:#2b3039;--accent:#f5f7fa}
+}
+*{box-sizing:border-box}
+body{
+  margin:0;background:var(--bg);color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;
+}
+.wrap{max-width:620px;margin:auto;padding:18px 14px 100px}
+header{padding:8px 4px 14px}
+h1{font-size:27px;margin:0 0 3px}
+.sub{color:var(--sub);font-size:14px}
+.card{
+  background:var(--card);border-radius:22px;padding:18px;
+  margin:12px 0;box-shadow:0 2px 14px #0000000d
+}
+.card h2{font-size:17px;margin:0 0 15px}
+.big{font-size:34px;font-weight:750;letter-spacing:-1px}
+.mid{font-size:21px;font-weight:700}
+.muted{color:var(--sub);font-size:13px}
+.row{display:flex;gap:10px}
+.row>*{flex:1}
+.stat{padding:12px 0}
+button{
+  border:0;border-radius:14px;padding:13px 15px;font-size:16px;
+  font-weight:650;background:var(--accent);color:var(--bg)
+}
+button.secondary{
+  background:var(--bg);color:var(--text);border:1px solid var(--line)
+}
+button.good{background:#228b57;color:white}
+button.warn{background:#b66b19;color:white}
+.quick{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:10px
+}
+.quick button{padding:10px 4px;font-size:14px}
+label{font-size:13px;color:var(--sub);display:block;margin:12px 0 6px}
+input,select{
+  width:100%;padding:13px;border-radius:12px;border:1px solid var(--line);
+  background:var(--bg);color:var(--text);font-size:16px
+}
+.progress{
+  height:11px;border-radius:99px;background:var(--line);overflow:hidden;margin:10px 0
+}
+.progress span{display:block;height:100%;background:#228b57;border-radius:99px}
+.tabs{
+  position:fixed;bottom:0;left:0;right:0;background:var(--card);
+  border-top:1px solid var(--line);display:flex;justify-content:center;
+  padding-bottom:max(7px,env(safe-area-inset-bottom));z-index:10
+}
+.tabs button{
+  color:var(--sub);background:none;font-size:12px;padding:10px 13px;min-width:70px
+}
+.tabs button.active{color:var(--text)}
+.page{display:none}.page.active{display:block}
+.item{
+  border-top:1px solid var(--line);padding:12px 0;
+  display:flex;justify-content:space-between;gap:10px
+}
+.item:first-child{border-top:0}
+.danger{color:#d34b4b}
+.badge{
+  display:inline-block;padding:5px 9px;border-radius:20px;
+  background:var(--bg);font-size:12px;font-weight:650
+}
+</style>
+</head>
+
+<body>
+<div class="wrap">
+
+<header>
+  <div class="sub" id="todayText"></div>
+  <h1>退勤とサニトラ 🚚</h1>
+</header>
+
+<section id="home" class="page active">
+
+<div class="card">
+  <h2>今日の勤務</h2>
+
+  <button class="good" style="width:100%" onclick="fixedShift()">定時勤務を1タップ登録</button>
+
+  <div class="row">
+    <div>
+      <label>出勤</label>
+      <input id="start" type="time" value="08:30">
+    </div>
+    <div>
+      <label>退勤</label>
+      <input id="end" type="time" value="17:00">
+    </div>
+  </div>
+
+  <div class="quick">
+    <button class="secondary" onclick="setEnd('17:00')">17:00</button>
+    <button class="secondary" onclick="setEnd('17:30')">17:30</button>
+    <button class="secondary" onclick="setEnd('18:00')">18:00</button>
+    <button class="secondary" onclick="setEnd('18:30')">18:30</button>
+    <button class="secondary" onclick="setEnd('19:00')">19:00</button>
+    <button class="secondary" onclick="setEnd('19:30')">19:30</button>
+    <button class="secondary" onclick="setEnd('20:00')">20:00</button>
+    <button class="secondary" onclick="setEnd('20:30')">20:30</button>
+  </div>
+
+  <button style="width:100%;margin-top:10px" onclick="saveWork()">この勤務を登録</button>
+
+  <div class="row" style="margin-top:16px">
+    <div class="stat">
+      <div class="muted">今日の残業</div>
+      <div class="mid" id="todayOT">0時間00分</div>
+    </div>
+    <div class="stat">
+      <div class="muted">残業代目安</div>
+      <div class="mid" id="todayPay">0円</div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <h2>今月の残業</h2>
+  <div class="big" id="monthOT">0時間00分</div>
+  <div class="progress"><span id="otBar"></span></div>
+  <div id="otStatus" class="muted"></div>
+
+  <div class="row" style="margin-top:15px">
+    <div>
+      <div class="muted">45時間まで</div>
+      <div class="mid" id="otRemain">45時間00分</div>
+    </div>
+    <div>
+      <div class="muted">残業代予測</div>
+      <div class="mid" id="monthPay">0円</div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <h2>サニトラ貯金 🚚</h2>
+
+  <div class="muted">現在</div>
+  <div class="big" id="savingNow">0円</div>
+
+  <div class="progress"><span id="saveBar"></span></div>
+  <div class="muted" id="saveRate"></div>
+
+  <div class="row" style="margin-top:16px">
+    <div>
+      <div class="muted">目標</div>
+      <div class="mid" id="savingGoal">1,800,000円</div>
+    </div>
+    <div>
+      <div class="muted">あと</div>
+      <div class="mid" id="savingRemain">1,800,000円</div>
+    </div>
+  </div>
+
+  <div style="margin-top:16px">
+    <div class="muted">このペースなら</div>
+    <div class="mid" id="goalDate">―</div>
+  </div>
+
+  <button class="good" style="width:100%;margin-top:16px" onclick="quickMonthly()">
+    今月の50,000円を追加
+  </button>
+</div>
+
+</section>
+
+<section id="history" class="page">
+<div class="card">
+  <h2>勤務履歴</h2>
+  <div id="workList"></div>
+</div>
+</section>
+
+<section id="saving" class="page">
+
+<div class="card">
+  <h2>貯金を追加</h2>
+
+  <label>金額</label>
+  <input id="saveAmount" type="number" inputmode="numeric" placeholder="50000">
+
+  <label>種類</label>
+  <select id="saveType">
+    <option>毎月貯金</option>
+    <option>ボーナス</option>
+    <option>臨時収入</option>
+    <option>その他</option>
+    <option>出金</option>
+  </select>
+
+  <label>メモ</label>
+  <input id="saveMemo" placeholder="任意">
+
+  <button style="width:100%;margin-top:14px" onclick="addSaving()">追加する</button>
+</div>
+
+<div class="card">
+  <h2>貯金履歴</h2>
+  <div id="saveList"></div>
+</div>
+
+<div class="card">
+  <h2>到達予測</h2>
+  <div id="targets"></div>
+</div>
+
+</section>
+
+<section id="sim" class="page">
+<div class="card">
+  <h2>サニトラ購入シミュレーター</h2>
+
+  <label>仮の現在貯金額</label>
+  <input id="simNow" type="number" value="300000">
+
+  <label>毎月の積立</label>
+  <input id="simMonthly" type="number" value="50000">
+
+  <label>追加の臨時収入</label>
+  <input id="simExtra" type="number" value="0">
+
+  <button style="width:100%;margin-top:14px" onclick="runSim()">計算する</button>
+
+  <div id="simResult" style="margin-top:18px"></div>
+</div>
+</section>
+
+<section id="settings" class="page">
+<div class="card">
+  <h2>設定</h2>
+
+  <label>標準出勤時刻</label>
+  <input id="setStart" type="time">
+
+  <label>標準退勤時刻</label>
+  <input id="setEnd" type="time">
+
+  <label>残業警告ライン（時間）</label>
+  <input id="setLimit" type="number">
+
+  <label>残業代単価（円 / 時間）</label>
+  <input id="setHourly" type="number">
+
+  <label>毎月のサニトラ積立額</label>
+  <input id="setMonthly" type="number">
+
+  <label>車両価格</label>
+  <input id="setCar" type="number">
+
+  <label>諸費用・整備予備費</label>
+  <input id="setExtra" type="number">
+
+  <label>初期サニトラ貯金額</label>
+  <input id="setInitial" type="number">
+
+  <button style="width:100%;margin-top:16px" onclick="saveSettings()">設定を保存</button>
+
+  <button class="secondary" style="width:100%;margin-top:10px" onclick="exportData()">バックアップを書き出す</button>
+</div>
+</section>
+
+</div>
+
+<nav class="tabs">
+  <button class="active" onclick="showPage('home',this)">ホーム</button>
+  <button onclick="showPage('history',this)">勤務</button>
+  <button onclick="showPage('saving',this)">貯金</button>
+  <button onclick="showPage('sim',this)">試算</button>
+  <button onclick="showPage('settings',this)">設定</button>
+</nav>
+
+<script>
+const KEY="taikinSanitraV1";
+
+const defaults={
+  settings:{
+    start:"08:30",
+    end:"17:00",
+    limit:45,
+    hourly:2679,
+    monthly:50000,
+    car:1500000,
+    extra:300000,
+    initial:0
+  },
+  work:[],
+  savings:[]
+};
+
+let db=load();
+
+function load(){
+  try{
+    const d=JSON.parse(localStorage.getItem(KEY));
+    return d?{...defaults,...d,settings:{...defaults.settings,...d.settings}}:structuredClone(defaults);
+  }catch(e){
+    return structuredClone(defaults);
+  }
+}
+
+function persist(){
+  localStorage.setItem(KEY,JSON.stringify(db));
+  render();
+}
+
+function today(){
+  return new Date().toISOString().slice(0,10);
+}
+
+function ym(){
+  return today().slice(0,7);
+}
+
+function min(t){
+  const [h,m]=t.split(":").map(Number);
+  return h*60+m;
+}
+
+function formatMin(m){
+  m=Math.max(0,Math.round(m));
+  return `${Math.floor(m/60)}時間${String(m%60).padStart(2,"0")}分`;
+}
+
+function yen(n){
+  return Math.round(n).toLocaleString("ja-JP")+"円";
+}
+
+/* 17:00〜17:15は残業に含めない */
+function overtime(start,end){
+  const scheduledEnd=min(db.settings.end);
+  const e=min(end);
+
+  if(e<=scheduledEnd) return 0;
+
+  let ot=e-scheduledEnd;
+
+  const restStart=17*60;
+  const restEnd=17*60+15;
+
+  const overlap=Math.max(0,Math.min(e,restEnd)-Math.max(scheduledEnd,restStart));
+  ot-=overlap;
+
+  return Math.max(0,ot);
+}
+
+function fixedShift(){
+  document.getElementById("start").value=db.settings.start;
+  document.getElementById("end").value=db.settings.end;
+  saveWork();
+}
+
+function setEnd(t){
+  document.getElementById("end").value=t;
+  previewToday();
+}
+
+function saveWork(){
+  const date=today();
+  const start=document.getElementById("start").value;
+  const end=document.getElementById("end").value;
+
+  const record={
+    date,start,end,
+    overtime:overtime(start,end),
+    type:"勤務"
+  };
+
+  const i=db.work.findIndex(x=>x.date===date);
+  if(i>=0) db.work[i]=record;
+  else db.work.push(record);
+
+  persist();
+}
+
+function deleteWork(date){
+  if(!confirm("この勤務記録を削除しますか？"))return;
+  db.work=db.work.filter(x=>x.date!==date);
+  persist();
+}
+
+function previewToday(){
+  const s=document.getElementById("start").value;
+  const e=document.getElementById("end").value;
+  const ot=overtime(s,e);
+  document.getElementById("todayOT").textContent=formatMin(ot);
+  document.getElementById("todayPay").textContent=yen(ot/60*db.settings.hourly);
+}
+
+function monthOT(){
+  return db.work
+    .filter(x=>x.date.startsWith(ym()))
+    .reduce((a,b)=>a+(b.overtime||0),0);
+}
+
+function currentSaving(){
+  const transactions=db.savings.reduce((a,b)=>a+b.amount,0);
+  return db.settings.initial+transactions;
+}
+
+function goal(){
+  return Number(db.settings.car)+Number(db.settings.extra);
+}
+
+function monthsTo(target,now=currentSaving(),monthly=db.settings.monthly){
+  if(now>=target)return 0;
+  if(monthly<=0)return null;
+  return Math.ceil((target-now)/monthly);
+}
+
+function futureDate(months){
+  if(months===null)return "積立額を設定してください";
+  const d=new Date();
+  d.setMonth(d.getMonth()+months);
+  return `${d.getFullYear()}年${d.getMonth()+1}月`;
+}
+
+function quickMonthly(){
+  const month=ym();
+  const exists=db.savings.some(x=>x.monthKey===month && x.type==="毎月貯金");
+
+  if(exists){
+    alert("今月分はすでに登録されています");
+    return;
+  }
+
+  db.savings.push({
+    id:Date.now(),
+    date:today(),
+    amount:Number(db.settings.monthly),
+    type:"毎月貯金",
+    memo:"",
+    monthKey:month
+  });
+
+  persist();
+}
+
+function addSaving(){
+  let amount=Number(document.getElementById("saveAmount").value);
+  const type=document.getElementById("saveType").value;
+  const memo=document.getElementById("saveMemo").value;
+
+  if(!amount)return alert("金額を入力してください");
+  if(type==="出金")amount=-Math.abs(amount);
+
+  const before=currentSaving();
+  const beforeMonths=monthsTo(goal(),before);
+
+  db.savings.push({
+    id:Date.now(),
+    date:today(),
+    amount,
+    type,
+    memo
+  });
+
+  const after=before+amount;
+  const afterMonths=monthsTo(goal(),after);
+
+  persist();
+
+  document.getElementById("saveAmount").value="";
+  document.getElementById("saveMemo").value="";
+
+  if(amount>0 && beforeMonths!==null && afterMonths!==null){
+    const faster=Math.max(0,beforeMonths-afterMonths);
+    if(faster>0) alert(`購入予定が約${faster}ヶ月早まりました！ 🚚`);
+  }
+}
+
+function deleteSaving(id){
+  if(!confirm("この入出金を削除しますか？"))return;
+  db.savings=db.savings.filter(x=>x.id!==id);
+  persist();
+}
+
+function runSim(){
+  const now=Number(document.getElementById("simNow").value);
+  const monthly=Number(document.getElementById("simMonthly").value);
+  const extra=Number(document.getElementById("simExtra").value);
+  const base=now+extra;
+
+  const list=[1000000,1500000,2000000];
+
+  document.getElementById("simResult").innerHTML=list.map(t=>{
+    const m=monthsTo(t,base,monthly);
+    return `<div class="item">
+      <div><b>${yen(t)}</b></div>
+      <div>${futureDate(m)}</div>
+    </div>`;
+  }).join("");
+}
+
+function saveSettings(){
+  db.settings.start=document.getElementById("setStart").value;
+  db.settings.end=document.getElementById("setEnd").value;
+  db.settings.limit=Number(document.getElementById("setLimit").value);
+  db.settings.hourly=Number(document.getElementById("setHourly").value);
+  db.settings.monthly=Number(document.getElementById("setMonthly").value);
+  db.settings.car=Number(document.getElementById("setCar").value);
+  db.settings.extra=Number(document.getElementById("setExtra").value);
+  db.settings.initial=Number(document.getElementById("setInitial").value);
+
+  persist();
+  alert("設定を保存しました");
+}
+
+function exportData(){
+  const text=JSON.stringify(db,null,2);
+  const blob=new Blob([text],{type:"application/json"});
+  const a=document.createElement("a");
+  a.href=URL.createObjectURL(blob);
+  a.download="taikin-sanitra-backup.json";
+  a.click();
+}
+
+function showPage(name,btn){
+  document.querySelectorAll(".page").forEach(x=>x.classList.remove("active"));
+  document.getElementById(name).classList.add("active");
+
+  document.querySelectorAll(".tabs button").forEach(x=>x.classList.remove("active"));
+  btn.classList.add("active");
+
+  render();
+}
+
+function render(){
+  const now=new Date();
+  document.getElementById("todayText").textContent=
+    new Intl.DateTimeFormat("ja-JP",{year:"numeric",month:"long",day:"numeric",weekday:"short"}).format(now);
+
+  const todayRec=db.work.find(x=>x.date===today());
+
+  document.getElementById("start").value=todayRec?.start||db.settings.start;
+  document.getElementById("end").value=todayRec?.end||db.settings.end;
+
+  previewToday();
+
+  const mot=monthOT();
+  const limit=db.settings.limit*60;
+  const remain=Math.max(0,limit-mot);
+
+  document.getElementById("monthOT").textContent=formatMin(mot);
+  document.getElementById("otRemain").textContent=formatMin(remain);
+  document.getElementById("monthPay").textContent=yen(mot/60*db.settings.hourly);
+
+  const percent=Math.min(100,mot/limit*100);
+  document.getElementById("otBar").style.width=percent+"%";
+
+  let state="通常";
+  if(mot>=45*60)state="警告：45時間以上";
+  else if(mot>=40*60)state="かなり注意";
+  else if(mot>=30*60)state="注意";
+
+  document.getElementById("otStatus").textContent=
+    `${formatMin(mot)} / ${db.settings.limit}時間　${state}`;
+
+  const s=currentSaving();
+  const g=goal();
+  const r=Math.max(0,g-s);
+  const rate=g?Math.min(100,s/g*100):0;
+
+  document.getElementById("savingNow").textContent=yen(s);
+  document.getElementById("savingGoal").textContent=yen(g);
+  document.getElementById("savingRemain").textContent=yen(r);
+  document.getElementById("saveRate").textContent=`達成率 ${rate.toFixed(1)}%`;
+  document.getElementById("saveBar").style.width=rate+"%";
+  document.getElementById("goalDate").textContent=
+    futureDate(monthsTo(g));
+
+  const wl=[...db.work].sort((a,b)=>b.date.localeCompare(a.date));
+
+  document.getElementById("workList").innerHTML=wl.length?wl.map(x=>`
+    <div class="item">
+      <div>
+        <b>${x.date}</b><br>
+        <span class="muted">${x.start} → ${x.end}</span>
+      </div>
+      <div style="text-align:right">
+        <b>${formatMin(x.overtime)}</b><br>
+        <button class="secondary" style="padding:5px 8px;font-size:11px"
+          onclick="deleteWork('${x.date}')">削除</button>
+      </div>
+    </div>
+  `).join(""):`<div class="muted">まだ勤務記録がありません</div>`;
+
+  const sl=[...db.savings].sort((a,b)=>b.id-a.id);
+
+  document.getElementById("saveList").innerHTML=sl.length?sl.map(x=>`
+    <div class="item">
+      <div>
+        <b>${x.type}</b><br>
+        <span class="muted">${x.date}${x.memo?" ・ "+x.memo:""}</span>
+      </div>
+      <div style="text-align:right">
+        <b>${x.amount>=0?"+":""}${yen(x.amount)}</b><br>
+        <button class="secondary" style="padding:5px 8px;font-size:11px"
+          onclick="deleteSaving(${x.id})">削除</button>
+      </div>
+    </div>
+  `).join(""):`<div class="muted">まだ貯金記録がありません</div>`;
+
+  document.getElementById("targets").innerHTML=
+    [1000000,1500000,2000000].map(t=>`
+      <div class="item">
+        <b>${yen(t)}</b>
+        <span>${futureDate(monthsTo(t))}</span>
+      </div>
+    `).join("");
+
+  const s2=db.settings;
+  document.getElementById("setStart").value=s2.start;
+  document.getElementById("setEnd").value=s2.end;
+  document.getElementById("setLimit").value=s2.limit;
+  document.getElementById("setHourly").value=s2.hourly;
+  document.getElementById("setMonthly").value=s2.monthly;
+  document.getElementById("setCar").value=s2.car;
+  document.getElementById("setExtra").value=s2.extra;
+  document.getElementById("setInitial").value=s2.initial;
+
+  document.querySelector("#home .good:last-child").textContent=
+    `今月の${yen(db.settings.monthly)}を追加`;
+}
+
+document.getElementById("start").addEventListener("change",previewToday);
+document.getElementById("end").addEventListener("change",previewToday);
+
+render();
+runSim();
+</script>
+</body>
+</html>
