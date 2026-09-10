@@ -24,6 +24,43 @@ button{font-weight:700;cursor:pointer}.primary{background:#111827;color:#fff;bor
 .tabs button{border:0;background:transparent;padding:8px 2px;font-size:11px}.tabs button.active{font-weight:800}
 .history-item{display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid #e5e7eb;padding:9px 0}.right{text-align:right}
 textarea{min-height:140px}
+@media (prefers-color-scheme: dark){
+  :root{color-scheme:dark}
+}
+body[data-theme="dark"]{background:#0d1117;color:#f5f7fb}
+body[data-theme="dark"] .card{background:#171c24;border-color:#2a313c}
+body[data-theme="dark"] .stat{background:#11161d;border-color:#2a313c}
+body[data-theme="dark"] .muted{color:#a5abb5}
+body[data-theme="dark"] input,
+body[data-theme="dark"] select,
+body[data-theme="dark"] button,
+body[data-theme="dark"] textarea{background:#11161d;color:#f5f7fb;border-color:#39414d}
+body[data-theme="dark"] .primary{background:#f5f7fb;color:#111827;border-color:#f5f7fb}
+body[data-theme="dark"] .bar{background:#2a313c}
+body[data-theme="dark"] .bar>div{background:#f5f7fb}
+body[data-theme="dark"] .badge{background:#252c36}
+body[data-theme="dark"] .tabs{background:#171c24;border-color:#2a313c}
+body[data-theme="dark"] .history-item{border-color:#2a313c}
+
+body[data-theme="light"]{color-scheme:light}
+
+@media (prefers-color-scheme: dark){
+  body[data-theme="auto"]{background:#0d1117;color:#f5f7fb}
+  body[data-theme="auto"] .card{background:#171c24;border-color:#2a313c}
+  body[data-theme="auto"] .stat{background:#11161d;border-color:#2a313c}
+  body[data-theme="auto"] .muted{color:#a5abb5}
+  body[data-theme="auto"] input,
+  body[data-theme="auto"] select,
+  body[data-theme="auto"] button,
+  body[data-theme="auto"] textarea{background:#11161d;color:#f5f7fb;border-color:#39414d}
+  body[data-theme="auto"] .primary{background:#f5f7fb;color:#111827;border-color:#f5f7fb}
+  body[data-theme="auto"] .bar{background:#2a313c}
+  body[data-theme="auto"] .bar>div{background:#f5f7fb}
+  body[data-theme="auto"] .badge{background:#252c36}
+  body[data-theme="auto"] .tabs{background:#171c24;border-color:#2a313c}
+  body[data-theme="auto"] .history-item{border-color:#2a313c}
+}
+
 @media(max-width:520px){.grid3{grid-template-columns:1fr}}
 </style>
 </head>
@@ -40,7 +77,7 @@ textarea{min-height:140px}
 <button class="primary" style="margin-top:12px" onclick="addWork()">この勤務を登録</button>
 <div class="muted" style="margin-top:8px">※ 17:00〜17:15は休憩として残業時間に含めません。</div>
 </div>
-<div class="card"><h2>今月</h2><div class="grid3"><div class="stat"><div class="muted">残業</div><div class="mid" id="monthOT"></div></div><div class="stat"><div class="muted">残業代</div><div class="mid" id="monthPay"></div></div><div class="stat"><div class="muted">45hまで</div><div class="mid" id="otRemain"></div></div></div><div class="bar" style="margin-top:12px"><div id="otBar"></div></div><div class="muted" id="otStatus" style="margin-top:7px"></div></div>
+<div class="card"><h2>今回の残業締め</h2><div class="muted" id="payPeriodText" style="margin-bottom:10px"></div><div class="grid3"><div class="stat"><div class="muted">残業</div><div class="mid" id="monthOT"></div></div><div class="stat"><div class="muted">残業代</div><div class="mid" id="monthPay"></div></div><div class="stat"><div class="muted">45hまで</div><div class="mid" id="otRemain"></div></div></div><div class="bar" style="margin-top:12px"><div id="otBar"></div></div><div class="muted" id="otStatus" style="margin-top:7px"></div></div>
 <div class="card"><h2>サニトラ資金</h2><div class="big" id="savingNow"></div><div class="muted" id="goalText"></div><div class="bar" style="margin:12px 0 7px"><div id="savingBar"></div></div><div id="savingStatus"></div><div class="stat" style="margin-top:12px"><div class="muted">このペースなら</div><div class="mid" id="goalEta"></div></div></div>
 </section>
 
@@ -54,7 +91,14 @@ textarea{min-height:140px}
 <section id="sim" class="page"><div class="card"><h2>サニトラ購入シミュレーター</h2><label>現在の貯金</label><input id="simNow" type="number"><label>毎月の積立</label><input id="simMonthly" type="number"><label>追加の臨時収入</label><input id="simExtra" type="number" value="0"><label>目標金額</label><input id="simGoal" type="number"><button class="primary" style="margin-top:12px" onclick="runSim()">計算</button><div class="stat" style="margin-top:14px"><div class="muted">結果</div><div class="mid" id="simResult"></div><div class="muted" id="simDetail"></div></div></div></section>
 
 <section id="settings" class="page">
-<div class="card"><h2>設定</h2><div class="row"><div><label>標準出勤</label><input id="setStart" type="time"></div><div><label>標準退勤</label><input id="setEnd" type="time"></div></div><label>残業上限（時間/月）</label><input id="setLimit" type="number"><label>残業単価（円/時間）</label><input id="setHourly" type="number"><label>毎月の車貯金（円）</label><input id="setMonthly" type="number"><label>車の目標金額（円）</label><input id="setCar" type="number"><label>購入時に残したい予備資金（円）</label><input id="setExtra" type="number"><label>初期貯金額（円）</label><input id="setInitial" type="number"><button class="primary" style="margin-top:12px" onclick="saveSettings()">設定を保存</button></div>
+<div class="card"><h2>設定</h2><div class="row"><div><label>標準出勤</label><input id="setStart" type="time"></div><div><label>標準退勤</label><input id="setEnd" type="time"></div></div><label>残業上限（時間/月）</label><input id="setLimit" type="number"><label>残業単価（円/時間）</label><input id="setHourly" type="number"><label>毎月の車貯金（円）</label><input id="setMonthly" type="number"><label>車の目標金額（円）</label><input id="setCar" type="number"><label>購入時に残したい予備資金（円）</label><input id="setExtra" type="number"><label>初期貯金額（円）</label><input id="setInitial" type="number">
+<label>表示テーマ</label>
+<select id="setTheme">
+<option value="auto">端末に合わせる</option>
+<option value="light">ライト</option>
+<option value="dark">ダーク</option>
+</select>
+<button class="primary" style="margin-top:12px" onclick="saveSettings()">設定を保存</button></div>
 <div class="card"><h2>バックアップ</h2><button onclick="exportBackup()">バックアップを書き出す</button><label>バックアップJSONを貼り付け</label><textarea id="backupText"></textarea><button onclick="importBackup()">復元する</button></div>
 </section>
 </div>
@@ -69,7 +113,7 @@ textarea{min-height:140px}
 
 <script>
 const KEY="taikinSanitraV4";
-const defaults={settings:{start:"08:30",end:"17:00",limit:45,hourly:2679,monthly:50000,car:1500000,extra:300000,initial:0},work:[],savings:[]};
+const defaults={settings:{start:"08:30",end:"17:00",limit:45,hourly:2679,monthly:50000,car:1500000,extra:300000,initial:0,theme:"auto"},work:[],savings:[]};
 const clone=x=>JSON.parse(JSON.stringify(x));
 function loadDb(){try{const raw=localStorage.getItem(KEY);if(!raw)return clone(defaults);const old=JSON.parse(raw);return{settings:{...defaults.settings,...(old.settings||{})},work:Array.isArray(old.work)?old.work:[],savings:Array.isArray(old.savings)?old.savings:[]}}catch(e){return clone(defaults)}}
 let db=loadDb();
@@ -79,7 +123,32 @@ function today(){const d=new Date();return `${d.getFullYear()}-${String(d.getMon
 function minFromTime(t){if(!t||!t.includes(":"))return 0;const [h,m]=t.split(":").map(Number);return h*60+m}
 function formatMin(m){m=Math.max(0,Math.round(Number(m)||0));return `${Math.floor(m/60)}時間${String(m%60).padStart(2,"0")}分`}
 function calcOT(start,end){const s=minFromTime(start),e=minFromTime(end),standardEnd=minFromTime(db.settings.end||"17:00");if(e<=s||e<=standardEnd)return 0;const breakEnd=standardEnd+15;if(e<=breakEnd)return 0;return e-breakEnd}
-function getMonthOT(){const d=new Date(),p=`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-`;return db.work.filter(x=>String(x.date||"").startsWith(p)).reduce((a,x)=>a+(Number(x.ot)||0),0)}
+function dateOnly(d){
+  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
+}
+function payPeriod(ref=new Date()){
+  const y=ref.getFullYear(),m=ref.getMonth(),day=ref.getDate();
+  let start,end;
+  if(day>=16){
+    start=new Date(y,m,16);
+    end=new Date(y,m+1,15);
+  }else{
+    start=new Date(y,m-1,16);
+    end=new Date(y,m,15);
+  }
+  start.setHours(0,0,0,0);
+  end.setHours(23,59,59,999);
+  return {start,end};
+}
+function getMonthOT(){
+  const p=payPeriod();
+  return db.work
+    .filter(x=>{
+      const d=new Date(`${x.date}T00:00:00`);
+      return !Number.isNaN(d.getTime()) && d>=p.start && d<=p.end;
+    })
+    .reduce((a,x)=>a+(Number(x.ot)||0),0);
+}
 function currentSaving(){return (Number(db.settings.initial)||0)+db.savings.reduce((a,x)=>a+(Number(x.amount)||0),0)}
 function goal(){return (Number(db.settings.car)||0)+(Number(db.settings.extra)||0)}
 function futureDate(months){const d=new Date();d.setMonth(d.getMonth()+months);return `${d.getFullYear()}年${d.getMonth()+1}月`}
@@ -90,15 +159,24 @@ function addWork(){const rec={date:today(),start:start.value,end:end.value,ot:ca
 function addSaving(){const raw=Number(saveAmount.value)||0,type=saveType.value,amount=type==="出金"?-Math.abs(raw):Math.abs(raw);if(!amount)return;db.savings.unshift({id:Date.now(),date:today(),amount,type,memo:saveMemo.value.trim()});saveAmount.value="";saveMemo.value="";persist();render()}
 function deleteWork(date){if(confirm(`${date} の勤務記録を削除しますか？`)){db.work=db.work.filter(x=>x.date!==date);persist();render()}}
 function deleteSaving(id){if(confirm("この貯金記録を削除しますか？")){db.savings=db.savings.filter(x=>x.id!==id);persist();render()}}
-function saveSettings(){db.settings={...db.settings,start:setStart.value||"08:30",end:setEnd.value||"17:00",limit:Number(setLimit.value)||45,hourly:Number(setHourly.value)||0,monthly:Number(setMonthly.value)||0,car:Number(setCar.value)||0,extra:Number(setExtra.value)||0,initial:Number(setInitial.value)||0};persist();syncInputs();render();alert("保存しました")}
+function saveSettings(){db.settings={...db.settings,start:setStart.value||"08:30",end:setEnd.value||"17:00",limit:Number(setLimit.value)||45,hourly:Number(setHourly.value)||0,monthly:Number(setMonthly.value)||0,car:Number(setCar.value)||0,extra:Number(setExtra.value)||0,initial:Number(setInitial.value)||0,theme:setTheme.value||"auto"};persist();applyTheme();syncInputs();render();alert("保存しました")}
 function runSim(){const n=Number(simNow.value)||0,m=Number(simMonthly.value)||0,e=Number(simExtra.value)||0,t=Number(simGoal.value)||0,b=n+e;if(b>=t){simResult.textContent="今すぐ購入圏内";simDetail.textContent="";return}if(m<=0){simResult.textContent="毎月の積立額を設定してください";simDetail.textContent="";return}const months=Math.ceil((t-b)/m);simResult.textContent=`${futureDate(months)}ごろ`;simDetail.textContent=`あと${months}ヶ月 / 残り ${yen(t-b)}`}
-function syncInputs(){const st=db.settings,rec=db.work.find(x=>x.date===today());start.value=rec?.start||st.start;end.value=rec?.end||st.end;setStart.value=st.start;setEnd.value=st.end;setLimit.value=st.limit;setHourly.value=st.hourly;setMonthly.value=st.monthly;setCar.value=st.car;setExtra.value=st.extra;setInitial.value=st.initial;simNow.value=currentSaving();simMonthly.value=st.monthly;simGoal.value=goal();previewToday()}
+function syncInputs(){const st=db.settings,rec=db.work.find(x=>x.date===today());start.value=rec?.start||st.start;end.value=rec?.end||st.end;setStart.value=st.start;setEnd.value=st.end;setLimit.value=st.limit;setHourly.value=st.hourly;setMonthly.value=st.monthly;setCar.value=st.car;setExtra.value=st.extra;setInitial.value=st.initial;setTheme.value=st.theme||"auto";simNow.value=currentSaving();simMonthly.value=st.monthly;simGoal.value=goal();previewToday()}
 function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
-function render(){todayText.textContent=new Intl.DateTimeFormat("ja-JP",{year:"numeric",month:"long",day:"numeric",weekday:"short"}).format(new Date());const mot=getMonthOT(),limit=(Number(db.settings.limit)||45)*60,remain=Math.max(0,limit-mot);document.getElementById("monthOT").textContent=formatMin(mot);monthPay.textContent=yen(mot/60*(Number(db.settings.hourly)||0));otRemain.textContent=formatMin(remain);otBar.style.width=(limit?Math.min(100,mot/limit*100):0)+"%";let state="通常";if(mot>=45*60)state="⚠️ 45時間以上";else if(mot>=40*60)state="かなり注意";else if(mot>=30*60)state="注意";otStatus.textContent=`${formatMin(mot)} / ${db.settings.limit}時間　${state}`;const s=currentSaving(),g=goal(),rate=g?Math.min(100,s/g*100):0;savingNow.textContent=yen(s);goalText.textContent=`目標 ${yen(g)}（車 ${yen(db.settings.car)} + 予備 ${yen(db.settings.extra)}）`;savingBar.style.width=rate+"%";savingStatus.innerHTML=`<span class="badge">${rate.toFixed(1)}%</span>`+(s>=g?`<span class="badge">購入圏内 🎉</span>`:`<span class="badge">あと ${yen(g-s)}</span>`);const m=monthsTo(g);goalEta.textContent=m===0?"今すぐ購入圏内":m===null?"毎月の積立額を設定してください":`${futureDate(m)}ごろ（あと${m}ヶ月）`;workList.innerHTML=db.work.length?db.work.map(x=>`<div class="history-item"><div><strong>${x.date}</strong><div class="muted">${x.start} → ${x.end}</div></div><div class="right"><strong>${formatMin(x.ot)}</strong><div class="muted">${yen((Number(x.ot)||0)/60*(Number(db.settings.hourly)||0))}</div><button onclick="deleteWork('${x.date}')">削除</button></div></div>`).join(""):`<div class="muted">まだ勤務記録がありません</div>`;saveList.innerHTML=db.savings.length?db.savings.map(x=>`<div class="history-item"><div><strong>${x.type}</strong><div class="muted">${x.date}${x.memo?` ・ ${escapeHtml(x.memo)}`:""}</div></div><div class="right"><strong>${x.amount>=0?"+":""}${yen(x.amount)}</strong><br><button onclick="deleteSaving(${Number(x.id)})">削除</button></div></div>`).join(""):`<div class="muted">まだ貯金記録がありません</div>`;previewToday()}
+function render(){todayText.textContent=new Intl.DateTimeFormat("ja-JP",{year:"numeric",month:"long",day:"numeric",weekday:"short"}).format(new Date());const pp=payPeriod();payPeriodText.textContent=`${pp.start.getFullYear()}/${pp.start.getMonth()+1}/${pp.start.getDate()} 〜 ${pp.end.getFullYear()}/${pp.end.getMonth()+1}/${pp.end.getDate()}`;const mot=getMonthOT(),limit=(Number(db.settings.limit)||45)*60,remain=Math.max(0,limit-mot);document.getElementById("monthOT").textContent=formatMin(mot);monthPay.textContent=yen(mot/60*(Number(db.settings.hourly)||0));otRemain.textContent=formatMin(remain);otBar.style.width=(limit?Math.min(100,mot/limit*100):0)+"%";let state="通常";if(mot>=45*60)state="⚠️ 45時間以上";else if(mot>=40*60)state="かなり注意";else if(mot>=30*60)state="注意";otStatus.textContent=`${formatMin(mot)} / ${db.settings.limit}時間　${state}`;const s=currentSaving(),g=goal(),rate=g?Math.min(100,s/g*100):0;savingNow.textContent=yen(s);goalText.textContent=`目標 ${yen(g)}（車 ${yen(db.settings.car)} + 予備 ${yen(db.settings.extra)}）`;savingBar.style.width=rate+"%";savingStatus.innerHTML=`<span class="badge">${rate.toFixed(1)}%</span>`+(s>=g?`<span class="badge">購入圏内 🎉</span>`:`<span class="badge">あと ${yen(g-s)}</span>`);const m=monthsTo(g);goalEta.textContent=m===0?"今すぐ購入圏内":m===null?"毎月の積立額を設定してください":`${futureDate(m)}ごろ（あと${m}ヶ月）`;workList.innerHTML=db.work.length?db.work.map(x=>`<div class="history-item"><div><strong>${x.date}</strong><div class="muted">${x.start} → ${x.end}</div></div><div class="right"><strong>${formatMin(x.ot)}</strong><div class="muted">${yen((Number(x.ot)||0)/60*(Number(db.settings.hourly)||0))}</div><button onclick="deleteWork('${x.date}')">削除</button></div></div>`).join(""):`<div class="muted">まだ勤務記録がありません</div>`;saveList.innerHTML=db.savings.length?db.savings.map(x=>`<div class="history-item"><div><strong>${x.type}</strong><div class="muted">${x.date}${x.memo?` ・ ${escapeHtml(x.memo)}`:""}</div></div><div class="right"><strong>${x.amount>=0?"+":""}${yen(x.amount)}</strong><br><button onclick="deleteSaving(${Number(x.id)})">削除</button></div></div>`).join(""):`<div class="muted">まだ貯金記録がありません</div>`;previewToday()}
 function showPage(id,btn){document.querySelectorAll(".page").forEach(x=>x.classList.toggle("active",x.id===id));document.querySelectorAll(".tabs button").forEach(x=>x.classList.remove("active"));btn?.classList.add("active");if(id==="sim"){simNow.value=currentSaving();simMonthly.value=db.settings.monthly;simGoal.value=goal()}}
 function exportBackup(){const text=JSON.stringify(db,null,2);backupText.value=text;navigator.clipboard?.writeText(text).catch(()=>{});alert("バックアップJSONを表示しました")}
 function importBackup(){try{const obj=JSON.parse(backupText.value);db={settings:{...defaults.settings,...(obj.settings||{})},work:Array.isArray(obj.work)?obj.work:[],savings:Array.isArray(obj.savings)?obj.savings:[]};persist();syncInputs();render();alert("復元しました")}catch(e){alert("バックアップJSONを読み込めませんでした")}}
-start.addEventListener("change",previewToday);end.addEventListener("change",previewToday);syncInputs();render();runSim();
+function applyTheme(){
+  const theme=db.settings.theme||"auto";
+  document.body.dataset.theme=theme;
+}
+start.addEventListener("change",previewToday);
+end.addEventListener("change",previewToday);
+applyTheme();
+syncInputs();
+render();
+runSim();
 </script>
 </body>
 </html>
