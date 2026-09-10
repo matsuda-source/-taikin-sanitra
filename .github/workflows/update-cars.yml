@@ -75,11 +75,36 @@ jobs:
                   "url": BASE + "/usedcar/btT/index.html",
                   "tag": "トラック",
               },
+              {
+                  "name": "セダン",
+                  "url": BASE + "/usedcar/btS/index.html",
+                  "tag": "セダン",
+              },
+              {
+                  "name": "ハッチバック",
+                  "url": BASE + "/usedcar/btD/index.html",
+                  "tag": "ハッチバック",
+              },
+              {
+                  "name": "ステーションワゴン",
+                  "url": BASE + "/usedcar/btW/index.html",
+                  "tag": "ステーションワゴン",
+              },
+              {
+                  "name": "SUV・クロカン",
+                  "url": BASE + "/usedcar/btX/index.html",
+                  "tag": "SUV・クロカン",
+              },
+              {
+                  "name": "ミニバン",
+                  "url": BASE + "/usedcar/btM/index.html",
+                  "tag": "ミニバン",
+              },
           ]
 
           # 各探索条件の最大ページ数
           # 車種ごとの10台制限ではない
-          MAX_PAGES_PER_DISCOVERY = 100
+          MAX_PAGES_PER_DISCOVERY = 10
 
           session = requests.Session()
 
@@ -584,7 +609,15 @@ jobs:
                           image_url = urljoin(BASE, image_url)
                       else:
                           image_url = ""
-
+                  excluded_models = [
+                      "キャリイ",
+                      "ミニキャブトラック",
+                      "サンバートラック",
+                      "アクティトラック",
+                  ]
+                  
+                  if any(model in title for model in excluded_models):
+                      continue
                   found[url] = {
                       "name": title,
                       "image": image_url,
