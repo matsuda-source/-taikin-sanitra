@@ -79,7 +79,7 @@ jobs:
 
           # 各探索条件の最大ページ数
           # 車種ごとの10台制限ではない
-          MAX_PAGES_PER_DISCOVERY = 10
+          MAX_PAGES_PER_DISCOVERY = 100
 
           session = requests.Session()
 
